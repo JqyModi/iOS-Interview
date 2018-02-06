@@ -19,4 +19,14 @@
 答：以NSMutableArray与NSArray为例：通过NSArray()创建方式会开辟一块不可变的内存空间，当我们希望向数组中加入新的内容时系统会在堆中开辟另一个内存空间并将指向原来创建的指针指向新开辟的内存空间，同时会将原来内存空间的内容拷贝到新的内存空间下，而NSMutableArray()是通过动态申请内存空间的方式开辟内存空间大小，当我们向数组中添加新的内容时会在原来开辟的基础上动态申请内存空间
 
 6.What is responder chain(响应者链)?
-答：
+答：1.响应者链是有多个响应者(UIResponder)对象组成的链条：每个UIResponder都有一个nextResponder属性，通过该属性可以组成一个响应者链，事件或者消息可以在链条上传递
+   2.如果当前UIResponder没有出来传递给它的事件，则会将未处理的消息继续传递给自己的下一个响应者(nextResponder)
+   3.响应者链传递规则：找响应者(hitTest)：UIApplication -> UIWindow -> UIViewController -> UIView -> SubView（UIView）-> 事件响应(touchesBegan) -> Superview（UIView）->···->UIView -> UIViewController -> UIWindow -> UIApplication
+
+7.Difference between method and selector?
+答：Selector可以获取到方法地址间接调用方法执行
+
+8.定义属性时，什么情况使用copy、assign、retain？
+答：1>copy：NSString、Block等类型
+   2>assign：基本数据类型
+   3>retain：OC对象类型
