@@ -88,7 +88,7 @@ extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BL
     
     //4.发现外部设备
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        debugPrint("||||| central --> \(central) ||||| peripheral --> \(peripheral) ||||| advertisementData --> \(advertisementData) ||||| RSSI --> \(RSSI) |||||")
+        debugPrint("********************* central --> \(central) ||||| peripheral --> \(peripheral) ||||| advertisementData --> \(advertisementData) ||||| RSSI --> \(RSSI) *********************")
         //5.过滤需要的蓝牙外设：通过名字前缀+信号强度过滤
         if peripheral.name == "mb_0cao0Nv5" && abs(RSSI.intValue) > 40 {
             //6.记录当前需要的外设
