@@ -12,7 +12,9 @@ import CoreBluetooth
 import MultipeerConnectivity
 
 class BLEViewController: UIViewController {
-
+    
+    @IBOutlet var bleView: BLEView!
+    
     var cm: CBCentralManager?
     
     //记录需要的外部设备
@@ -22,16 +24,12 @@ class BLEViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.init(patternImage: UIImage(named:"demo_img")!)
-        
-        //添加View
-        view.addSubview(bleView)
         bleView.delegate = self
-        
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        bleTest()
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        bleTest()
+//    }
 
     private func bleTest() {
         //1.初始化蓝牙中心管理者
@@ -40,14 +38,21 @@ class BLEViewController: UIViewController {
     }
     
     //懒加载
-    private lazy var bleView = BLEView()
+//    private lazy var bleView: BLEView = {
+//        let b = Bundle.main.loadNibNamed("BLEView", owner: nil, options: nil)?.last as! BLEView
+//        b.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+//        b.backgroundColor = UIColor.orange
+//        b.delegate = self
+//        return b
+//    }()
 }
 
 extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BLEViewDelegate {
     
     //MARK: - CBCentralManagerDelegate
-    func findPeripheral() {
+    @objc func findPeripheral() {
         debugPrint("func --> \(#function) : line --> \(#line)")
+        bleTest()
     }
     
     //MARK: - CBCentralManagerDelegate
@@ -57,14 +62,19 @@ extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BL
         
         switch central.state {
         case .unknown:
+            debugPrint("centralManagerDidUpdateState --> 状态 : unknown")
             break
         case .resetting:
+            debugPrint("centralManagerDidUpdateState --> 状态 : resetting")
             break
         case .unsupported:
+            debugPrint("centralManagerDidUpdateState --> 状态 : unsupported")
             break
         case .unauthorized:
+            debugPrint("centralManagerDidUpdateState --> 状态 : unauthorized")
             break
         case .poweredOff:
+            debugPrint("centralManagerDidUpdateState --> 状态 : poweredOff")
             break
         case .poweredOn:
             debugPrint("func --> 开启状态 : line --> \(#line)")
@@ -80,14 +90,14 @@ extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BL
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         debugPrint("||||| central --> \(central) ||||| peripheral --> \(peripheral) ||||| advertisementData --> \(advertisementData) ||||| RSSI --> \(RSSI) |||||")
         //5.过滤需要的蓝牙外设：通过名字前缀+信号强度过滤
-        if peripheral.name == "Amazfit Cor" && abs(RSSI.intValue) > 40 {
+        if peripheral.name == "mb_0cao0Nv5" && abs(RSSI.intValue) > 40 {
             //6.记录当前需要的外设
             self.peripheral = peripheral
             //7.停止扫描外设
             cm?.stopScan()
             //8.链接该外设
             cm?.connect(self.peripheral!, options: nil)
-            
+
         }
     }
     
@@ -95,11 +105,14 @@ extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BL
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
 //        debugPrint("central --> \(central) : peripheral --> \(peripheral)")
         debugPrint("外设链接成功")
+        //10.设置已经链接的外设的代理事件
+        peripheral.delegate = self
+        peripheral.discoverServices(nil)
     }
     
     //MARK: - CBPeripheralDelegate
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
-        
+        debugPrint("didDiscoverServices ---> \(error)")
     }
     
 }
