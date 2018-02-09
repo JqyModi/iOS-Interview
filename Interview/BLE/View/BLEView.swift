@@ -19,5 +19,5 @@ class BLEView: UIView {
     @IBAction func findPeripheral(_ sender: UIButton) {
         self.delegate?.findPeripheral()
     }
-
+    
 }

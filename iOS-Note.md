@@ -344,3 +344,31 @@ UIView不能与用户交互的三种情况：
 蓝牙开发：
 1.可用框架：GameKit
 
+# 通过xib方式创建自定义View：
+    1.新建一个Empty文件
+    2.拖一个UIView到界面上并在属性设置中设置Size为Freefrom：即可以自由修改大小
+    3.布局View界面
+    4.代码加载该xib创建的View
+        - 方式1：
+        //let xib: UIView = Bundle.main.loadNibNamed("BLEView_", owner: nil, options: nil)?.last as! UIView
+        //view.addSubview(xib)
+        - 方式2：
+        //let xib: UIView = nibBundle?.loadNibNamed("BLEView_", owner: nil, options: nil)?.last as! UIView
+        //view.addSubview(xib)
+        - 方式3：
+        //let nib = UINib(nibName: "BLEView_", bundle: Bundle.main)
+        //let views: [UIView] = nib.instantiate(withOwner: nil, options: nil) as! [UIView]
+        //let xib = views.last
+        //view?.addSubview(xib!)
+    5.若需要为View上面控件赋值：
+        1.创建一个对应ViewClass并在属性设置中设置class为ViewClass
+        2.通过拖拽方式将view上控件与ViewClass的一个属性关联
+        3.通过模型类属性的赋值方法给控件赋值
+    6.初始化代码封装到自定义View本身类中：
+        1.写一个类方法将通过xib创建好的View返回
+
+# instancetype与id类型区别：
+    1.前者只能作为方法返回值：表示当前类的类型
+    2.id指向任何类的类型
+    
+#

@@ -25,6 +25,28 @@ class BLEViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.init(patternImage: UIImage(named:"demo_img")!)
         bleView.delegate = self
+        
+        let xib: BLEView_ = BLEView_()
+        xib.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+        xib.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        xib.model = "demo_img"
+        view.addSubview(xib)
+        
+        //加载xib创建的View
+//        let xib: BLEView_ = Bundle.main.loadNibNamed("BLEView_", owner: nil, options: nil)?.last as! BLEView_
+//        xib.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+//        xib.model = "demo_img"
+//        view.addSubview(xib)
+        
+//        let xib: BLEView_ = nibBundle?.loadNibNamed("BLEView_", owner: nil, options: nil)?.last as! BLEView_
+//        xib.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+//        xib.model = "demo_img"
+//        view.addSubview(xib)
+        
+//        let nib = UINib(nibName: "BLEView_", bundle: Bundle.main)
+//        let views: [UIView] = nib.instantiate(withOwner: nil, options: nil) as! [UIView]
+//        let xib = views.last
+//        view?.addSubview(xib!)
     }
     
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
