@@ -22,6 +22,7 @@
 		04768B6E202006300030CF9F /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6D202006300030CF9F /* ViewC.swift */; };
 		04768B70202006320030CF9F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6F202006320030CF9F /* ViewD.swift */; };
 		04768B72202006360030CF9F /* ViewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B71202006360030CF9F /* ViewE.swift */; };
+		04969E7D202D38F000849968 /* BLEView_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04969E7C202D38F000849968 /* BLEView_.xib */; };
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		04768B6D202006300030CF9F /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
 		04768B6F202006320030CF9F /* ViewD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewD.swift; sourceTree = "<group>"; };
 		04768B71202006360030CF9F /* ViewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewE.swift; sourceTree = "<group>"; };
+		04969E7C202D38F000849968 /* BLEView_.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView_.xib; sourceTree = "<group>"; };
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			children = (
 				0412CFD1202AF7170085ABE4 /* BLEView.swift */,
 				0412CFD3202AF7920085ABE4 /* BLEView.xib */,
+				04969E7C202D38F000849968 /* BLEView_.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				0444E7BF201AD4290007B0E5 /* LaunchScreen.storyboard in Resources */,
 				0444E7BC201AD4290007B0E5 /* Assets.xcassets in Resources */,
 				0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */,
+				04969E7D202D38F000849968 /* BLEView_.xib in Resources */,
 				0444E7BA201AD4290007B0E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

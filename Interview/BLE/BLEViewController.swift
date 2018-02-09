@@ -97,8 +97,8 @@ extension BLEViewController : CBCentralManagerDelegate, CBPeripheralDelegate, BL
             cm?.stopScan()
             //8.链接该外设
             cm?.connect(self.peripheral!, options: nil)
-
         }
+        
     }
     
     //9.链接成功调用

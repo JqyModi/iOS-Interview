@@ -1,0 +1,629 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 AppleColorEmoji;
+\f3\fswiss\fcharset0 Helvetica;\f4\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red163\green21\blue21;
+\red43\green131\blue159;\red0\green128\blue0;\red0\green0\blue255;\red43\green131\blue159;\red255\green255\blue255;
+\red0\green0\blue0;\red92\green38\blue153;\red46\green13\blue110;\red0\green116\blue0;\red63\green110\blue116;
+\red196\green26\blue22;\red28\green0\blue207;\red170\green13\blue145;\red102\green217\blue239;\red39\green40\blue34;
+}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\csgenericrgb\c63922\c8235\c8235;
+\csgenericrgb\c16863\c51373\c62353;\csgenericrgb\c0\c50196\c0;\csgenericrgb\c0\c0\c100000;\csgenericrgb\c16900\c51200\c62500;\csgenericrgb\c100000\c100000\c100000;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c0\c45600\c0;\csgenericrgb\c24700\c43100\c45600;
+\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c40000\c85100\c93700;\csgenericrgb\c15300\c15700\c13300;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15500\viewh8580\viewkind0
+\deftab674
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \CocoaLigature0 \'bf\'aa\'c6\'f4aria2c\'b7\'fe\'ce\'f1\'a3\'ba
+\f1\fs22 \cf2 \cb3 aria2c --enable-rpc --rpc-listen-all
+\f2\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+\cf0 \
+1\uc0\u8419 \u65039 
+\f0 \'d1\'a7\'cf\'b0\'bb\'f9\'b4\'a1\'d3\'ef\'b7\'a8\'bc\'b0
+\f3 UI
+\f0 \'bd\'e7\'c3\'e6\'bf\'d8\'bc\'fe
+\f3 \
+
+\f2 2\uc0\u8419 \u65039 
+\f0 \'ca\'ec\'cf\'a4\'cf\'ee\'c4\'bf\'bf\'f2\'bc\'dc\'bd\'e1\'b9\'b9
+\f3 \
+
+\f2 3\uc0\u8419 \u65039 
+\f0 \'d0\'de\'b8\'c4
+\f3 BUG\
+	1.
+\f0 \'b5\'e3\'bb\'f7\'ce\'d2\'b5\'c4\'ca\'d5\'b2\'d8\'a3\'ad>\'b4\'f2\'bf\'aa\'ca\'d5\'b2\'d8\'b7\'d6\'c0\'e0\'a3\'ad\'b5\'e3\'bb\'f7\'c6\'e4\'d6\'d0\'c8\'ce\'d2\'e2\'d2\'bb\'b8\'f6Item\'a3\'ad\'b7\'b5\'bb\'d8\'a3\'ad\'bd\'f8\'c8\'eb\'cd\'ac\'b2\'bd\'ca\'d3\'c6\'b5\'bb\'f2\'b7\'c2\'d5\'e6\'ca\'d4\'d1\'e9\'a3\'ad\'b5\'e3\'bb\'f7\'c6\'e4\'d6\'d0\'c8\'ce\'d2\'e2\'d2\'bb\'b8\'f6\'cf\'c2\'c0\'ad\'cf\'ee\'a3\'ad\'b3\'cc\'d0\'f2\'b1\'c0\'c0\'a3	\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	2.\'b7\'c2\'d5\'e6\'ca\'d4\'d1\'e9\'c4\'a3\'bf\'e9\'d3\'d2\'c9\'cf\'bd\'c7\'cb\'d1\'cb\'f7\'b9\'a6\'c4\'dc\'a3\'ad\'ca\'fd\'be\'dd\'bd\'d3\'bf\'da\'b4\'ed\'ce\'f3		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	3.\'cb\'f9\'d3\'d0\'bd\'e7\'c3\'e6\'b5\'c4\'b7\'d6\'c0\'e0\'c5\'c5\'d0\'f2\'ce\'de\'d0\'a7	\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	4.\'d6\'f7\'d2\'b3\'b2\'bc\'be\'d6\'bc\'b0Item\'d1\'f9\'ca\'bd\'d0\'de\'b8\'c4	\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	5.\'b3\'cc\'d0\'f2\'b5\'c7\'c2\'bc\'c4\'a3\'bf\'e9\'ce\'de\'d0\'a7		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	6.\'c7\'e5\'c0\'ed\'bb\'ba\'b4\'e6\'ca\'fd\'be\'dd\'ca\'d6\'bb\'fa\'d3\'d0\'d0\'a7\'c6\'bd\'b0\'e5\'b1\'c0\'c0\'a3		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	7.\'c6\'bd\'b0\'e5\'c6\'f4\'b6\'af\'d2\'b3\'c3\'e6\'cd\'bc\'c6\'ac\'b4\'f3\'d0\'a1\'b3\'df\'b4\'e7\'b2\'bb\'ba\'cf\'ca\'ca		\'a3\'ad\'a3\'ad\'b4\'fd\'bd\'e2\'be\'f6\
+	8.\'d7\'a2\'b2\'e1\'c4\'a3\'bf\'e9\'ce\'de\'d0\'a7		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	9.\'d6\'d8\'d6\'c3\'c3\'dc\'c2\'eb\'c4\'a3\'bf\'e9\'ce\'de\'d0\'a7		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	10.\'e4\'af\'c0\'c0\'bc\'c7\'c2\'bc\'c4\'a3\'bf\'e9\'ce\'de\'d0\'a7		\'a3\'ad\'a3\'ad\'b4\'fd\'bd\'e2\'be\'f6\
+	11.\'ca\'c7\'b7\'f1\'ca\'d5\'b2\'d8\'cf\'d4\'ca\'be\'b4\'ed\'ce\'f3		\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	12.\'c1\'d0\'b1\'ed\'b7\'d6\'b8\'ee\'cf\'df\'d6\'f7\'cc\'e2\'cd\'b3\'d2\'bb	\'a3\'ad\'a3\'ad\'b4\'fd\'cd\'ea\'c9\'c6\
+	13.\'b7\'d6\'cf\'ed\'b9\'a6\'c4\'dc\'ce\'de\'d0\'a7		\'a3\'ad\'a3\'ad\'b4\'fd\'bd\'e2\'be\'f6\
+	14.\'b5\'b1\'cd\'f8\'c2\'e7\'c7\'e9\'bf\'f6\'b2\'bb\'c0\'ed\'cf\'eb\'b5\'c4\'c7\'e9\'bf\'f6\'cf\'c2\'b5\'c7\'c2\'bc\'bd\'e7\'c3\'e6\'b5\'af\'b3\'f6\'d1\'d3\'bb\'ba\'b4\'cb\'ca\'b1\'d3\'c3\'bb\'a7\'b6\'e0\'b4\'ce\'b5\'e3\'bb\'f7\'bb\'e1\'c9\'fa\'b3\'c9\'b6\'e0\'b8\'f6\'b5\'c7\'c2\'bc\'d2\'b3		\'a3\'ad\'a3\'ad\'b4\'fd\'bd\'e2\'be\'f6\
+	15.\'ce\'d2\'b5\'c4\'ca\'d5\'b2\'d8\'c4\'a3\'bf\'e9\'bc\'d3\'d4\'d8\'ca\'fd\'be\'dd\'ce\'de\'cf\'de\'d6\'d8\'b8\'b4	\'a3\'ad\'a3\'ad\'bd\'e2\'be\'f6\
+	16.\
+\
+\
+\'be\'ad\'d1\'e9\'bb\'fd\'c0\'db\'a3\'ba\
+	1.\'b5\'bc\'c8\'eb\'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2\'a3\'ba\
+		1.pod\'d6\'ae\'ba\'f3\'d6\'d8\'d0\'c2\'b4\'f2\'bf\'aa\'cf\'ee\'c4\'bf\'d6\'ae\'ba\'f3\'d2\'bb\'b6\'a8\'d2\'aaclean\'ba\'f3\'d4\'d9build\'b7\'f1\'d4\'f2\'bb\'e1\'d5\'d2\'b2\'bb\'b5\'bd\'b8\'d5\'b8\'d5\'b0\'b2\'d7\'b0\'b5\'c4\'bf\'e2\
+		2.\'d2\'f2\'ce\'aa\'ba\'dc\'b6\'e0\'c8\'fd\'b7\'bd\'bf\'e2\'b6\'bc\'ca\'c7\'d3\'c3OC\'d0\'b4\'b5\'c4\'b9\'ca\'b5\'bc\'c8\'eb\'ca\'b1\'d0\'e8\'d2\'aa\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6\'c7\'c5\'bd\'d3\'ce\'c4\'bc\'fe\'a3\'babridging.h\'c0\'b4\'d2\'fd\'c8\'eb\'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2\'d6\'d0\'b5\'c4.h\'cd\'b7\'ce\'c4\'bc\'fe\'b2\'c5\'bf\'c9\'d2\'d4\'bd\'f8\'d0\'d0\'ca\'b9\'d3\'c3:\
+			1.\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6\'c3\'fb\'d7\'d6\'ce\'aabridging.h\'b5\'c4\'cd\'b7\'ce\'c4\'bc\'fe\
+			2.\'d4\'da\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe\'d6\'d0\'bc\'d3\'c8\'ebXXX/bridging.h\'c2\'b7\'be\'b6\'a3\'baXXX-Build Settings-Swift Compiler - Code Generation-Objective-C Bridging Header-XXX/bridging.h\
+	2.self.presentViewController(\'a1\'ad)\'d2\'d4model\'d0\'ce\'ca\'bd\'cc\'f8\'d7\'aa\'d2\'bb\'b8\'f6\'bd\'e7\'c3\'e6\'a3\'ba\'cf\'c8\'d6\'b4\'d0\'d0\'b4\'fd\'cc\'f8\'d7\'aacontroller\'b5\'c4ViedDidLoad\'b7\'bd\'b7\'a8\'d4\'d9\'d6\'b4\'d0\'d0\'cc\'f8\'d7\'aa\'b6\'af\'d7\'f7 \'a3\'ba\'b6\'f8pushViewController\'b5\'c4\'b7\'bd\'ca\'bd\'ca\'c7:\'cf\'c8\'d6\'b4\'d0\'d0pushViewController(\'a1\'ad)\'b2\'d9\'d7\'f7\'d4\'d9\'d6\'b4\'d0\'d0\'bd\'e7\'c3\'e6\'b5\'c4\'b2\'d9\'d7\'f7\'c8\'e7\'a3\'baViewDidLoad(...)\
+	3.LeanCloud\'d6\'d0\'ca\'fd\'be\'dd\'b2\'e9\'d1\'af\'ca\'b1\'c8\'e7\'b9\'fb\'d2\'bb\'b8\'f6\'b1\'ed\'d6\'d0\'b0\'fc\'ba\'ad\'c1\'ed\'d2\'bb\'b8\'f6\'b1\'ed\'b5\'c4\'d6\'b8\'d5\'eb\'d6\'b1\'bd\'d3\'b2\'e9\'d1\'af\'b3\'f6\'c0\'b4\'ca\'c7\'c3\'bb\'d3\'d0\'ca\'fd\'be\'dd\'b5\'c4\'d6\'bb\'d3\'d0\'d6\'b8\'cf\'f2\'b8\'c3\'b1\'ed\'b5\'c4\'d6\'b8\'d5\'eb\'a3\'ba\'c8\'f4\'d0\'e8\'d2\'aa\'d6\'b1\'bd\'d3\'b4\'f8\'ca\'fd\'be\'dd\'b2\'e9\'d1\'af\'d0\'e8\'d2\'aa\'bc\'d3\'c9\'cf
+\f4 incloudkey
+\f0 (
+\f4 key
+\f0 name)\
+	4.swift\'d6\'d0\'cd\'f8\'c2\'e7\'c7\'eb\'c7\'f3\'c4\'ac\'c8\'cf\'ca\'b9\'d3\'c3https\'a3\'ba\'c8\'f4\'d2\'aa\'d6\'a7\'b3\'d6http\'d4\'f2\'d0\'e8\'d2\'aa\'d4\'daXXX/info\'bb\'f2\'d5\'dfinfo.plist\'d6\'d0\'cc\'ed\'bc\'d3App Transport Security Settings-Allow Arbitrary Loads-YES\
+	5.\'bd\'abswift 2.x \'b5\'bc\'c8\'ebXcode8/swift 3.x\'d6\'d0\'ca\'b1\'d7\'a2\'d2\'e2\'a3\'ba\
+		1.\'b8\'f9\'be\'dd\'cc\'e1\'ca\'be\'d1\'a1\'d4\'f1convert - to swift 3.0 - .app - save \
+		2.\'c8\'f4\'b3\'f6\'cf\'d6
+\f1\fs28 \cf4 \CocoaLigature0 Alamofire
+\f0\fs24 \cf0 \CocoaLigature1 \'b1\'a8\'b4\'ed\'d4\'f2\'d0\'e8\'d2\'aa\'d4\'dapod\'d6\'d0\'bc\'d3\'c8\'eb
+\f1\fs28 \CocoaLigature0 pod \cf4 "Alamofire\'94
+\f0 \cf0 \'b8\'fc\'d0\'c2\'b5\'bd\'d0\'c2\'b0\'e6\'b1\'be\
+		3.\'c8\'f4\'b3\'f6\'cf\'d6Use Swift Leagcy \'a1\'ad/ \'a1\'ad. \'a3\'ba\'bd\'e2\'be\'f6\'b7\'bd\'ca\'bd\'a3\'baXXX - Build Settings - \'cb\'d1\'cb\'f7swift_version - \'d0\'de\'b8\'c4swift_version\'b0\'e6\'b1\'be\'b5\'bd3.0\'bb\'f2\'d5\'df\'bd\'abUse Legacy swift.. \'b8\'c4\'ce\'aaYES:\'b1\'ed\'ca\'be\'d4\'ca\'d0\'ed\'ca\'b9\'d3\'c3\'b5\'cd\'b0\'e6\'b1\'be\
+		4.clean-build\
+	6.\'b5\'bc\'c8\'eb\'b5\'da\'c8\'fd\'b7\'bd\'d7\'d6\'cc\'e5\'a3\'ba\
+		1.\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6resource\'ce\'c4\'bc\'fe\'bc\'d0\'bd\'ab\'d7\'d6\'cc\'e5\'b8\'b4\'d6\'c6\'b5\'bd\'cf\'ee\'c4\'bf\'d6\'d0\
+		2.\'d4\'daXXX-info\'d6\'d0\'cc\'ed\'bc\'d3Font provided by application-Array\'c0\'e0\'d0\'cd\'cf\'c2\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6item-XXX.ttf\
+		3.\'d4\'da\'b4\'fa\'c2\'eb\'d6\'d0\'cd\'a8\'b9\'fd:
+\f1 \cf5 xxx\cf0 .\cf5 font\cf0  = \cf5 UIFont\cf0 (name: \cf5 fontName\cf0 , size: 15)
+\f0 \'b5\'c4\'b7\'bd\'ca\'bd\'c9\'e8\'d6\'c3\'d7\'d6\'cc\'e5\'d1\'f9\'ca\'bd
+\f1 :fontName
+\f0 \'b1\'ed\'ca\'be\'b8\'c4\'d7\'d6\'cc\'e5\'b6\'d4\'d3\'a6\'b5\'c4\'d3\'a2\'ce\'c4\'c3\'fb\'b3\'c6\'a3\'ba\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f1 \cf6 let arr=UIFont.familyNames();print(arr)
+\f0 \'c0\'b4\'bb\'f1\'c8\'a1\'d7\'d6\'cc\'e5\'c3\'fb\'b3\'c6\'b6\'bc\'d3\'d0\'c4\'c4\'d0\'a9
+\f1 \
+	\cf0 7.
+\f0 \'bf\'c9\'ca\'d3\'bb\'af\'bd\'e7\'c3\'e6\'b1\'e0\'b3\'cc\'a3\'ba\
+		1.storyboard:\
+			1.\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6xxx.storyboard\'ce\'c4\'bc\'fe\'b2\'a2\'c9\'e8\'bc\'c6\'b3\'f6\'c0\'ed\'cf\'eb\'d0\'a7\'b9\'fb\
+			2.\'d4\'da\'d3\'d2\'b2\'e0\'cf\'d4\'ca\'be\'ca\'f4\'d0\'d4\'d6\'d0\'d5\'d2\'b5\'bd\'a3\'bashow the identity inspector-Custom Class\'d6\'d0\'b0\'f3\'b6\'a8\'d2\'bb\'b8\'f6\'ce\'c4\'bc\'fe\'d6\'d0\'d0\'c2\'bd\'a8\'b5\'c4xxxViewController(\'c8\'e7\'a3\'baLoginViewController)\'b2\'a2\'d4\'daIdentity\'d6\'d0\'ce\'aaStoryboard\'c9\'e8\'d6\'c3\'d2\'bb\'b8\'f6ID\'c8\'e7Login\
+			3.\'ce\'aa\'bd\'e7\'c3\'e6\'cc\'ed\'bc\'d3\'d4\'bc\'ca\'f8\'b5\'c8\
+			4.\'cd\'a8\'b9\'fd\'b4\'fa\'c2\'eb\'b2\'d9\'d7\'f7storyboard\'a3\'ba\
+				
+\f1 \cf6 //
+\f0 \'cf\'c8\'bb\'f1\'c8\'a1
+\f1 storyboard\
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0             \cf7 let\cf0  loginStoryboard = \cf5 UIStoryboard\cf0 (name: \cf4 "Login"\cf0 , bundle: \cf7 nil\cf0 )\
+            \cf6 //
+\f0 \'d4\'da\'bf\'c9\'ca\'d3\'bb\'af\'b2\'bc\'be\'d6\'bd\'e7\'c3\'e6\'d6\'d0\'c9\'e8\'d6\'c3
+\f1 Identifier = Login\
+\cf0             \cf7 let\cf0  loginVC = loginStoryboard.instantiateViewController(withIdentifier: \cf4 "Login"\cf0 )\
+            \cf7 self\cf0 .present(loginVC, animated: \cf7 true\cf0 , completion: \{\
+                print(\cf4 "
+\f0 \'cc\'f8\'d7\'aa\'b5\'bd\'b5\'c7\'c2\'bc\'d2\'b3
+\f1 "\cf0 )\
+            \})
+\f0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+\cf0 		2.xib:\
+			1.\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6XXX.xib\'ce\'c4\'bc\'fe\'c8\'e7InputView.xib\
+			2.\'c9\'e8\'bc\'c6\'bf\'d8\'bc\'fe\'bd\'e7\'c3\'e6\
+			3.\'cd\'a8\'b9\'fd\'b4\'fa\'c2\'eb\'b9\'d8\'c1\'aa\'b8\'c4xib\'a3\'ba\
+			    
+\f1 \cf6 //
+\f0 \'b3\'f5\'ca\'bc\'bb\'af\'ca\'e4\'c8\'eb\'bf\'f2\'bf\'d8\'bc\'fe
+\f1 :
+\f0 \'cd\'a8\'b9\'fd
+\f1 xib
+\f0 \'b3\'f5\'ca\'bc\'bb\'af\'d2\'bb\'b8\'f6\'bf\'d8\'bc\'fe
+\f1 (.last)\
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0             \cf7 self\cf0 .commentInput = Bundle.main.loadNibNamed(\cf4 "InputView"\cf0 , owner: \cf7 self\cf0 , options: \cf7 nil\cf0 )?.last \cf7 as\cf0 ! \cf5 InputView\cf0 \
+            \cf7 self\cf0 .commentInput?.frame = \cf5 CGRect\cf0 (x: 0, y: \cf5 SCREEN_HEIGHT\cf0 -44, width: \cf5 SCREEN_WIDTH\cf0 , height: 44)\cf6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+\cf6 	\cf0 8.
+\f0 \'bd\'e7\'c3\'e6\'cc\'f8\'d7\'aa\'d6\'d0\'ca\'fd\'be\'dd\'b4\'ab\'b5\'dd\'b7\'bd\'ca\'bd
+\f1 :\
+		1.
+\f0 delegate\'a3\'ba\'cf\'e0\'b5\'b1\'d3\'da\'b0\'b2\'d7\'bf\'d6\'d0\'b5\'c4\'bd\'d3\'bf\'da\'bb\'d8\'b5\'f7\
+			1.\'d4\'da\'b4\'f8\'cc\'f8\'d7\'aa\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6delegate\'bc\'b0\'d0\'e8\'d2\'aa\'b5\'c4\'b7\'bd\'b7\'a8\
+			2.\'c9\'f9\'c3\'f7delegate\'ca\'b5\'c0\'fd\'b6\'d4\'cf\'f3\
+			3.\'d4\'da\'b8\'c3\'bb\'d8\'b5\'f7\'b5\'c4\'b5\'d8\'b7\'bd\'bb\'d8\'b5\'f7\'b8\'c3delegate\'d6\'d0\'b5\'c4\'b7\'bd\'b7\'a8\'b2\'a2\'bd\'ab\'d0\'e8\'d2\'aa\'b5\'c4\'b2\'ce\'ca\'fd\'b4\'ab\'b5\'dd\'b9\'fd\'c8\'a5\
+			4.\'d4\'da\'cc\'f8\'d7\'aa\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'ca\'b5\'cf\'d6\'b8\'c3delegate\'bb\'f1\'c8\'a1\'bb\'d8\'b5\'f7\'ca\'fd\'be\'dd\
+			5.PS:\
+				1.\'d4\'da\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6delegate\'ca\'b1\'bf\'c9\'d2\'d4\'d4\'da\'c7\'b0\'c3\'e6\'bc\'d3\'c9\'cf@objc\'b1\'ed\'ca\'be\'d3\'c3OC\'b7\'bd\'ca\'bd\'c0\'b4\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6delegate\'c7\'f8\'b1\'f0\'d4\'da\'d3\'dadelegate\'d6\'d0\'b5\'c4\'b7\'bd\'b7\'a8\'bf\'c9\'d2\'d4\'c9\'e8\'d6\'c3\'ce\'aaOptional\'b5\'c4\
+				2.\'ca\'b9\'d3\'c3delegate\'ba\'dc\'c8\'dd\'d2\'d7\'d4\'ec\'b3\'c9\'c4\'da\'b4\'e6\'d0\'b9\'c2\'a9: \'d0\'e8\'d2\'aa\'d4\'da\'c9\'f9\'c3\'f7\'ca\'b1\'bd\'abdelegate\'c9\'f9\'c3\'f7\'ce\'aa\'d2\'bb\'b8\'f6weak\'c0\'e0\'d0\'cd\'b5\'c4\'b6\'f8swift\'d6\'d0\'b2\'bb\'d6\'a7\'b3\'d6\'d6\'b1\'bd\'d3\'c9\'e8\'d6\'c3\'ce\'aaweak\'bb\'b9\'d0\'e8\'d2\'aa\'bd\'ab\'b8\'c3delegate\'bc\'cc\'b3\'d0\'d6\'c1class\'b2\'c5\'bf\'c9\'d2\'d4\'bd\'f8\'d0\'d0\'b4\'cb\'b2\'d9\'d7\'f7\
+		2.\'b1\'d5\'b0\'fc/Block\
+			1.\'d4\'da\'b4\'fd\'cc\'f8\'d7\'aa\'bf\'d8\'d6\'c6\'c6\'f7\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'b1\'d5\'b0\'fc\'a3\'ba
+\f1 Block\cf6 \
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf7 			typealias\cf0  Push_titleCallBack = (\cf7 _\cf0  title: String) ->\cf5 Void\
+		  \cf0 2.
+\f0 \'c9\'f9\'c3\'f7\'d2\'bb\'b8\'f6\'b1\'d5\'b0\'fc\'bb\'d8\'b5\'f7\'a3\'ba
+\f1 callback\cf6 \
+\cf0     		\cf7 var\cf0  callback: \cf5 Push_titleCallBack\cf0 ?\
+		  3.
+\f0 \'b7\'b5\'bb\'d8\'ca\'b1\'cd\'a8\'b9\'fd
+\f1 callback
+\f0 \'bb\'d8\'b5\'f7\'b7\'b5\'bb\'d8\'ca\'fd\'be\'dd
+\f1 :
+\f0 \'b5\'f7\'d3\'c3\'b5\'c4\'ca\'b1\'ba\'f2\'d0\'e8\'d2\'aa\'ca\'b5\'cf\'d6\'b8\'c3
+\f1 callback
+\f0 \'b7\'f1\'d4\'f2\'bb\'e1\'b1\'a8\'b4\'ed
+\f1 \cf6 \
+\cf0             \cf7 self\cf0 .callback!((\cf7 self\cf0 .tf?.text)!)\
+		  4.
+\f0 \'d4\'da\'cc\'f8\'d7\'aa\'b4\'a6\'ca\'b5\'cf\'d6
+\f1 Block
+\f0 \'bb\'f1\'c8\'a1\'b5\'bd\'cf\'c2\'d2\'bb\'d2\'b3\'c3\'e6\'b4\'ab\'bb\'d8\'b5\'c4\'ca\'fd\'be\'dd
+\f1 \cf6 \
+\cf0         	tc.callback = \{(type: String, detialType: String) \cf7 in\cf0 \
+            print(\cf4 "type = \cf0 \\\cf4 (\cf0 type\cf4 )"\cf0 )\
+        	\}
+\f0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+\cf0 		3.NSNotification\'a3\'ba\'cd\'a8\'d6\'aa:\'c0\'e0\'cb\'c6\'b0\'b2\'d7\'bf\'b9\'e3\'b2\'a5\
+			1.\'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa\'b2\'d9\'d7\'f7
+\f1 :
+\f0 \'b7\'a2\'cb\'cd\'d2\'bb\'b8\'f6\'cd\'a8\'d6\'aa\'b2\'a2\'bd\'ab\'d0\'e8\'d2\'aa\'ca\'fd\'be\'dd\'b4\'ab\'b5\'dd\'b9\'fd\'c8\'a5\'cd\'a8\'b9\'fduserinfo\'bb\'f2\'d5\'dfobject
+\f1 \cf6 \
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0 			NotificationCenter.\cf7 default\cf0 .post(name: Notification.Name(rawValue: \cf4 "pushBookNotification"\cf0 ), object: \cf7 nil\cf0 , userInfo: [\cf4 "success"\cf0  : \cf7 true\cf0 ])
+\f0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+
+\f1 \cf6 			\cf0 2.
+\f0 \'d7\'a2\'b2\'e1\'d2\'bb\'b8\'f6\'cd\'a8\'d6\'aa\'d3\'c3\'c0\'b4\'bd\'d3\'ca\'d5\'ca\'e9\'c6\'c0\'ca\'c7\'b7\'f1\'c9\'cf\'b4\'ab\'b3\'c9\'b9\'a6
+\f1 :
+\f0 \'b8\'fa\'cc\'ed\'bc\'d3\'b5\'e3\'bb\'f7\'ca\'c2\'bc\'fe\'c0\'e0\'cb\'c6
+\f1 \cf6 \
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0         NotificationCenter.\cf7 default\cf0 .addObserver(\cf7 self\cf0 , selector: \cf7 #selector\cf0 (pushNewBookController.pushBookNotification(\cf7 _\cf0 :)), name: NSNotification.Name(rawValue: \cf4 "pushBookNotification"\cf0 ), object: \cf7 nil\cf0 )\
+		  3.
+\f0 \'cf\'ec\'d3\'a6\'cd\'a8\'d6\'aa
+\f1 \cf6 \
+\cf0     		\cf7 func\cf0  pushBookNotification(\cf7 _\cf0  notify: Notification)\{\'85\}\cf6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab674\pardirnatural\partightenfactor0
+
+\f0 \cf0 			4.\'d4\'dadeinit\'d6\'d0\'d2\'c6\'b3\'fd\'cd\'a8\'d6\'aa\
+			   
+\f1 \cf6 //
+\f0 \'d2\'c6\'b3\'fd\'cd\'a8\'d6\'aa\'a3\'ba\'b2\'bb\'d2\'c6\'b3\'fd\'bf\'c9\'c4\'dc\'bb\'e1\'ca\'b9\'cd\'a8\'d6\'aa\'cf\'ec\'d3\'a6\'b6\'e0\'b4\'ce\'b2\'d9\'d7\'f7\'b3\'cc\'d0\'f2\'b1\'c0\'c0\'a3
+\f1 :
+\f0 \'d2\'c6\'b3\'fd\'b6\'d4\'cf\'f3\'c9\'cf\'b5\'c4\'cb\'f9\'d3\'d0\'cd\'a8\'d6\'aa
+\f1 :
+\f0 \'d2\'b2\'bf\'c9\'d2\'d4\'b0\'b4
+\f1 name
+\f0 \'c0\'b4\'d2\'c6\'b3\'fd\'cf\'e0\'b6\'d4\'d3\'a6\'b5\'c4\'cd\'a8\'d6\'aa
+\f1 \
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0         	NotificationCenter.\cf7 default\cf0 .removeObserver(\cf7 self\cf0 )\
+	9.
+\f0 \'c4\'da\'b4\'e6\'b9\'dc\'c0\'ed\'a3\'ba
+\f1 \
+		1.
+\f0 \'d4\'da\'d6\'f7\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'bd\'f8\'d0\'d0\'c4\'da\'b4\'e6\'d0\'b9\'c2\'a9\'bc\'ec\'b2\'e2\'a3\'ba\'d4\'da\'ce\'f6\'b9\'b9\'ba\'af\'ca\'fd
+\f1 deinit
+\f0 \'d6\'d0\'ca\'e4\'b3\'f6
+\f1 log
+\f0 \'c8\'d5\'d6\'be\'bf\'b4\'ca\'c7\'b7\'f1\'d3\'d0\'ca\'e4\'b3\'f6\'c8\'f4\'ca\'e4\'b3\'f6\'d4\'f2\'b1\'ed\'ca\'be\'c4\'da\'b4\'e6\'d2\'d1\'be\'ad\'ca\'cd\'b7\'c5\'b7\'f1\'d4\'f2\'c4\'da\'b4\'e6\'d0\'b9\'c2\'a9\
+		2.\'c4\'da\'b4\'e6\'d0\'b9\'c2\'a9\'d4\'ad\'d2\'f2\'a3\'ba\
+			1.delegate\'d6\'d0\'ca\'b9\'d3\'c3self\'b9\'d8\'bc\'fc\'d7\'d6\'b5\'bc\'d6\'c2\'bf\'d8\'d6\'c6\'c6\'f7\'ce\'de\'b7\'a8\'ca\'cd\'b7\'c5\'a3\'ba\'bd\'abdelegate\'c9\'e8\'d6\'c3\'b3\'c9weak\'c0\'e0\'d0\'cd\
+			2.\'b1\'d5\'b0\'fc\'d6\'d0\'ca\'b9\'d3\'c3\'c1\'cbself\'b9\'d8\'bc\'fc\'d6\'ae\'b5\'bc\'d6\'c2\'bf\'d8\'d6\'c6\'c6\'f7\'ce\'de\'b7\'a8\'ca\'cd\'b7\'c5\'a3\'ba\'bd\'abcallback\'c9\'e8\'d6\'c3\'b3\'c9weak\'a3\'baswift\'b2\'bb\'b4\'e6\'d4\'da\'d5\'e2\'b8\'f6\'d4\'ad\'d2\'f2\'a3\'baOC\'b4\'e6\'d4\'da\
+			3\'a1\'ad\
+	10.\'b4\'fa\'c2\'eb\'d6\'d8\'b9\'b9\'a3\'ba\
+		1.\'b9\'a4\'b3\'a7\'c4\'a3\'ca\'bd\'a3\'ba\'bd\'ab\'d6\'d8\'b8\'b4\'b6\'f8\'be\'df\'d3\'d0\'cf\'e0\'cb\'c6\'b2\'d9\'d7\'f7\'b5\'c4\'b4\'fa\'c2\'eb\'b6\'ce\'b7\'e2\'d7\'b0\'b3\'c9\'d2\'bb\'b8\'f6\'b7\'bd\'b7\'a8\'cc\'e6\'bb\'bb\'d0\'e8\'d2\'aa\'b5\'c4\'b5\'d8\'b7\'bd\'a3\'ba\'b4\'ab\'c8\'eb\'b2\'bb\'cd\'ac\'c0\'e0\'d0\'cd\'b5\'c4\'b2\'ce\'ca\'fd\'bc\'b8\'b8\'f6\'c9\'fa\'b3\'c9\'b2\'bb\'cd\'ac\'b5\'c4\'b6\'d4\'cf\'f3\'bb\'f2\'b7\'b5\'bb\'d8\'c4\'bf\'b1\'ea\'d6\'b5\
+		2.\
+	11.MVC\'c4\'a3\'ca\'bd\'a3\'baM\'a1\'a2V\'a1\'a2C\
+	12.\'b5\'f7\'d3\'c3\'cf\'b5\'cd\'b3\'cf\'e0\'bb\'fa\'cf\'e0\'b2\'e1\'a3\'ba\
+		
+\f1 \cf7 func\cf0  photo()\{\
+        \cf6 //
+\f0 \'c5\'d0\'b6\'cf\'cf\'e0\'bb\'fa\'ca\'c7\'b7\'f1\'b4\'e6\'d4\'da
+\f1 \
+\cf0         \cf7 if\cf0  \cf5 UIImagePickerController\cf0 .isSourceTypeAvailable(\cf5 UIImagePickerControllerSourceType\cf0 .camera) \{\
+            \cf6 //
+\f0 \'bf\'aa\'ca\'bc\'b5\'f7\'d3\'c3\'cf\'e0\'bb\'fa\'c5\'c4\'d5\'d5
+\f1 \
+\cf0             \cf7 self\cf0 .\cf5 picker\cf0 ?.sourceType = \cf5 UIImagePickerControllerSourceType\cf0 .camera\
+            \cf6 //
+\f0 \'cc\'f8\'d7\'aa\'b5\'bd\'cf\'b5\'cd\'b3\'cf\'e0\'bb\'fa\'bd\'e7\'c3\'e6\'a3\'ba\'b4\'f2\'bf\'aa\'cf\'e0\'bb\'fa
+\f1 \
+\cf0             \cf7 self\cf0 .present(\cf7 self\cf0 .picker!, animated: \cf7 true\cf0 , completion: \{ \
+                print(\cf4 "
+\f0 \'b4\'f2\'bf\'aa\'cf\'e0\'bb\'fa\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+                \cf6 //\
+\cf0             \})\
+        \}\cf7 else\cf0 \{\
+            \cf6 //
+\f0 \'b5\'af\'b4\'b0\'b8\'e6\'cb\'df\'d3\'c3\'bb\'a7\'cf\'e0\'bb\'fa\'b2\'bb\'b4\'e6\'d4\'da
+\f1 \
+\cf0             \cf7 let\cf0  alert = \cf5 UIAlertController\cf0 (title: \cf4 ""\cf0 , message: \cf4 "
+\f0 \'cf\'e0\'bb\'fa\'b2\'bb\'bf\'c9\'d3\'c3
+\f1 "\cf0 , preferredStyle: \cf5 UIAlertControllerStyle\cf0 .alert)\
+            \
+            alert.addAction(\cf5 UIAlertAction\cf0 (title: \cf4 "
+\f0 \'c8\'a1\'cf\'fb
+\f1 "\cf0 , style: \cf5 UIAlertActionStyle\cf0 .cancel, handler: \{ (UIAlertAction) \cf7 in\cf0 \
+                print(\cf4 "
+\f0 \'cf\'e0\'bb\'fa\'b2\'bb\'bf\'c9\'d3\'c3\'b5\'af\'b4\'b0\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+                \cf6 //
+\f0 \'b9\'d8\'b1\'d5\'b8\'c3\'b5\'af\'b3\'f6\'b4\'b0\'cc\'e5
+\f1 \
+\cf0                 \cf7 self\cf0 .dismiss(animated: \cf7 true\cf0 , completion: \{ \
+                    print(\cf4 "
+\f0 \'b9\'d8\'b1\'d5\'b5\'b1\'c7\'b0\'b5\'af\'b4\'b0
+\f1 "\cf0 )\
+                \})\
+            \}))\
+            \cf7 self\cf0 .present(alert, animated: \cf7 true\cf0 , completion: \{ \
+                print(\cf4 "
+\f0 \'cf\'e0\'bb\'fa\'b2\'bb\'bf\'c9\'d3\'c3\'cc\'f8\'d7\'aa\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+            \})\
+        \}\
+    \}\
+    \
+    	\cf7 func\cf0  gallery()\{\
+        	\cf6 //
+\f0 \'b4\'f2\'bf\'aa\'cf\'e0\'b2\'e1
+\f1 \
+\cf0         	\cf7 self\cf0 .\cf5 picker\cf0 ?.sourceType = \cf5 UIImagePickerControllerSourceType\cf0 .photoLibrary\
+        	\cf6 //
+\f0 \'cc\'f8\'d7\'aa\'b5\'bd\'cf\'b5\'cd\'b3\'cf\'e0\'b2\'e1\'a3\'ba\'b4\'f2\'bf\'aa\'cf\'e0\'b2\'e1\'bb\'d8\'b5\'f7
+\f1 \
+\cf0         	\cf7 self\cf0 .present(\cf7 self\cf0 .picker!, animated: \cf7 true\cf0 ) \{\
+            print(\cf4 "
+\f0 \'b4\'f2\'bf\'aa\'cf\'e0\'b2\'e1\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+        	\}\
+    	\}\
+    	\cf6 //
+\f0 \'cd\'a8\'b9\'fd\'ca\'b5\'cf\'d6\'ce\'af\'cd\'d0\'ca\'c2\'bc\'fe\'bb\'f1\'c8\'a1\'cd\'bc\'c6\'ac
+\f1 \
+\cf0     	\cf7 func\cf0  imagePickerController(\cf7 _\cf0  picker: \cf5 UIImagePickerController\cf0 , didFinishPickingMediaWithInfo info: [\cf5 String\cf0  : \cf5 Any\cf0 ]) \{\
+        	\cf5 print\cf0 (\cf4 "
+\f0 \'bb\'f1\'c8\'a1\'cd\'bc\'c6\'ac
+\f1 "\cf0 )\
+        	\cf6 //
+\f0 \'cd\'a8\'b9\'fd\'b8\'c3\'d7\'d6\'b7\'fb\'ca\'fd\'d7\'e9\'bb\'f1\'c8\'a1\'cd\'bc\'c6\'ac
+\f1 :
+\f0 \'c7\'bf\'d7\'aa\'b3\'c9
+\f1 UIImage\
+\cf0         	\cf7 let\cf0  img = info[\cf5 UIImagePickerControllerOriginalImage\cf0 ] \cf7 as\cf0 ! \cf5 UIImage\cf0 \
+        	\cf6 //
+\f0 \'b9\'d8\'b1\'d5\'cd\'bc\'c6\'ac\'d1\'a1\'d4\'f1\'bd\'e7\'c3\'e6
+\f1 \
+\cf0         	\cf7 self\cf0 .\cf5 picker\cf0 ?.dismiss(animated: \cf7 true\cf0 , completion: \{\
+            print(\cf4 "
+\f0 \'b9\'d8\'b1\'d5\'cf\'e0\'b2\'e1\'d1\'a1\'d4\'f1\'cd\'ea\'b3\'c9\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+            \cf7 self\cf0 .dismiss(animated: \cf7 true\cf0 , completion: \{\
+                print(\cf4 "
+\f0 \'b9\'d8\'b1\'d5\'cf\'e0\'b2\'e1\'bd\'e7\'c3\'e6\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+                \cf6 //
+\f0 \'cd\'a8\'b9\'fd\'ca\'c2\'bc\'fe\'ce\'af\'cd\'d0\'b7\'bd\'ca\'bd\'bd\'ab\'d1\'a1\'d6\'d0\'b5\'c4\'cf\'e0\'c6\'ac\'b7\'a2\'cb\'cd\'b8\'f8
+\f1 pushNewBook...
+\f0 \'bd\'e7\'c3\'e6
+\f1 \
+\cf0                 \cf7 self\cf0 .delegate?.getPhoto(img)\
+            \})\
+        \})\
+        \
+    \}\
+    	\cf6 //
+\f0 \'b5\'b1\'d1\'a1\'d4\'f1\'cd\'ea\'b3\'c9\'bb\'f2\'d5\'df\'c8\'a1\'cf\'fb\'cd\'bc\'c6\'ac\'d1\'a1\'d4\'f1\'ca\'b1\'bb\'d8\'b5\'f7
+\f1 \
+\cf0     	\cf7 func\cf0  imagePickerControllerDidCancel(\cf7 _\cf0  picker: \cf5 UIImagePickerController\cf0 ) \{\
+        	\cf5 print\cf0 (\cf4 "
+\f0 \'cf\'e0\'b2\'e1\'d1\'a1\'d4\'f1\'cd\'ea\'b3\'c9\'bb\'f2\'d5\'df\'c8\'a1\'cf\'fb\'d1\'a1\'d4\'f1\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+        	\cf7 self\cf0 .\cf5 picker\cf0 ?.dismiss(animated: \cf7 true\cf0 , completion: \{ \
+            print(\cf4 "
+\f0 \'b9\'d8\'b1\'d5\'cf\'e0\'b2\'e1\'d1\'a1\'d4\'f1\'cd\'ea\'b3\'c9\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+            \cf7 self\cf0 .dismiss(animated: \cf7 true\cf0 , completion: \{ \
+                print(\cf4 "
+\f0 \'b9\'d8\'b1\'d5\'cf\'e0\'b2\'e1\'bd\'e7\'c3\'e6\'bb\'d8\'b5\'f7
+\f1 "\cf0 )\
+            \})\
+        \})\
+    \}
+\f0 \
+	13.\'b4\'a6\'c0\'ed\'bc\'fc\'c5\'cc\'d5\'da\'b5\'b2\'a3\'ba\
+		1.\'d7\'a2\'b2\'e1\'bc\'fc\'c5\'cc\'cf\'d4\'ca\'be\'d2\'fe\'b2\'d8\'cd\'a8\'d6\'aa\
+		2.\'bb\'f1\'c8\'a1\'bc\'fc\'c5\'ccframe\'b4\'f3\'d0\'a1\
+		3.\'bc\'fc\'c5\'cc\'b5\'af\'b3\'f6\'ca\'b1\'bd\'abUI\'ca\'d3\'cd\'bc\'b5\'c4bottom\'c9\'cf\'d2\'c6\'d6\'c1\'bc\'fc\'c5\'cc\'b6\'a5\'b2\'bftop : PS:\'d0\'e8\'d2\'aa\'c9\'e8\'d6\'c3
+\f1 \cf7 self\cf0 .view.layoutIfNeeded()
+\f0 \'ca\'b9UI\'ca\'d3\'cd\'bc\'d2\'bb\'d6\'a1\'d2\'bb\'d6\'a1\'c9\'cf\'d2\'c6\'a3\'ba\'c8\'f4\'ca\'b9\'d3\'c3storyboard\'d7\'f7\'ce\'aa\'bd\'e7\'c3\'e6\'ca\'b1\'bf\'c9\'d2\'d4\'ce\'aa\'d4\'bc\'ca\'f8\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6\'c9\'cf\'d2\'c6\'b6\'af\'bb\'af\'ca\'b9UI\'ca\'d3\'cd\'bc\'c9\'cf\'d2\'c6
+\f1 \
+		4.
+\f0 \'ca\'b5\'c0\'fd\'b4\'fa\'c2\'eb\'a3\'ba\
+			
+\f1 \cf6 /**\
+     		* 
+\f0 \'cf\'ec\'d3\'a6\'bc\'fc\'c5\'cc\'ca\'c2\'bc\'fe
+\f1 \
+     		* keyboardWillShowNotification\
+     		*/\cf0 \
+    		\cf7 func\cf0  keyboardWillShowNotification(\cf7 _\cf0  notify: \cf5 Notification\cf0 )\{\
+        		\cf5 UIView\cf0 .animate(withDuration: 0.3, animations: \{\
+            	print(\cf4 "
+\f0 \'bf\'aa\'ca\'bc\'d6\'b4\'d0\'d0\'b6\'af\'bb\'ad
+\f1 "\cf0 )\
+            	\cf6 //
+\f0 \'bd\'ab\'d4\'bc\'ca\'f8\'c9\'e8\'d6\'c3\'ce\'aa
+\f1 -200,
+\f0 \'d4\'f2\'bd\'e7\'c3\'e6\'bb\'e1\'c9\'cf\'d2\'c6\'a3\'ac\'d0\'e8\'d2\'aa\'bd\'ab\'c9\'cf\'d2\'c6\'b9\'fd\'b3\'cc\'b1\'e4\'c2\'fd\'d3\'c3\'d2\'d4\'cf\'c2\'b2\'d9\'d7\'f7
+\f1 layoutIfNeeded():
+\f0 \'d2\'bb\'d6\'a1\'d2\'bb\'d6\'a1\'c9\'cf\'d2\'c6\'bd\'e7\'c3\'e6\'a3\'ba\'b6\'af\'bb\'ad
+\f1 \
+\cf0             	\cf7 self\cf0 .topLayout.constant = -200\
+            	\cf7 self\cf0 .view.layoutIfNeeded()\
+        		\}) \
+    		\}\
+\
+\
+\
+********************
+\f0 \'bf\'bc\'ca\'d4\'cf\'b5\'cd\'b3
+\f1 ********************
+\f0 \
+1.\'c8\'e7\'ba\'ce\'b6\'af\'cc\'ac\'bc\'c6\'cb\'e3UILabel\'b5\'c4\'b8\'df\'b6\'c8\'a3\'ba\
+	\
+2.\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6\'d6\'d0\'c8\'e7\'ba\'ce\'b6\'af\'cc\'ac\'b5\'f7\'d5\'fb\'bf\'d8\'bc\'fe\'b5\'c4\'cf\'e0\'b6\'d4\'ce\'bb\'d6\'c3:\'cd\'a8\'b9\'fd\'bf\'c9\'ca\'d3\'bb\'af\'bd\'e7\'c3\'e6\'ce\'aa\'d0\'e8\'d2\'aa\'b5\'f7\'d5\'fb\'b5\'c4\'bf\'d8\'bc\'fe\'cc\'ed\'bc\'d3\'d4\'bc\'ca\'f8\'b2\'a2\'d4\'da\'b4\'fa\'c2\'eb\'d6\'d0\'cc\'ed\'bc\'d3\'d4\'bc\'ca\'f8\'b1\'e4\'c1\'bf\'a3\'ac\'c8\'bb\'ba\'f3\'cd\'a8\'b9\'fd\'b8\'c4\'b1\'e4\'d4\'bc\'ca\'f8\'b1\'e4\'c1\'bf\'b5\'c4\'d6\'b5\'c0\'b4\'b8\'c4\'b1\'e4\'bf\'d8\'bc\'fe\'b5\'c4\'cf\'e0\'b6\'d4\'ce\'bb\'d6\'c3\
+\
+3.\'c8\'e7\'ba\'ce\'b4\'a6\'c0\'edviewpager\'d6\'d0\'d2\'b3\'c3\'e6\'b5\'c4\'c9\'cf\'cf\'c2\'b9\'f6\'b6\'af\'d3\'ebviewpager\'b5\'c4\'d7\'f3\'d3\'d2\'bb\'ac\'b6\'af\'b5\'c4\'b3\'e5\'cd\'bb\'a3\'bf\'a3\'bf\
+\
+4.NSMutibaleDictionary\'b4\'e6\'b4\'a2\'ca\'fd\'be\'dd\'ca\'b1key\'ce\'a8\'d2\'bb\'d0\'d4\'a3\'ba\'b8\'b2\'b8\'c7\'d4\'ad\'d3\'d0\'b5\'c4\'d6\'b5\'a3\'ba\'b2\'bb\'cf\'eb\'b1\'bb\'b8\'b2\'b8\'c7\'bf\'c9\'d2\'d4\'d0\'b4\'b3\'c9\'be\'d6\'b2\'bf\'b1\'e4\'c1\'bf
+\f1 \
+\
+5.
+\f0 \'d2\'fe\'b2\'d8\'bc\'fc\'c5\'cc\'b2\'d9\'d7\'f7\'a3\'baresignResponse\'a1\'a3\'a1\'a3\'a1\'a3\
+\
+6.
+\f1 \
+\
+\
+\
+*******************Objective-C******************\
+1. .h / .m
+\f0 \'ce\'c4\'bc\'fe
+\f1  : 
+\f0 .h\'cd\'b7\'ce\'c4\'bc\'fe\'d3\'c3\'c0\'b4\'b6\'a8\'d2\'e5\'b6\'d4\'d3\'a6.m\'c0\'e0\'d6\'d0\'d3\'a6\'b8\'c3\'d3\'d0\'b5\'c4\'b1\'e4\'c1\'bf\'bc\'b0\'b7\'bd\'b7\'a8, .m\'ce\'c4\'bc\'fe\'ca\'b5\'cf\'d6.h\'d6\'d0\'b6\'a8\'d2\'e5\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'b5\'f7\'d3\'c3\'ca\'b1\'d6\'bb\'d2\'aa\'b5\'bc\'c8\'eb.h\'ce\'c4\'bc\'fe\'bc\'b4\'bf\'c9\
+\
+2.	\'b3\'c9\'d4\'b1\'b1\'e4\'c1\'bf\'bc\'b0\'b3\'c9\'d4\'b1\'b7\'bd\'b7\'a8\'b5\'c4\'b6\'a8\'d2\'e5\'a3\'ba@interface xxx \'a3\'fb//\'b6\'a8\'d2\'e5\'b3\'c9\'d4\'b1\'b1\'e4\'c1\'bf\'a3\'fd//\'b6\'a8\'d2\'e5\'b3\'c9\'d4\'b1\'b7\'bd\'b7\'a8\'c7\'f8 @end :PS: \'c6\'d5\'cd\'a8\'b7\'bd\'b7\'a8[\'b9\'b9\'d4\'ec\'b7\'bd\'b7\'a8\'ca\'f4\'d3\'da\'c6\'d5\'cd\'a8\'b7\'bd\'b7\'a8]\'c7\'b0\'bc\'d3\'a3\'ad\'a3\'af\'c0\'e0\'b7\'bd\'b7\'a8\'c7\'b0\'bc\'d3\'a3\'ab\
+\
+3.	. \'b5\'e3\'d3\'ef\'b7\'a8\'a3\'ba\'cd\'a8\'b9\'fd\'b5\'e3\'d3\'ef\'b7\'a8\'b2\'d9\'d7\'f7\'b1\'e4\'c1\'bf\'c6\'e4\'ca\'b5\'ca\'c7\'cd\'a8\'b9\'fd\'b5\'f7\'d3\'c3get/set\'b7\'bd\'b7\'a8\'c0\'b4\'b2\'d9\'d7\'f7\'b3\'c9\'d4\'b1\'b1\'e4\'c1\'bf
+\f1 \
+\
+4.	
+\f0 \'c0\'e0\'b1\'f0\'a3\'ba
+\f1 category: 
+\f0 \'d3\'eb \'bc\'cc\'b3\'d0\'b5\'c4\'c7\'f8\'b1\'f0\'a3\'ba\
+	1.\'cf\'e0\'cd\'ac\'b5\'e3\'a3\'ba\'b5\'b1\'d4\'ad\'c0\'b4\'b5\'c4\'c0\'e0\'ce\'de\'b7\'a8\'c2\'fa\'d7\'e3\'d0\'e8\'c7\'f3\'ca\'c7\'d0\'e8\'d2\'aa\'c0\'a9\'d5\'b9\
+	2.\'b2\'bb\'cd\'ac\'b5\'e3\'a3\'ba\'bc\'cc\'b3\'d0\'d6\'d0\'bf\'c9\'d2\'d4\'c0\'a9\'d5\'b9\'b1\'e4\'c1\'bf\'b8\'fa\'b7\'bd\'b7\'a8\'a3\'db\'d2\'bb\'b0\'e3\'d3\'c3\'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5\'ca\'b1\'a3\'ac\'d0\'e8\'d2\'aa\'d0\'c2\'d4\'f6\'b4\'f3\'c1\'bf\'b1\'e4\'c1\'bf\'a3\'dd\'a3\'ac\'c0\'e0\'b1\'f0\'d6\'bb\'c4\'dc\'c0\'a9\'d5\'b9\'b7\'bd\'b7\'a8\'a3\'db\'d2\'bb\'b0\'e3\'d3\'c3\'d4\'da\'c0\'a9\'d5\'b9\'cf\'b5\'cd\'b3\'c4\'da\'bf\'e2\'b7\'bd\'b7\'a8\'a3\'ba\'c8\'e7\'ce\'aaNSString\'c0\'a9\'d5\'b9\'d2\'bb\'d0\'a9\'b7\'bd\'b7\'a8\'a3\'dd
+\f1 \
+\
+5.	%@
+\f0 \'b8\'f1\'ca\'bd\'bb\'af\'ca\'e4\'b3\'f6
+\f1 OC
+\f0 \'d6\'d0\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae
+\f1 \
+\
+6.	
+\f0 \'d7\'d6\'b7\'fb\'b4\'ae\'d3\'eb\'bb\'f9\'b1\'be\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\'bc\'e4\'b5\'c4\'d7\'aa\'bb\'bb\
+\
+7.	
+\f1 \
+\
+\
+\
+\
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+
+\f0 \cf0 \'cf\'ee\'c4\'bf\'d4\'a4\'c9\'e8\'a3\'ba\'d1\'a7\'cf\'b0\'b1\'ca\'bc\'c7\'bb\'d8\'d2\'e4\'c2\'bc\'a3\'ba\'b0\'b2\'d7\'bf\'a3\'adIOS
+\f1 \
+		
+\f0  \'cd\'f8\'c2\'e7\'c1\'b4\'bd\'d3\'ca\'d3\'c6\'b5\'b2\'a5\'b7\'c5\'c6\'f7\'d6\'a7\'b3\'d6\'bf\'ec\'bd\'f8\'b2\'a5\'b7\'c5\'b4\'f8\'c9\'f9\'d2\'f4
+\f1 \
+\
+\
+\
+
+\f0 \'ca\'fd\'d7\'d6\'ca\'e9\'b7\'a8\'a3\'ba\
+	1.viewController\'d2\'d4push\'b7\'bd\'ca\'bd\'b3\'ca\'cf\'d6\'ca\'b1\'d3\'c3popViewController\'b9\'d8\'b1\'d5\'a3\'bb\'d2\'d4present\'b7\'bd\'ca\'bd\'b3\'ca\'cf\'d6\'ca\'b1\'d3\'c3dismiss\'b9\'d8\'b1\'d5
+\f1 \
+	2.
+\f0 \'c9\'e8\'d6\'c3
+\f1 cell
+\f0 \'d2\'f5\'d3\'b0\'d0\'a7\'b9\'fb\'a3\'ba
+\f1 \
+		 
+\fs32 \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 cornerRadius\cf0  = 10;\
+\pard\tx791\pardeftab791\pardirnatural\partightenfactor0
+\cf0         \cf7 self\cf0 .\cf5 contentView\cf0 .\cf5 layer\cf0 .\cf5 cornerRadius\cf0  = 10.0;\
+        \cf7 self\cf0 .\cf5 contentView\cf0 .\cf5 layer\cf0 .\cf5 borderWidth\cf0  = 0.5;\
+        \cf7 self\cf0 .\cf5 contentView\cf0 .\cf5 layer\cf0 .\cf5 borderColor\cf0  = \cf5 UIColor\cf0 .\cf5 clear\cf0 .\cf5 cgColor\cf0 \
+        \cf7 self\cf0 .\cf5 contentView\cf0 .\cf5 layer\cf0 .\cf5 masksToBounds\cf0  = \cf7 true\cf0 ;\
+        \
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 shadowColor\cf0  = \cf5 UIColor\cf0 .\cf5 darkGray\cf0 .\cf5 cgColor\cf0 \
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 shadowOffset\cf0  = \cf5 CGSize\cf0 (width: 5, height: 5)\
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 shadowRadius\cf0  = 4.0;\
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 shadowOpacity\cf0  = 0.5;\
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 masksToBounds\cf0  = \cf7 false\cf0 ;\
+        \cf7 self\cf0 .\cf5 layer\cf0 .\cf5 shadowPath\cf0  = \cf5 UIBezierPath\cf0 (roundedRect: \cf7 self\cf0 .\cf5 bounds\cf0 , cornerRadius: \cf7 self\cf0 .\cf5 contentView\cf0 .\cf5 layer\cf0 .\cf5 cornerRadius\cf0 ).\cf5 cgPath
+\fs28 \cf0 \
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+
+\f0 \cf0 \'d4\'cb\'d0\'d0\'d1\'ad\'bb\'b7\'a3\'baRunLoop\'a3\'ba\'c3\'bf\'b8\'f6\'cf\'df\'b3\'cc\'b6\'bc\'d3\'d0\'d2\'bb\'b8\'f6RunLoop\'c0\'b4\'b8\'ba\'d4\'f0\'ca\'c2\'bc\'fe\'bc\'e0\'cc\'fd\'a1\'be\'b4\'a5\'c3\'fe\'a1\'a2\'ca\'b1\'d6\'d3\'a1\'a2\'cd\'f8\'c2\'e7\'a1\'bf\
+CFRunLoopStop(runloop)\
+CFRunLoopStart()\
+CFRunLoopGetCurrent()
+\f1 \
+\
+\
+
+\f0 OC\'ca\'f4\'d0\'d4\'d0\'de\'ca\'ce\'b7\'fb\'b9\'d8\'bc\'fc\'d7\'d6\'a3\'baatomic\'d4\'ad\'d7\'d3\'ca\'f4\'d0\'d4/nonatomic \'b7\'c7\'d4\'ad\'d7\'d3\'ca\'f4\'d0\'d4\
+	\'d4\'ad\'d7\'d3\'ca\'f4\'d0\'d4\'cc\'d8\'b5\'e3\'a3\'ba\'b6\'e0\'cf\'df\'b3\'cc\'c7\'e9\'bf\'f6\'cf\'c2\'a3\'ba\'d4\'ad\'d7\'d3\'ca\'f4\'d0\'d4\'d4\'da\'cd\'ac\'d2\'bb\'ca\'b1\'bf\'cc\'d6\'bb\'c4\'dc\'d3\'d0\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc\'c4\'dc\'b6\'d4\'b8\'c3\'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5\'b2\'d9\'d7\'f7\'a3\'ac\'b6\'c1\'c8\'a1\'b6\'bc\'bf\'c9\'d2\'d4\'a3\'ba\'cf\'b5\'cd\'b3\'c4\'ac\'c8\'cf\'bb\'e1\'b8\'f8setter\'b7\'bd\'b7\'a8\'bc\'d3\'d2\'bb\'b0\'d1\'cb\'f8\'a3\'ba\'d7\'d4\'d0\'fd\'cb\'f8\'a3\'ba\'b2\'a2\'b2\'bb\'c4\'dc\'b1\'a3\'d6\'a4\'cf\'df\'b3\'cc\'b0\'b2\'c8\'ab\
+	\'b7\'c7\'d4\'ad\'d7\'d3\'ca\'f4\'d0\'d4\'cc\'d8\'b5\'e3\'a3\'ba\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'bf\'c9\'d2\'d4\'cd\'ac\'ca\'b1\'b6\'c1\'c8\'a1\'a1\'a2\'b8\'b3\'d6\'b5
+\f1 \
+\
+
+\f0 \'b6\'e0\'cf\'df\'b3\'cc\'a3\'ba\'cd\'ac\'b2\'bd\'cb\'f8(\'bb\'a5\'b3\'e2\'cb\'f8): synchronized(\'cb\'f8\'b6\'d4\'cf\'f3)\{\'b4\'fa\'c2\'eb\'bf\'e9\} \'a3\'ba\'c3\'bf\'b8\'f6\'b6\'d4\'cf\'f3\'b6\'bc\'d3\'d0\'d2\'bb\'b0\'d1\'cb\'f8\'a3\'ac\'c4\'ac\'c8\'cf\'bf\'aa\'d7\'c5: \'b5\'c8\'b4\'fd\'d6\'b4\'d0\'d0\'ca\'b1\'bb\'e1\'d0\'dd\'c3\'df\'b6\'f8\'d7\'d4\'d0\'fd\'cb\'f8\'b2\'bb\'bb\'e1\'d0\'dd\'c3\'df\'d2\'bb\'d6\'b1\'b7\'c3\'ce\'ca\'b5\'b1\'c7\'b0\'cb\'f8\'d7\'b4\'cc\'ac\
+\
+ARC/MRC\'a3\'ba\'ca\'d6\'b6\'af\'b9\'dc\'c0\'ed\'c4\'da\'b4\'e6\'a3\'a8\'d4\'ad\'d4\'f2\'a3\'ba\'cb\'ad\'b4\'b4\'bd\'a8\'cb\'ad\'ca\'cd\'b7\'c5\'a3\'ba\'d7\'d4\'b6\'af\'ca\'cd\'b7\'c5\'b3\'d8\'a3\'baautorelese\'a3\'ba\'d1\'d3\'ca\'b1\'ca\'cd\'b7\'c5\'a3\'ac\'ca\'cd\'b7\'c5\'c7\'b0\'bb\'e1\'cf\'f2\'cb\'f9\'d3\'d0\'b6\'d4\'cf\'f3\'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2\'a3\'a9\
+\
+\'cf\'df\'b3\'cc\'b3\'d8\'a3\'ba\'ba\'c3\'b4\'a6\'a3\'ba\'d7\'d4\'b6\'af\'b9\'dc\'c0\'ed\'cf\'df\'b3\'cc\'c9\'fa\'c3\'fc\'d6\'dc\'c6\'da\'a3\'a8\'b4\'b4\'bd\'a8-\'b5\'f7\'b6\'c8-\'cf\'fa\'bb\'d9\'a3\'a9\'a3\'ac\'b8\'b4\'d3\'c3\'cf\'df\'b3\'cc\'b1\'dc\'c3\'e2\'c6\'b5\'b7\'b1\'b4\'b4\'bd\'a8\'ba\'cd\'cf\'fa\'bb\'d9\'cf\'df\'b3\'cc
+\f1 \
+\
+\
+
+\f0 \'cf\'fb\'cf\'a2\'d1\'ad\'bb\'b7\'a3\'ba\'c3\'bf\'b8\'f6\'cf\'df\'b3\'cc\'b6\'bc\'d3\'d0\'d2\'bb\'b8\'f6\'cf\'fb\'cf\'a2\'d1\'ad\'bb\'b7\'a3\'ac\'d6\'f7\'cf\'df\'b3\'cc\'c4\'ac\'c8\'cf\'bf\'aa\'c6\'f4\'a3\'ac\'d7\'d3\'cf\'df\'b3\'cc\'c4\'ac\'c8\'cf\'b9\'d8\'b1\'d5\'a3\'a8\'d0\'e8\'d2\'aa\'ca\'d6\'b6\'af\'bf\'aa\'c6\'f4\'a3\'a9\
+		1.\'b4\'b4\'bd\'a8\'cf\'fb\'cf\'a2\
+		2.\'bd\'ab\'cf\'fb\'cf\'a2\'b7\'c5\'c8\'eb\'d1\'ad\'bb\'b7\'a3\'ac\'b2\'a2\'d6\'b8\'b6\'a8\'cf\'fb\'cf\'a2\'d4\'cb\'d0\'d0\'c4\'a3\'ca\'bd\
+		3.\'d4\'da\'d3\'eb\'d1\'ad\'bb\'b7\'d4\'cb\'d0\'d0\'c4\'a3\'ca\'bd\'c6\'a5\'c5\'e4\'ca\'b1\'cf\'fb\'cf\'a2(\'ca\'c2\'bc\'fe\'a3\'ba\'ca\'e4\'c8\'eb\'d4\'b4&\'ca\'b1\'d6\'d3\'d4\'b4)\'b2\'c5\'c4\'dc\'d4\'cb\'d0\'d0\
+		4.\'d2\'c9\'ce\'ca\'a3\'baNSTimer\'ca\'b9\'d3\'c3\'ca\'b1\'c3\'bb\'bf\'b4\'b5\'bd\'d0\'e8\'d2\'aa\'bc\'d3\'c8\'eb\'b5\'bd\'d4\'cb\'d0\'d0\'d1\'ad\'bb\'b7\'d6\'d0\'a3\'bf\'a3\'bf\
+\
+GCD(Grand Central Dispatch\'a3\'a8\'b5\'f7\'b6\'c8\'a3\'a9): \'d3\'c5\'bb\'af\'c1\'cb\'b6\'e0\'ba\'cb\'cf\'c2\'b6\'e0\'cf\'df\'b3\'cc\'d6\'b4\'d0\'d0\'d0\'a7\'c2\'ca\'a3\'acGCD = queue \'a3\'a8\'b6\'d3\'c1\'d0\'a3\'ba\'d3\'b5\'d3\'d0\'b6\'e0\'b8\'f6\'c8\'ce\'ce\'f1\'b4\'fdCPU\'b5\'f7\'b6\'c8\'d6\'b4\'d0\'d0\'a3\'a9+ task\'a3\'a8\'b4\'fd\'d6\'b4\'d0\'d0\'b5\'c4\'b4\'fa\'c2\'eb\'a3\'a9 
+\f1 \
+	1. 
+\f0 \'b4\'ae\'d0\'d0(Seiral)\'b6\'d3\'c1\'d0\'cd\'ac\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'b2\'bb\'bf\'aa\'c6\'f4\'d0\'c2\'b5\'c4\'cf\'df\'b3\'cc\'a3\'ac\'d4\'da\'b5\'b1\'c7\'b0\'cf\'df\'b3\'cc\'cf\'c2\'a3\'a8\'d6\'f7\'cf\'df\'b3\'cc\'a3\'a9\'d3\'d0\'d0\'f2\'d6\'b4\'d0\'d0\
+	2.   \'b4\'ae\'d0\'d0(Seiral)\'b6\'d3\'c1\'d0\'d2\'ec\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'bf\'aa\'c6\'f4\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'cf\'df\'b3\'cc\'a3\'ac\'d4\'da\'d0\'c2\'bf\'aa\'b5\'c4\'cf\'df\'b3\'cc\'cf\'c2\'d3\'d0\'d0\'f2\'d6\'b4\'d0\'d0\
+	3.   \'b2\'a2\'d0\'d0(Concurrent)\'b6\'d3\'c1\'d0\'cd\'ac\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'b2\'bb\'bf\'aa\'c6\'f4\'d0\'c2\'b5\'c4\'cf\'df\'b3\'cc\'a3\'ac\'d4\'da\'b5\'b1\'c7\'b0\'cf\'df\'b3\'cc\'cf\'c2\'a3\'a8\'d6\'f7\'cf\'df\'b3\'cc\'a3\'a9\'d3\'d0\'d0\'f2\'d6\'b4\'d0\'d0 = 1 \'d6\'d0\'c7\'e9\'bf\'f6\
+	4.   \'b2\'a2\'d0\'d0(Concurrent)\'b6\'d3\'c1\'d0\'d2\'ec\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'bf\'aa\'c6\'f4\'b6\'e0\'b8\'f6\'d0\'c2\'b5\'c4\'cf\'df\'b3\'cc\'a3\'ac\'d4\'da\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'cf\'c2\'ce\'de\'d0\'f2\'d6\'b4\'d0\'d0\'a3\'ac\'d0\'a7\'c2\'ca\'d7\'ee\'b4\'f3\
+	5.   \'d6\'f7\'b6\'d3\'c1\'d0\'a3\'a8main\'a3\'a9\'cd\'ac\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'cf\'df\'b3\'cc\'cb\'c0\'cb\'f8 \'a3\'a1\'a3\'a1\'a3\'a1 \
+	6.   \'d6\'f7\'b6\'d3\'c1\'d0\'a3\'a8main\'a3\'a9\'d2\'ec\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ba\'d4\'da\'d6\'f7\'cf\'df\'b3\'cc\'cb\'b3\'d0\'f2\'d6\'b4\'d0\'d0\
+\
+\'c8\'ab\'be\'d6\'b6\'d3\'c1\'d0\'a3\'a8global\'a3\'a9\'a3\'ba\'b4\'b4\'bd\'a8\'d0\'e8\'d2\'aa\'c1\'bd\'b8\'f6\'b2\'ce\'ca\'fd\'a3\'badispatch_queue_create_global(0,0) \'a3\'ba\'b5\'da\'d2\'bb\'b8\'f6\'b1\'ed\'ca\'be\'d3\'c5\'cf\'c8\'bc\'b6\'a3\'baios8\'d6\'ae\'ba\'f3\'b8\'c4\'b3\'c9QoS\'a3\'ac\'b5\'da\'b6\'fe\'b8\'f6\'ca\'c7\'d4\'a4\'c1\'f4\'b2\'ce\'ca\'fd\
+\
+\'d1\'d3\'ca\'b1\'d6\'b4\'d0\'d0\'a3\'ba\
+	\'b7\'bd\'ca\'bd1\'a3\'baTimer\'a3\'ba\'b6\'a8\'ca\'b1\'c6\'f7\
+	\'b7\'bd\'ca\'bd2\'a3\'baNSThread\'b5\'c4\'d2\'fe\'ca\'bd\'d1\'d3\'ca\'b1\'b7\'bd\'ca\'bd\'a3\'ba\cf8 \cb9 \CocoaLigature1 perform\cf10 (<#T##aSelector: Selector##Selector#>, with: <#T##Any?#>, afterDelay: <#T##TimeInterval#>)\cf0 \cb1 \CocoaLigature0 \
+	\'b7\'bd\'ca\'bd3\'a3\'baGCD\'a3\'badispatch_after(*,*,*) \'a3\'ba\'d2\'ec\'b2\'bd\'d6\'b4\'d0\'d0\'a3\'ac\'bd\'f8\'b6\'c8\'b8\'df\'a3\'ba\'be\'ab\'c8\'b7\'b5\'bd\'c4\'c9\'c3\'eb\
+\
+GCD: \'d6\'bb\'d6\'b4\'d0\'d0\'d2\'bb\'b4\'ce\'a3\'ba\'cd\'a8\'b3\'a3\'d3\'c3\'c0\'b4\'b4\'b4\'bd\'a8\'b5\'a5\'c0\'fd\'a3\'badispatch_once(&onceToken, block\{\'a1\'ad\}) \'a3\'baonceToken\'b4\'fa\'b1\'ed\'d2\'bb\'b8\'f6\'be\'b2\'cc\'ac\'c7\'f8\'b5\'c4\'ca\'fd\'d7\'d6\'a3\'ac\'cf\'df\'b3\'cc\'b0\'b2\'c8\'ab\'a3\'ba\'b6\'e0\'cf\'df\'b3\'cc\'bb\'b7\'be\'b3\'cf\'c2\'d2\'b2\'d6\'bb\'d6\'b4\'d0\'d0\'d2\'bb\'b4\'ce\
+\
+NSOperation(Operation) : \'b2\'d9\'d7\'f7\'b6\'e0\'cf\'df\'b3\'cc\'d3\'ebGCD\'c0\'e0\'cb\'c6\'a3\'ba\'ca\'c7GCD\'b5\'c4\'b7\'e2\'d7\'b0\'a3\'a8\'ba\'af\'ca\'fd\'ca\'bd\'a3\'a9\'a3\'ac\'c3\'e6\'cf\'f2\'b6\'d4\'cf\'f3\'b1\'e0\'b3\'cc\
+	1.\'b4\'b4\'bd\'a8\'b2\'d9\'d7\'f7\'a3\'baNSInvoOperation/BlockOperation\
+	2.\'b4\'b4\'bd\'a8\'b6\'d3\'c1\'d0\'a3\'baOperationQueue\'a3\'ba\
+	3.\'bd\'ab\'b2\'d9\'d7\'f7\'cc\'ed\'bc\'d3\'b5\'bd\'b6\'d3\'c1\'d0\'d6\'d0\'a3\'ba\'d7\'d4\'b6\'af\'d6\'b4\'d0\'d0\'b2\'bb\'d0\'e8\'d2\'aa\'b5\'f7\'d3\'c3start\'b7\'bd\'b7\'a8\
+\
+\'cf\'df\'b3\'cc\'bc\'e4\'cd\'a8\'d0\'c5\'a3\'ba\'d6\'f7\'cf\'df\'b3\'cc\'b2\'d9\'d7\'f7UI\'a3\'baOperationQueue.MainQueue.addblock...\
+\
+\'cd\'bc\'c6\'ac\'bb\'ba\'b4\'e6\'a3\'ba\'bd\'ab\'cd\'bc\'c6\'ac\'bb\'ba\'b4\'e6\'b5\'bd\'c4\'da\'b4\'e6\'d6\'d0\'a3\'ba\'d3\'c3\'d2\'bb\'b8\'f6\'d7\'d6\'b5\'e4(\'bc\'fc\'d6\'b5\'b6\'d4\'b7\'bd\'b1\'e3\'b4\'e6\'c8\'a1)\'b5\'c8\'b4\'e6\'c6\'f0\'c0\'b4\'a3\'ac\'b5\'b1\'d3\'c3\'ca\'b1\'d6\'b1\'bd\'d3\'bc\'d3\'d4\'d8\'a3\'ba\'d3\'c3\'bf\'d5\'bc\'e4\'bb\'bb\'c8\'a1\'d6\'b4\'d0\'d0\'ca\'b1\'bc\'e4\
+\
+UITableView\'a3\'ba\'b5\'b1\'cd\'bc\'c6\'ac\'cf\'c2\'d4\'d8\'cb\'d9\'b6\'c8\'b9\'fd\'c2\'fd\'ca\'b1\'bf\'c9\'c4\'dc\'bb\'e1\'b3\'f6\'cf\'d6\'d3\'c9Cell\'b8\'b4\'d3\'c3\'b5\'bc\'d6\'c2\'cd\'bc\'c6\'ac\'b8\'fc\'d0\'c2\'b4\'ed\'d0\'d0\'ce\'ca\'cc\'e2\'a3\'ba\'bd\'e2\'be\'f6\'b7\'bd\'ca\'bd\'a3\'ba\'b5\'b1\'cd\'bc\'c6\'ac\'cf\'c2\'d4\'d8\'cd\'ea\'b3\'c9\'b8\'fc\'d0\'c2\'b6\'d4\'d3\'a6\'b5\'c4Cell\'a3\'batableview.reloadRows....\
+\
+\'bb\'ba\'b4\'e6\'cd\'bc\'c6\'ac\'b5\'bd\'c4\'da\'b4\'e6\'d6\'d0\'ca\'b1\'a3\'ba\'bf\'c9\'c4\'dc\'bb\'e1\'b3\'f6\'cf\'d6\'c4\'da\'b4\'e6\'be\'af\'b8\'e6
+\f2 \uc0\u9888 \u65039 
+\f0 \'a3\'ba\'d0\'e8\'d2\'aa\'c7\'e5\'c0\'ed\'c4\'da\'b4\'e6\'a3\'ba\'ca\'d6\'b6\'af\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'bb\'ba\'b4\'e6\'b3\'d8\'a3\'ba\'d3\'c3\'d7\'d6\'b5\'e4\'b4\'e6\'b4\'a2\'a3\'ba\'b7\'bd\'b1\'e3\'b4\'e6\'c8\'a1\
+\
+UITableview\'bf\'aa\'c6\'f4\'d7\'d3\'cf\'df\'b3\'cc\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac\'ca\'b1\'a3\'ba\'d4\'da\'cd\'bc\'c6\'ac\'bb\'b9\'c3\'bb\'cf\'c2\'d4\'d8\'cd\'ea\'b3\'c9\'ca\'b1\'b2\'bb\'cd\'a3\'cd\'cf\'b6\'afCell\'c1\'d0\'b1\'ed\'bf\'c9\'c4\'dc\'bb\'e1\'b3\'f6\'cf\'d6\'d6\'d8\'b8\'b4\'cc\'ed\'bc\'d3\'cf\'c2\'d4\'d8\'c8\'ce\'ce\'f1\'b2\'d9\'d7\'f7\'a3\'ba\'d0\'e8\'d2\'aa\'bd\'ab\'cf\'c2\'d4\'d8\'c8\'ce\'ce\'f1\'b2\'d9\'d7\'f7\'d2\'b2\'bb\'ba\'b4\'e6\'c6\'f0\'c0\'b4\'a3\'ba\'cf\'c2\'d4\'d8\'c7\'b0\'cf\'c8\'c5\'d0\'b6\'cf\'ca\'c7\'b7\'f1\'d2\'d1\'be\'ad\'cc\'ed\'bc\'d3\'b5\'bd\'b2\'d9\'d7\'f7\'bb\'ba\'b4\'e6\'b3\'d8\'d6\'d0\'a3\'ba\'ca\'d5\'b5\'bd\'c4\'da\'b4\'e6\'be\'af\'b8\'e6\'ca\'b1\'d2\'b2\'d0\'e8\'d2\'aa\'c7\'e9\'bf\'f6\'bb\'ba\'b4\'e6\
+\
+block\'d6\'d0\'ca\'b9\'d3\'c3self\'ca\'c7\'b7\'f1\'bb\'e1\'b3\'f6\'cf\'d6\'d1\'ad\'bb\'b7\'d2\'fd\'d3\'c3\'a3\'bf\'a3\'ba\'b7\'d6\'ce\'f6\'ca\'c7\'b7\'f1\'bb\'e1\'d1\'ad\'bb\'b7\'d2\'fd\'d3\'c3\'a3\'ba\'bd\'e2\'be\'f6\'d1\'ad\'bb\'b7\'d2\'fd\'d3\'c3\'a3\'ba\'bb\'f2\'d5\'df[weak self]\
+\
+\'cd\'bc\'c6\'ac\'c8\'fd\'bc\'b6\'bb\'ba\'b4\'e6\'a3\'ba\'ca\'d7\'cf\'c8\'bd\'ab\'cd\'bc\'c6\'ac\'bb\'ba\'b4\'e6\'b5\'bd\'c4\'da\'b4\'e6\'d6\'d0\'a3\'a8\'d3\'c3\'bb\'a7\'c6\'f4\'b6\'af\'d6\'ae\'ba\'f3\'ce\'de\'d0\'e8\'d6\'d8\'b8\'b4\'bc\'d3\'d4\'d8\'a3\'a9- \'bd\'ab\'cd\'bc\'c6\'ac\'b1\'a3\'b4\'e6\'b5\'bd\'c9\'b3\'ba\'d0\'b5\'c4Cache\'c4\'bf\'c2\'bc\'cf\'c2\'a3\'a8\'d3\'c3\'bb\'a7\'d4\'d9\'b4\'ce\'c6\'f4\'b6\'afAPP\'ce\'de\'d0\'e8\'d6\'d8\'b8\'b4\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac\'a3\'ba\'d6\'b1\'bd\'d3\'b4\'d3\'c9\'b3\'ba\'d0\'d6\'d0\'b6\'c1\'c8\'a1\'cd\'bc\'c6\'ac\'b2\'a2\'bb\'ba\'b4\'e6\'b5\'bd\'c4\'da\'b4\'e6\'d6\'d0\'a3\'a9- \'c8\'e7\'b9\'fb\'bb\'ba\'b4\'e6\'ba\'cd\'c9\'b3\'ba\'d0\'d6\'d0\'b6\'bc\'c3\'bb\'d3\'d0\'cd\'bc\'c6\'ac\'d4\'f2\'b4\'d3\'cd\'f8\'c2\'e7\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac\'b2\'a2\'bb\'ba\'b4\'e6\'b5\'bd\'c4\'da\'b4\'e6\'bc\'b0\'c9\'b3\'ba\'d0\'d6\'d0 \
+\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\fs36 \cf11 \cb9 \CocoaLigature1 \'bd\'ab\'bf\'c9\'b1\'e4\'ca\'fd\'d7\'e9\'d7\'aa\'b2\'bb\'bf\'c9\'b1\'e4\'ca\'fd\'d7\'e9\'a3\'ba
+\f1 NSMutableArray\cf10 ().\cf12 copy\cf10 ()\
+\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+\cf13 //
+\f0 \'d4\'cb\'d0\'d0\'ca\'b1\'c9\'e8\'d6\'c3
+\f1 UITextView
+\f0 \'cc\'e1\'ca\'be\'ce\'c4\'b1\'be\'bf\'d8\'bc\'fe
+\f3\fs24 \cf0 \
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf10         \cf14 fillBlank\cf10 .\cf12 setValue\cf10 (\cf14 placeHolderLabel\cf10 , forKeyPath: \cf15 "_placeholderLabel"\cf10 )\
+\
+//PS: SnapKit + UITableViewCell
+\f0 \'a3\'ba\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6
+\f1 \
+1.
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5Cell\'a3\'ba\'d6\'d8\'d0\'b4init\'a3\'badesign\'b3\'f5\'ca\'bc\'bb\'af\'b7\'bd\'b7\'a8\'a3\'basetupUI:\'c0\'c1\'bc\'d3\'d4\'d8\'bf\'d8\'bc\'fe\
+2.\'cc\'ed\'bc\'d3\'bf\'d8\'bc\'fe\'b5\'bdcontentView\'a3\'ba\'cc\'ed\'bc\'d3\'b2\'bc\'be\'d6\'d4\'bc\'ca\'f8\'a3\'ba\
+3.\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6\'a3\'ba\'d0\'e8\'d2\'aa\'b8\'f8BottomView\'cc\'ed\'bc\'d3\'b5\'d7\'b2\'bf\'d4\'bc\'ca\'f8\
+4.\'c9\'e8\'d6\'c3UITableViewController\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6\'a3\'ba
+\f1 \cf13 //1.
+\f0 \'c9\'e8\'d6\'c3\'b9\'c0\'bc\'c6\'d6\'b5
+\f3\fs24 \cf0 \
+
+\f1\fs36 \cf10         tableView.estimatedRowHeight = \cf16 400
+\f3\fs24 \cf0 \
+
+\f1\fs36 \cf10         \cf13 //2.
+\f0 \'c9\'e8\'d6\'c3\'d7\'d4\'b6\'af\'bc\'c6\'cb\'e3
+\f3\fs24 \cf0 \
+
+\f1\fs36 \cf10         tableView.rowHeight = UITableViewAutomaticDimension\
+\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f0 \cf10 \'bc\'fc\'c5\'cc\'d5\'da\'b5\'b2\'ce\'ca\'cc\'e2\'a3\'ba\'c9\'cf\'d2\'c6\'b2\'bc\'be\'d6\'a3\'ba
+\f1 view.frame.y = \'85\
+\
+1125 * 2436 iPhone X 
+\f0 \'c6\'f4\'b6\'af\'cd\'bc\
+\
+OC\'a3\'ba\'b7\'d6\'c0\'e0\'d6\'d0\'b2\'bb\'c4\'dc\'d4\'f6\'bc\'d3\'b3\'c9\'d4\'b1\'b1\'e4\'c1\'bf\'b5\'ab\'ca\'c7\'bf\'c9\'d2\'d4\'d4\'f6\'bc\'d3\'d2\'bb\'b8\'f6\'ca\'f4\'d0\'d4\'a3\'ba\'b1\'d8\'d0\'eb\'d6\'d8\'d0\'b4get/set\'b7\'bd\'b7\'a8\
+\
+\'c1\'aa\'ba\'cf\'b6\'d4\'cf\'f3\'a3\'baAssociatedObject : \'d4\'cb\'d0\'d0\'c6\'da\'bc\'e4\'b8\'f8\'c4\'b3\'b8\'f6\'b6\'d4\'cf\'f3\'d4\'f6\'bc\'d3\'ca\'f4\'d0\'d4\
+\
+\'d4\'cb\'d0\'d0\'ca\'b1\'a3\'ba1.\'bf\'c9\'d2\'d4\'d4\'da\'d4\'cb\'d0\'d0\'ca\'b1\'b8\'f8\'c4\'b3\'b8\'f7\'c0\'e0\'d4\'f6\'bc\'d3\'ca\'f4\'d0\'d4\
+	     2.\'bf\'c9\'d2\'d4\'d4\'da\'d4\'cb\'d0\'d0\'ca\'b1\'bb\'f1\'c8\'a1\'c4\'b3\'b8\'f6\'b6\'d4\'cf\'f3\'cb\'f9\'d3\'d0\'ca\'f4\'d0\'d4\'c3\'fb\'b3\'c6\
+	     3.\'bd\'bb\'bb\'bb\'b7\'bd\'b7\'a8\
+\
+NSCache: \'bb\'ba\'b4\'e6\'bb\'fa\'d6\'c6\'a3\'ba1.\'c4\'da\'b4\'e6\'b2\'bb\'d7\'e3\'d7\'d4\'b6\'af\'ca\'cd\'b7\'c5\'a3\'ba\'d0\'e8\'d2\'aa\'c5\'d0\'b6\'cf\'bf\'d5\
+				2.\'c4\'da\'b4\'e6\'b0\'b2\'c8\'ab\
+				3.\'bf\'c9\'d2\'d4\'c9\'e8\'d6\'c3\'bb\'ba\'b4\'e6\'a3\'a8\'b3\'d8\'a3\'a9\'b4\'f3\'d0\'a1\'ba\'cd\'ca\'fd\'c1\'bf\
+\
+PS\'a3\'ba\'b5\'b1\'ca\'d5\'b5\'bd\'c4\'da\'b4\'e6\'be\'af\'b8\'e6\'ba\'f3\'b5\'f7\'d3\'c3\'c1\'cbNSCache\'b6\'d4\'cf\'f3\'b5\'c4removeAllObject\'b7\'bd\'b7\'a8\'ba\'f3\'cf\'b5\'cd\'b3\'bb\'e1\'b1\'ea\'bc\'c7\'b8\'c3NSCache\'b6\'d4\'cf\'f3\'a3\'ac\'b2\'bb\'c4\'dc\'d4\'d9\'cd\'f9\'c0\'ef\'c3\'e6\'b4\'e6\'b4\'a2\'a3\'ac\'b5\'ab\'d2\'bb\'b0\'e3\'c7\'e9\'bf\'f6\'cf\'c2\'b5\'f7\'d3\'c3removeAllObject\'bb\'b9\'ca\'c7\'bf\'c9\'d2\'d4\'bc\'cc\'d0\'f8\'ca\'b9\'d3\'c3\'b8\'c3\'b6\'d4\'cf\'f3\'b4\'e6\'b4\'a2\
+\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f1 \cf12 Swift3
+\f0 \'ca\'e4\'b3\'f6\'b6\'d4\'cf\'f3\'b5\'d8\'d6\'b7\'a3\'ba\
+\'b7\'bd\'ca\'bd\'d2\'bb\'a3\'ba
+\f1 debugPrint\cf10 (\cf12 unsafeBitCast\cf10 (immutableArr, to: \cf11 UnsafeRawPointer\cf10 .\cf17 self\cf10 ))\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f0 \cf12 \'b7\'bd\'ca\'bd\'b6\'fe\cf10 \'a3\'ba
+\f1 \cf12 debugPrint\cf10 (\cf11 Unmanaged\cf10 .\cf12 passUnretained\cf10 (immutableArr).\cf12 toOpaque\cf10 ())\
+\
+UIView
+\f0 \'b2\'bb\'c4\'dc\'d3\'eb\'d3\'c3\'bb\'a7\'bd\'bb\'bb\'a5\'b5\'c4\'c8\'fd\'d6\'d6\'c7\'e9\'bf\'f6\'a3\'ba
+\f1 \
+1.UIView
+\f0 \'b5\'c4\'cd\'b8\'c3\'f7\'b6\'c8\'d0\'a1\'d3\'da
+\f1 0.01
+\f0 \'ca\'b1\'bf\'d8\'bc\'fe\'b2\'bb\'c4\'dc\'cf\'ec\'d3\'a6\'ca\'c2\'bc\'fe\
+2.\'c9\'e8\'d6\'c3\'bf\'d8\'bc\'fe\'b5\'c4
+\f4\fs28 \cf18 \cb19 isUserInteractionEnabled
+\f0\fs36 \cf10 \cb9 \'ce\'aa
+\f4 false
+\f0 \'ca\'b1\'b2\'bb\'c4\'dc\'cf\'ec\'d3\'a6\'ca\'c2\'bc\'fe
+\fs28 \
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\fs36 \cf10 3.\'c9\'e8\'d6\'c3\'bf\'d8\'bc\'fe\'b5\'c4isHidden\'ce\'aatrue\'ca\'b1\'b2\'bb\'c4\'dc\'cf\'ec\'d3\'a6\'ca\'c2\'bc\'fe\
+\
+\'c0\'b6\'d1\'c0\'bf\'aa\'b7\'a2\'a3\'ba\
+1.\'bf\'c9\'d3\'c3\'bf\'f2\'bc\'dc\'a3\'baGameKit\
+}
