@@ -410,4 +410,11 @@
             2.1.1 内部原理也是将LaunchScreen.storyboard/xib运行时效果截图作为启动图片
         2.2 直接使用图片作为启动图：Use Asset Catalog -> Migrate -> LaunchImage（拖拽图片到此处）-> 删除原来默认的LaunchImage引用
     PS：控制器大小会根据启动图的大小来最终确定，当启动图中最大的启动图比预先设置的控制器大小要小时控制器大小等于启动图中最大尺寸那张图的大小：会引起一些UI控件错位问题：解决这一问题：将对应设备启动图补全
+    
+# UITableView添加右侧索引栏（类似通信录中的字母索引）：
+    1.实现sectionIndexTitlesForTableView方法返回对应的索引标签
 
+# UIAlertView带输入框显示：
+    1.设置alertViewStyle为plainTextInput
+    2.通过textFieldAtIndex获取弹出框中指点View控件
+    
