@@ -371,4 +371,22 @@ UIView不能与用户交互的三种情况：
     1.前者只能作为方法返回值：表示当前类的类型
     2.id指向任何类的类型
     
-#
+# UIScrollView实现喜马拉雅滚动效果(当滚动区域滚动到头部或者尾部时穿透效果)：
+    1.拖入一个全屏的ScrollView并设置好内部布局
+    1.1设置scrollView的contentSize
+    2.将头部视图拖到scrollView的上面并设置透明度为0.6
+    3.将底部视图拖到scrollView上并设置透明度为0.6
+    4.设置scrollView的contentoffset和底部contentInset
+
+# UIScrollView实现轮播器效果：
+    1.设置好scrollView的大小及位置
+    2.添加内部代表page的View并设置好frame
+    3.设置scrollView的contentSize保证可用滚动
+    4.设置分页属性：isPagingEnable = true
+    5.设置pageControl在scrollView上大小及位置
+    6.通过scrollView的contentoffset计算出当前页码并设置给pageControl
+    7.通过let offsetX = scrollView.contentOffset.x + scrollView.frame.width * 0.5处理计算出页码效果较好：当滑动操过一半就跳到下一页
+    8.通过定时器实现自动跳转：
+        8.1.NSTimer:(时间间隔大于1秒)
+        8.2.CADisplayLink:(时间间隔小于1秒)
+    PS: scrollView分页依据是scrollView自身frame的大小，故每个page的大小最好一致否则出现分页不完整

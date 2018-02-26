@@ -17,14 +17,17 @@
 		0444E7C9201AD5590007B0E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7C8201AD5590007B0E5 /* Person.swift */; };
 		0444E7CB201AD5970007B0E5 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CA201AD5970007B0E5 /* Man.swift */; };
 		0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */; };
+		04719E4720424B2800612E4D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04719E4620424B2800612E4D /* GuessViewController.swift */; };
 		04768B6A2020061D0030CF9F /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B692020061D0030CF9F /* ViewA.swift */; };
 		04768B6C2020062E0030CF9F /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6B2020062E0030CF9F /* ViewB.swift */; };
 		04768B6E202006300030CF9F /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6D202006300030CF9F /* ViewC.swift */; };
 		04768B70202006320030CF9F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6F202006320030CF9F /* ViewD.swift */; };
 		04768B72202006360030CF9F /* ViewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B71202006360030CF9F /* ViewE.swift */; };
+		047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A9B9920438A7100EDBBB2 /* PageViewController.swift */; };
 		04969E7D202D38F000849968 /* BLEView_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04969E7C202D38F000849968 /* BLEView_.xib */; };
 		04969E7F202D4FA500849968 /* BLEView_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04969E7E202D4FA500849968 /* BLEView_.swift */; };
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
+		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,14 +44,17 @@
 		0444E7C8201AD5590007B0E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0444E7CA201AD5970007B0E5 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
 		0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Category.swift"; sourceTree = "<group>"; };
+		04719E4620424B2800612E4D /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		04768B692020061D0030CF9F /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
 		04768B6B2020062E0030CF9F /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		04768B6D202006300030CF9F /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
 		04768B6F202006320030CF9F /* ViewD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewD.swift; sourceTree = "<group>"; };
 		04768B71202006360030CF9F /* ViewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewE.swift; sourceTree = "<group>"; };
+		047A9B9920438A7100EDBBB2 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		04969E7C202D38F000849968 /* BLEView_.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView_.xib; sourceTree = "<group>"; };
 		04969E7E202D4FA500849968 /* BLEView_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView_.swift; sourceTree = "<group>"; };
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,8 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				047A9B9820438A3900EDBBB2 /* ScrollView_Page */,
+				04719E4520424A4500612E4D /* Guess Figure */,
 				04E2365F2029957800431C1A /* BLE */,
 				04768B68202005DD0030CF9F /* Responder Chain */,
 				0444E7C7201AD4B50007B0E5 /* Catagory_Inheritance */,
@@ -124,6 +132,14 @@
 			path = Catagory_Inheritance;
 			sourceTree = "<group>";
 		};
+		04719E4520424A4500612E4D /* Guess Figure */ = {
+			isa = PBXGroup;
+			children = (
+				04719E4620424B2800612E4D /* GuessViewController.swift */,
+			);
+			path = "Guess Figure";
+			sourceTree = "<group>";
+		};
 		04768B68202005DD0030CF9F /* Responder Chain */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +151,15 @@
 				049FF3A92021968100631F9E /* BaseView.swift */,
 			);
 			path = "Responder Chain";
+			sourceTree = "<group>";
+		};
+		047A9B9820438A3900EDBBB2 /* ScrollView_Page */ = {
+			isa = PBXGroup;
+			children = (
+				047A9B9920438A7100EDBBB2 /* PageViewController.swift */,
+				04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */,
+			);
+			path = ScrollView_Page;
 			sourceTree = "<group>";
 		};
 		04E2365F2029957800431C1A /* BLE */ = {
@@ -226,6 +251,8 @@
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
+				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
+				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
 				0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */,
 				04768B72202006360030CF9F /* ViewE.swift in Sources */,
 				04768B70202006320030CF9F /* ViewD.swift in Sources */,
@@ -234,6 +261,7 @@
 				04768B6E202006300030CF9F /* ViewC.swift in Sources */,
 				049FF3AA2021968100631F9E /* BaseView.swift in Sources */,
 				0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */,
+				047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
