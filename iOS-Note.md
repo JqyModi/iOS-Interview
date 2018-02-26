@@ -40,25 +40,25 @@
         2.在XXX-info中添加Font provided by application-Array类型下添加一个item-XXX.ttf
         3.在代码中通过:xxx.font = UIFont(name: fontName, size: 15)的方式设置字体样式:fontName表示改字体对应的英文名称：可以通过let arr=UIFont.familyNames();print(arr)来获取字体名称都有哪些
     7.可视化界面编程：
-    1.storyboard:
-        1.新建一个xxx.storyboard文件并设计出理想效果
-        2.在右侧显示属性中找到：show the identity inspector-Custom Class中绑定一个文件中新建的xxxViewController(如：LoginViewController)并在Identity中为Storyboard设置一个ID如Login
-        3.为界面添加约束等
-        4.通过代码操作storyboard：
-        //先获取storyboard
-        let loginStoryboard = UIStoryboard(name: "Login", bundle: nil)
-        //在可视化布局界面中设置Identifier = Login
-        let loginVC = loginStoryboard.instantiateViewController(withIdentifier: "Login")
-        self.present(loginVC, animated: true, completion: {
-        print("跳转到登录页")
-        })
-    2.xib:
-        1.新建一个XXX.xib文件如InputView.xib
-        2.设计控件界面
-        3.通过代码关联改xib：
-        //初始化输入框控件:通过xib初始化一个控件(.last)
-        self.commentInput = Bundle.main.loadNibNamed("InputView", owner: self, options: nil)?.last as! InputView
-        self.commentInput?.frame = CGRect(x: 0, y: SCREEN_HEIGHT-44, width: SCREEN_WIDTH, height: 44)
+        1.storyboard:
+            1.新建一个xxx.storyboard文件并设计出理想效果
+            2.在右侧显示属性中找到：show the identity inspector-Custom Class中绑定一个文件中新建的xxxViewController(如：LoginViewController)并在Identity中为Storyboard设置一个ID如Login
+            3.为界面添加约束等
+            4.通过代码操作storyboard：
+            //先获取storyboard
+            let loginStoryboard = UIStoryboard(name: "Login", bundle: nil)
+            //在可视化布局界面中设置Identifier = Login
+            let loginVC = loginStoryboard.instantiateViewController(withIdentifier: "Login")
+            self.present(loginVC, animated: true, completion: {
+            print("跳转到登录页")
+            })
+        2.xib:
+            1.新建一个XXX.xib文件如InputView.xib
+            2.设计控件界面
+            3.通过代码关联改xib：
+            //初始化输入框控件:通过xib初始化一个控件(.last)
+            self.commentInput = Bundle.main.loadNibNamed("InputView", owner: self, options: nil)?.last as! InputView
+            self.commentInput?.frame = CGRect(x: 0, y: SCREEN_HEIGHT-44, width: SCREEN_WIDTH, height: 44)
     8.界面跳转中数据传递方式:
         1.delegate：相当于安卓中的接口回调
             1.在带跳转的控制器中定义一个delegate及需要的方法
@@ -402,3 +402,12 @@
         2.4 6Plus物理尺寸5.5英寸 点阵：414*736 分辨率(像素点)：1242*2208
     3.分辨率：把屏幕进行横向和纵向等分所得
     4.在retina屏幕下一个点表示2个像素：@2x,在非retina屏幕下一个点表示一个像素，在plus下一个点表示3个像素：@3x
+    
+# 设置应用程序图标+启动图片：
+    1.图标设置：直接在AppIcon中添加图标图片
+    2.启动图片设置：
+        2.1 使用LaunchScreen.storyboard/xib方式：（默认）
+            2.1.1 内部原理也是将LaunchScreen.storyboard/xib运行时效果截图作为启动图片
+        2.2 直接使用图片作为启动图：Use Asset Catalog -> Migrate -> LaunchImage（拖拽图片到此处）-> 删除原来默认的LaunchImage引用
+    PS：控制器大小会根据启动图的大小来最终确定，当启动图中最大的启动图比预先设置的控制器大小要小时控制器大小等于启动图中最大尺寸那张图的大小：会引起一些UI控件错位问题：解决这一问题：将对应设备启动图补全
+
