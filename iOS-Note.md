@@ -412,25 +412,26 @@
     PS：控制器大小会根据启动图的大小来最终确定，当启动图中最大的启动图比预先设置的控制器大小要小时控制器大小等于启动图中最大尺寸那张图的大小：会引起一些UI控件错位问题：解决这一问题：将对应设备启动图补全
     
 # UITableView添加右侧索引栏（类似通信录中的字母索引）：
-    1.实现sectionIndexTitlesForTableView方法返回对应的索引标签
+    1.实现sectionIndexTitlesForTableView方法返回对应的索引标签
 
 # UIAlertView带输入框显示：
-    1.设置alertViewStyle为plainTextInput
-    2.通过textFieldAtIndex获取弹出框中指点View控件
+    1.设置alertViewStyle为plainTextInput
+    2.通过textFieldAtIndex获取弹出框中指点View控件
     
 # UITableViewCell:
-    1.通过xib方式实现：
+    1.通过xib方式实现：
         1.0 为每个Cell设置一个Identifier可重用标识
-        1.1 通过xib搭建好界面并设置好Identitfier:相当于reuseIdentitfier来重用通过xib创建的Cell
-        1.2 通过NSBundle来加载xib文件得到Cell对象
-        1.2.1 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
-        1.3 将1.2步骤封装到自定义Cell类中方便代码实现Cell时的修改
-        1.4 将Cell设置给TableView
-    2.通过代码方式实现：
-        2.0 为每个Cell设置一个Identifier可重用标识
-        2.1 先通过设置的ReuseIdentifier到缓存池中找可重用的Cell
+        1.1 通过xib搭建好界面并设置好Identitfier:相当于reuseIdentitfier来重用通过xib创建的Cell
+        1.2 通过NSBundle来加载xib文件得到Cell对象
+        1.2.1 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
+        1.3 将1.2步骤封装到自定义Cell类中方便代码实现Cell时的修改
+        1.4 将Cell设置给TableView
+    2.通过代码方式实现：
+        2.0 为每个Cell设置一个Identifier可重用标识
+        2.1 先通过设置的ReuseIdentifier到缓存池中找可重用的Cell
+        2.1.1 重写Cell的InitWithIdentitfier初始化方法来添加内部自控件
         2.2 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
-        2.3 将获取到Cell设置给TableView
+        2.3 将获取到Cell设置给TableView
         
 ### TableView中FootView只能修改X和Hight 若需要自定义可变样式View可以放一个容器View修改内部View即可
 
@@ -439,7 +440,8 @@
 ### TableView局部刷新只适用于数据源条数没有发生变化情况
 
 # 代理编写规范：
-    1.定义方法：至少传递一个参数就是当前View本身
-    2.命名应该以控件名称开头 + 该方法所实现功能
+    1.定义方法：至少传递一个参数就是当前View本身
+    2.命名应该以控件名称开头 + 该方法所实现功能
     
 ### 自定义View中当需要操作内部某个子控件是需要在awakeFromNib方法之后操作：所有子控件已经初始化完毕
+    
