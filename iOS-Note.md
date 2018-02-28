@@ -463,3 +463,6 @@
 # 拉升图片：平铺方式拉升
     1.通过UIImage的stretchableImageWithLeftCapWidth...TopCapHight方法来拉升图片：该方法会按照设置的距离左边的距离和距离上边的距离来平铺拉升图片
 
+# 处理键盘弹出时控制器View的上移操作：
+    1.通过键盘键盘广播：UIKeyboardWillChangeFrameNotification来响应键盘弹出和隐藏时的操作
+    2.通过计算键盘弹出后的Y值来确定控制器View需要上移的距离：键盘高度 - 屏幕高度 = 负值 (正好是控制器View需要上移的高度，也是负值，当键盘隐藏时该值是0控制器View正好回到原点：巧妙解决了键盘弹出时遮挡问题)
