@@ -58,6 +58,7 @@ class PageViewController: UIViewController {
         //1.设置Timer的优先级与UI控件的优先级一样
         //1.1通过RunLoop对象设置当前Timer优先级：也就是RunLoop的运行模式
         RunLoop.current.add(timer!, forMode: RunLoopMode.commonModes)
+        
     }
 
     /**

@@ -1,5 +1,7 @@
 ## 开启aria2c服务：aria2c --enable-rpc --rpc-listen-all
 
+## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
+
 # 学习基础语法及UI界面控件
 # 熟悉项目框架结构
 # 修改BUG
@@ -183,6 +185,16 @@
 
 # 考试系统
     1.如何动态计算UILabel的高度：
+        1.1 label字符串
+            let s = NSString(string: "string")
+        1.2 Label的大小限制
+            let size = CGSize(width: 100, height: 100)
+        1.3 Label大小的计算方式
+            let options = NSStringDrawingOptions.usesLineFragmentOrigin
+        1.4 设置字体大小、字体类型等
+            let attributes = [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]
+        1.5 通过NSString的boundingRect方法计算出字符串对应矩形的宽高
+            let strSize = s.boundingRect(with: size, options: options, attributes: attributes, context: nil).size
 
     2.自动布局中如何动态调整控件的相对位置:通过可视化界面为需要调整的控件添加约束并在代码中添加约束变量，然后通过改变约束变量的值来改变控件的相对位置
 
@@ -429,9 +441,12 @@
     2.通过代码方式实现：
         2.0 为每个Cell设置一个Identifier可重用标识
         2.1 先通过设置的ReuseIdentifier到缓存池中找可重用的Cell
-        2.1.1 重写Cell的InitWithIdentitfier初始化方法来添加内部自控件
-        2.2 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
+        2.1.1 重写Cell的InitWithIdentitfier初始化方法来添加内部自控件
+        2.2 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
         2.3 将获取到Cell设置给TableView
+    3.动态计算TableViewCell行高：
+        1. 在控制器中通过Model模型数据计算出可变控件(UILabel)的Frame
+        2.
         
 ### TableView中FootView只能修改X和Hight 若需要自定义可变样式View可以放一个容器View修改内部View即可
 
@@ -444,4 +459,6 @@
     2.命名应该以控件名称开头 + 该方法所实现功能
     
 ### 自定义View中当需要操作内部某个子控件是需要在awakeFromNib方法之后操作：所有子控件已经初始化完毕
-    
+
+
+
