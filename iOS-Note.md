@@ -460,5 +460,6 @@
     
 ### 自定义View中当需要操作内部某个子控件是需要在awakeFromNib方法之后操作：所有子控件已经初始化完毕
 
-
+# 拉升图片：平铺方式拉升
+    1.通过UIImage的stretchableImageWithLeftCapWidth...TopCapHight方法来拉升图片：该方法会按照设置的距离左边的距离和距离上边的距离来平铺拉升图片
 
