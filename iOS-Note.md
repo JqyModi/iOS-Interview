@@ -474,5 +474,30 @@
     2.以平铺的方式拉升图片（背景）使得设置好的气泡背景不至于变形
     3.放大UIButton以包裹文字
     4.若第3步操作还是没有解决则需要给UIButton的textLabel加上内边距来解决
-    
+       
+## 通过代理和通知都可以实现对象间通信：
+    1.区别代理是一对一的
+    2.通知（相当于广播）多对多的
+    
+# UITableView实现分组效果且分组不仅仅包含标题文字还包含其他View控件：
+    1.通过实现tableView的代理方法ViewForHeaderInSection来重新定义Group的样式效果
+    2.为了可以重用每个相同样式的分组可以用系统的UITableViewHeaderFooterView来取代UIView（继承关系）
+    3.为了实现自定义的Group效果则重新自定义一个UITableViewHeaderFooterView来初始化时添加内部UI控件
+    4.通过一个类方法将创建UITableViewHeaderFooterView及重用标识等封装到该自定义UITableViewHeaderFooterView中
+    4.1重写UITableViewHeaderFooterView的initWithReuseIdentifier方法来返回自定义的UITableViewHeaderFooterView
+    4.2设置内部自定义子控件的frame
+    5.将自定义的UITableViewHeaderFooterView设置给tableview
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     

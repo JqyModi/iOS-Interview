@@ -89,6 +89,22 @@
       "idiom" : "ios-marketing",
       "size" : "1024x1024",
       "scale" : "1x"
+    },
+    {
+      "filename" : "icon_01.jpg",
+      "unassigned" : true
+    },
+    {
+      "filename" : "icon_02.jpg",
+      "unassigned" : true
+    },
+    {
+      "filename" : "icon_03.jpg",
+      "unassigned" : true
+    },
+    {
+      "filename" : "icon_04.jpg",
+      "unassigned" : true
     }
   ],
   "info" : {
