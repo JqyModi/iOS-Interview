@@ -487,13 +487,9 @@
     4.1重写UITableViewHeaderFooterView的initWithReuseIdentifier方法来返回自定义的UITableViewHeaderFooterView
     4.2设置内部自定义子控件的frame
     5.将自定义的UITableViewHeaderFooterView设置给tableview
-    
-    
-    
-    
-    
-    
-    
+    
+### 获取当前屏幕的Window窗口：UIApplication.share.keyWindow
+    
     
     
     
