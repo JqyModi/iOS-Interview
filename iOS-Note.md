@@ -540,9 +540,10 @@
         3.1：通过UIPickerView的代理事件viewForRow方法设置每行显示的样式布局而不是通过titleForRow来显示文字信息
 ### UIDatePicker：
     1.选择日期：
-    2.
-    
-    
-    
+    2.不需要设置frame自动占据键盘位置
+    
+# 自定义键盘即上方工具条：
+    1.通过UITextField的inputView设置自定义View作为弹出（键盘）View
+    2.通过inputAccessoryView设置键盘上方的工具条View：一般用UIToolBar：添加UIBaButtonItem
     
     
