@@ -34,6 +34,7 @@
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
+		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			children = (
 				043088272047D76400814006 /* FriendTableViewCell.swift */,
 				043088292047DE6500814006 /* GroupHeaderView.swift */,
+				04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
+				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,

@@ -99,9 +99,27 @@ class GroupsHeaderTableViewController: UITableViewController {
 //        return group.name
 //    }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        testRandom()
+    }
+    
+    //测试随机数
+    func testRandom() {
+        let r = arc4random_uniform(10)
+        debugPrint("r = \(r)")
+        
+        let r1 = arc4random() % (10 + 1)
+        debugPrint("r1 = \(r1)")
+        
+        //UIPickerView的用法：跟UITableView的用法一样
+        let picker = UIPickerView()
+        //表示第0组选择的行索引
+        picker.selectedRow(inComponent: 0)
+    }
+    
 }
 
-extension GroupsHeaderTableViewController: GroupHeaderViewDelegate {
+extension GroupsHeaderTableViewController: GroupHeaderViewDelegate, UIPickerViewDelegate {
     func groupHeaderViewGroupDidClicked(groupHeaderView: GroupHeaderView) {
         //点击按钮时需要重新刷新TableView才会调用numberOfRowsInSection方法以实现分组展开与合上效果
 //        tableView.reloadData()
