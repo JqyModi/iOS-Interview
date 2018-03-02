@@ -545,5 +545,21 @@
 # 自定义键盘即上方工具条：
     1.通过UITextField的inputView设置自定义View作为弹出（键盘）View
     2.通过inputAccessoryView设置键盘上方的工具条View：一般用UIToolBar：添加UIBaButtonItem
-    
-    
+    
+### 获取项目的info.plist文件：
+    1.Bundle.main.infoDictionary
+
+## 项目的PCH文件使用：
+    1.预编译一些工具类：
+    2.定义一些宏：
+    3.控制项目的打印日志：
+        3.1 
+            *****************
+            #ifdef __OBJC__
+            #ifdef DEBUG
+            #define MDLog(...) NSLog(__VA_ARGS__)
+            #else
+            #define MDLog(...)
+            #endif
+            #endif
+            *****************
