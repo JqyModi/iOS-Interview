@@ -445,8 +445,12 @@
         2.2 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
         2.3 将获取到Cell设置给TableView
     3.动态计算TableViewCell行高：
-        1. 在控制器中通过Model模型数据计算出可变控件(UILabel)的Frame
-        2.
+        1. 新建一个UITableViewCellFrame模型用来记录Cell中所有控件的Frame和Cell的行高
+        2. 在UITableViewCellFrame中给Model模型赋值时计算出所有子控件及可变控件(UILabel)的Frame，再通过最底部子控件 + margin 计算出行高rowHeight
+        3. 在控制器中将计算好的UITableViewCellFrame对象赋值给UITableViewCell对象
+        4. 在UITableViewCell中加载UITableViewCellFrame作为模型对象
+        5. 在UITableViewCellFrame模型对象赋值时设置UITableViewCell子控件的数据及计算好的Frame
+        6. 通过UITableViewCellFrame对象在控制器中UITableView的代理事件heightForRowAtIndexPath方法返回行高给UITableViewCell
         
 ### TableView中FootView只能修改X和Hight 若需要自定义可变样式View可以放一个容器View修改内部View即可
 
@@ -490,10 +494,34 @@
     
 ### 获取当前屏幕的Window窗口：UIApplication.share.keyWindow
     
-    
-    
-    
-    
-    
+## 屏幕适配：
+    1.autoresizing ：用父容器作为 参照 来设置子控件的frame的屏幕适配
+    1.1 通过代码实现autoresizing：
+        1.1.1 去掉系统默认勾选的autolayout + size classes
+        1.1.2 通过代码的autoresizingMask来设置约束：多个同时作用用或(| 因为autoresizingMask是一个位枚举)
+    2.autolayout ：不仅仅可以设置控件与父控件的参照规则，也可以设置控件与控件之间的参照规则
+    3.size classes + autolayout : 可以在不同尺寸的屏幕下设置不同的约束规则
+    4.设置好屏幕适配规则后可以在辅助编辑器中的导航条处找到preview来预览各个屏幕下的显示效果不再需要一个一个设备去运行
+    5.Xcode6开始设置距离左右的约束时默认系统加入了margin = 16解决这个问题：
+        5.1 勾选掉constrain to margins
+        5.2 将左右边距该为0
+    6.当设置上下左右边距约束时需要注意设置的参照时距离控制器的距离还是距离上下导航条的距离
+    7.案例解决方案：一个游戏图片上面有设计好的按钮：要使点击图片上的按钮位置有响应
+        7.1 可以用透明的按钮来代替该位置的响应事件
+        7.2 当不同尺寸屏幕下需要屏幕适配：否则图片上按钮位置发生变化后透明按钮位置出现错位
+        7.3 解决思路：将透明按钮位置找到图片上一个不变位置作为参照：如水平中线或者垂直中线
+    8.约束被添加的位置：
+        8.1 当约束不依赖任何控件时约束被添加到控件本身上面
+        8.2 当控件约束依赖于父控件时约束被添加到父控件上
+        8.3 当控件约束依赖于兄弟控件时约束被添加到两个兄弟控件的上一级相同父控件上
+    9.代码实现Autolayout：
+        1.禁止🚫autoresizing功能：通过View的属性translatesAutoresizingMaskIntoConstraints为false
+        2.添加约束前一定要保证相关控件都已经添加到父控件上
+        3.不用再设置frame：约束 = X、Y、Width、Height
+        4.约束计算公式：view1.value(left/right/...) = view2.value * multiplier + constain
+    10.通过约束实现动画效果：
+        10.1 将要改变的约束拖线到控制器等用一个属性来记录
+        10.2 在需要改变控件约束的地方改变约束的值
+        10.3 通过动画的方式改变：以动画方式调用view.layoutIfNeeded()方法刷新布局即可实现动画效果：没有那么生硬
     
     

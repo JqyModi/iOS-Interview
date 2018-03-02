@@ -10,6 +10,12 @@ import UIKit
 
 class FriendTableViewCell: UITableViewCell {
     
+    var friend: Friend? {
+        didSet {
+//            setupData()
+        }
+    }
+    
     static func cellWithTableView(tableView: UITableView) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "ID")
         if (cell == nil) {
@@ -18,4 +24,10 @@ class FriendTableViewCell: UITableViewCell {
         return cell!
     }
     
+    
+//    private func setupData() {
+//        self.imageView?.image = UIImage(named: (friend?.icon!)!)
+//        self.textLabel?.text = friend?.nick
+//        self.detailTextLabel?.text = friend?.qm
+//    }
 }
