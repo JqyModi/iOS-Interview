@@ -112,9 +112,23 @@ class GroupsHeaderTableViewController: UITableViewController {
         debugPrint("r1 = \(r1)")
         
         //UIPickerView的用法：跟UITableView的用法一样
-        let picker = UIPickerView()
+//        let picker = UIPickerView()
         //表示第0组选择的行索引
-        picker.selectedRow(inComponent: 0)
+//        picker.selectedRow(inComponent: 0)
+        
+        //显示应用程序图标上的数字
+        let app = UIApplication.shared
+//        app.alternateIconName = "SIRI"
+        
+        //IOS8.0后使用必须注册通知：registerUserNotificationSettings
+        let set = Set<UIUserNotificationCategory>.init(arrayLiteral: UIUserNotificationCategory())
+        let userNotificationSettings = UIUserNotificationSettings(types: .badge, categories: set)
+        app.registerUserNotificationSettings(userNotificationSettings)
+        
+        app.applicationIconBadgeNumber = 10
+        app.isNetworkActivityIndicatorVisible = true
+        
+        app.isStatusBarHidden = true
     }
     
 }
@@ -129,5 +143,7 @@ extension GroupsHeaderTableViewController: GroupHeaderViewDelegate, UIPickerView
         let indexSet = NSIndexSet(index: groupHeaderView.tag)
         //局部刷新某一组
         tableView.reloadSections(indexSet as IndexSet, with: .automatic)
+        
+//        testRandom()
     }
 }

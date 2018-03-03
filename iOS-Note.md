@@ -2,6 +2,8 @@
 
 ## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
 
+[Markdown](http://pad.haroopress.com/user.html#download)
+
 # 学习基础语法及UI界面控件
 # 熟悉项目框架结构
 # 修改BUG
@@ -554,11 +556,48 @@
     2.定义一些宏：
     3.控制项目的打印日志：
 	*****************
-		#ifdef __OBJC__
-		#ifdef DEBUG
-		#define MDLog(...) NSLog(__VA_ARGS__)
-		#else
-		#define MDLog(...)
-		#endif
-		#endif
+	#ifdef __OBJC__
+	#ifdef DEBUG
+	#define MDLog(...) NSLog(__VA_ARGS__)
+	#else
+	#define MDLog(...)
+	#endif
+	#endif
 	*****************
+	4.第3部中包含C文件时报错可以添加：#ifdef __OBJC__ ··· #endif 来控制···该段代码只会在OC中起作用
+	
+## 应用程序对象：UIApplication
+	1.执行应用级别的操作：如QQ接收到消息在图标出有消息数提示、联网时状态栏的菊花
+	2.应用图标头像上的数字：applicationIconBadgeNumber
+	3.应用程序联网状态：networkActivityIndicatorVisiable
+	4.状态栏管理：系统默认是将状态栏交给控制器管理：通过prefersStatusBarHidden管理
+		4.1 当我们在应用程序中的info.plist中添加一个Key为View controller-based status bar appearance - value 为 NO后控制器管理的状态栏失效转由UIApplication管理
+		4.2 UIApplication通过isStatusBarHidden来管理
+	5.openURL：打电话、发短信、跳转到其他应用程序
+	
+## 应用程序的启动原理：
+	1.OC下可以看到入口函数：main.h main函数
+		1.1 main函数接收两个参数：参数1表示参数个数：参数2表示参数具体值
+	2.创建自动释放池
+	3.执行UIApplicationMain方法：永远不会返回保证程序不会销毁
+	4.3中将事件代理给AppDelegate
+	5.AppDelegate实例化一个window并设置为应用程序的keyWindow（主窗口）
+	6.系统根据info.plist文件中配置的Main.storyboard文件中带箭头的控制器来初始化界面
+	7.应用程序生命周期方法
+	8.应用程序销毁：
+		8.1 通过Home键直接进入后台：
+			8.1.1 不活跃状态 -> 进入后台 -> 进入任务栈 ->（拖走）不执行销毁方法：程序崩溃(相当于系统执行exit(9)) -----> 所有不能再销毁时在保存应用数据而是应该在进入后台时保存数据为宜
+		8.2 通过任务栈进入后台：
+			8.2.1 不活跃状态 -> 进入后台 -> 销毁（拖走）
+	
+## 判断类中是否包含某个方法：
+	1.responseToSelector方法
+
+		
+	
+	
+	
+	
+	
+	
+	
