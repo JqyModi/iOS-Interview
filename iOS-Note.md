@@ -553,13 +553,12 @@
     1.预编译一些工具类：
     2.定义一些宏：
     3.控制项目的打印日志：
-        3.1 
-            *****************
-            #ifdef __OBJC__
-            #ifdef DEBUG
-            #define MDLog(...) NSLog(__VA_ARGS__)
-            #else
-            #define MDLog(...)
-            #endif
-            #endif
-            *****************
+	*****************
+		#ifdef __OBJC__
+		#ifdef DEBUG
+		#define MDLog(...) NSLog(__VA_ARGS__)
+		#else
+		#define MDLog(...)
+		#endif
+		#endif
+	*****************
