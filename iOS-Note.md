@@ -593,11 +593,42 @@
 ## 判断类中是否包含某个方法：
 	1.responseToSelector方法
 
+## UIWindow
+	1.UIWindow的makeKeyAndVisiable表示设置为keyWindow和显示
+	2.UIWindow默认是隐藏的
+	3.应用场景：提示类的框架：如提示用户选座、加载等待菊花等
+
+# 3种加载控制器方式：
+	1.纯代码创建控制器
+	2.通过storyboard创建控制器
+		1.加载storyboard文件：UIStoryboard.storyboardWithName
+		2.从storyboard中加载控制器
+			2.1 加载箭头指向的控制器：storyboard.instantiateInitialViewController
+			2.2 加载不带箭头的控制器：instantiateViewControllerWithIdentifier -> 需要在storyboard中指点Identity ID
+			3. 系统默认加载带箭头的控制器：如果不指定带箭头控制器则可以通过Identity方式加载
+	3.通过xib创建控制器：
+		3.1 新建一个xib文件
+		3.2 给xib文件指点file·s Owner
+		3.3 给xib文件指点file·s Owner指点view试图
+			3.3.1 通过控制器的initWithNibNamed方式初始化控制器加载
+			3.3.2 直接通过ViewController的初始化方法初始化：ViewController（） -> 系统自动会找到名称与控制器完全一致的xib文件来创建 -> 若没有名称完全一致的则找到名称相似的来创建 -> 若还是没有则认为是代码创建的
+	
+# 导航控制器：
+	1.改变系统导航栏默认生成的返回按钮：self.navigationItem.backBarButtonItem = UIBarButtonItem():self.navigationItem.backBarButtonItem
 		
+### 用storyboard编写界面还是代码： 可以通过看界面是否会有很大的改变来决定
 	
-	
-	
-	
-	
+## Segue
+	1.自动型：不需要判断直接从控件跳转到下个控制器
+		1.1 直接通过控件来拖线到下一个控制器
+	2.手动型：需要判断是否满足条件才能决定是否可以跳转到下一个控制器
+		2.1 拖线：通过控制器拖到控制器实现
+		2.2 为界面上的Segue设置Identifier
+		2.3代码中手动调用：performSegueWithIdentifier
+	3.Segue执行过程：
+		3.1 调用rformSegueWithIdentifier跳转或者自动跳转
+		3.2 根据Identifier创建Segue并赋值sourceController及新建destinationController并赋值
+		3.3 调用sourceViewController的perferSegue方法带赋值好目标控制器和来源控制器的Segue参数
+		3.4 跳转到目标控制器
 	
 	
