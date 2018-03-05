@@ -112,7 +112,7 @@ class GroupsHeaderTableViewController: UITableViewController {
         debugPrint("r1 = \(r1)")
         
         //UIPickerView的用法：跟UITableView的用法一样
-//        let picker = UIPickerView()
+//        let picker = UIPickerView
         //表示第0组选择的行索引
 //        picker.selectedRow(inComponent: 0)
         
@@ -129,6 +129,7 @@ class GroupsHeaderTableViewController: UITableViewController {
         app.isNetworkActivityIndicatorVisible = true
         
         app.isStatusBarHidden = true
+        
     }
     
 }

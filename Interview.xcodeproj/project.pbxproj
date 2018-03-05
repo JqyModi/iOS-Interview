@@ -56,6 +56,7 @@
 		0444E7C8201AD5590007B0E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0444E7CA201AD5970007B0E5 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
 		0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Category.swift"; sourceTree = "<group>"; };
+		045C2A9B204CCD8800E3A16E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04719E4620424B2800612E4D /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		04768B692020061D0030CF9F /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
 		04768B6B2020062E0030CF9F /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				045C2A9A204CCD5900E3A16E /* PCH */,
 				04F59A2E20479E7400FA3BD9 /* TableView */,
 				047A9B9820438A3900EDBBB2 /* ScrollView_Page */,
 				04719E4520424A4500612E4D /* Guess Figure */,
@@ -180,6 +182,14 @@
 				0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */,
 			);
 			path = Catagory_Inheritance;
+			sourceTree = "<group>";
+		};
+		045C2A9A204CCD5900E3A16E /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				045C2A9B204CCD8800E3A16E /* PrefixHeader.pch */,
+			);
+			path = PCH;
 			sourceTree = "<group>";
 		};
 		04719E4520424A4500612E4D /* Guess Figure */ = {
@@ -468,6 +478,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJ2S6KBYBK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Interview/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = Interview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -484,6 +496,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJ2S6KBYBK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Interview/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = Interview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

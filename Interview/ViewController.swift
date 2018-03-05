@@ -67,6 +67,8 @@ class ViewController: UIViewController {
         //对比原方法地址与SEL对象地址
         debugPrint("sel ----> \(unsafeBitCast(sel, to: UnsafeRawPointer.self))")
         
+        //判断当前类是否实现了某个方法
+        let isExist = self.responds(to: "test2")
     }
     
 }

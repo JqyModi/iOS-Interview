@@ -427,7 +427,8 @@
     
 # UITableView添加右侧索引栏（类似通信录中的字母索引）：
     1.实现sectionIndexTitlesForTableView方法返回对应的索引标签
-
+    2.tableView.separatorInset在iOS8中无效？？
+    
 # UIAlertView带输入框显示：
     1.设置alertViewStyle为plainTextInput
     2.通过textFieldAtIndex获取弹出框中指点View控件
@@ -453,6 +454,9 @@
         4. 在UITableViewCell中加载UITableViewCellFrame作为模型对象
         5. 在UITableViewCellFrame模型对象赋值时设置UITableViewCell子控件的数据及计算好的Frame
         6. 通过UITableViewCellFrame对象在控制器中UITableView的代理事件heightForRowAtIndexPath方法返回行高给UITableViewCell
+    4.UITableViewCell通过系统提供的UITableViewController中自带模板Cell实现
+        4.1 在storyboard中UITableViewController自带的模板Cell中指定Identifier
+        4.2 在UITableView CellForRow代理方法中通过模板中指定的identifier到缓存池中取UITableViewCell不需要再次判断缓存池中是没有Cell的情况，如果没有系统会自动通过模板中指定的identifier创建对应的UITableViewCell返回
         
 ### TableView中FootView只能修改X和Hight 若需要自定义可变样式View可以放一个容器View修改内部View即可
 
@@ -591,7 +595,9 @@
 			8.2.1 不活跃状态 -> 进入后台 -> 销毁（拖走）
 	
 ## 判断类中是否包含某个方法：
-	1.responseToSelector方法
+    1.responseToSelector方法
+    //判断当前类是否实现了某个方法
+    let isExist = self.responds(to: "test2")
 
 ## UIWindow
 	1.UIWindow的makeKeyAndVisiable表示设置为keyWindow和显示
@@ -631,4 +637,10 @@
 		3.3 调用sourceViewController的perferSegue方法带赋值好目标控制器和来源控制器的Segue参数
 		3.4 跳转到目标控制器
 	
-	
+## 断言测试
+    let sel = ...
+    assert(sel == nil, "断言生效 ~ ····")
+
+
+
+

@@ -35,6 +35,7 @@ class GroupHeaderView: UITableViewHeaderFooterView {
         
         //点击是不会展开/合上分组：因为只有当数据源改变才会重新调用numberOfRowsInSection方法所有需要刷新TableView
         delegate?.groupHeaderViewGroupDidClicked(groupHeaderView: self)
+
     }
     
     override init(reuseIdentifier: String?) {
