@@ -642,5 +642,22 @@
     assert(sel == nil, "断言生效 ~ ····")
 
 
+## 数据存储
+	1.plist(xml)存储：拥有writeToFile方法的对象（数组、字典）可以用这种方式存储，NSString也可以但是plist默认不支持（不会显示类型）
+	2.偏好设置：UserDefault：保存到沙盒->Library->Preference下
+	3.自定义对象：归档/解档
+		3.1 遵守NSCoding协议
+		3.2 解析文件重写initWithCoder方法
+		3.3 序列化文件重写encodeWithCoder方法
 
+## 多控制器管理：
+	1.UINavigationController
+	2.UITabbarController
+		2.1 不指定任何子控制器时底部空白导航条
+		2.2 导航条内部UITabBarButton子控件的个数由UITabbarController的子控件个数决定
+		2.3 导航条内部子控件样式由UITabbarController每个子控制器中的UITabBarButton决定（导航控制器类似）
+	3.控制器嵌套：同时拥有两种UINavigationController和UITabbarController
+		3.1 两种嵌套方式：
+			3.1.1 UITabbarController -> UINavigationController -> ViewController  -- 正确嵌套方法	
+			3.1.2 UINavigationController -> UITabbarController -> ``` -> ViewController -- 错误嵌套方法 ---> 1.设置导航栏文字冲突···	
 
