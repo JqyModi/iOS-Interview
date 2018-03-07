@@ -303,7 +303,7 @@
 
 ## 图片缓存：将图片缓存到内存中：用一个字典(键值对方便存取)等存起来，当用时直接加载：用空间换取执行时间
 
-## UITableView：当图片下载速度过慢时可能会出现由Cell复用导致图片更新错行问题：解决方式：当图片下载完成更新对应的Cell：tableview.reloadRows....
+## ：当图片下载速度过慢时可能会出现由Cell复用导致图片更新错行问题：解决方式：当图片下载完成更新对应的Cell：tableview.reloadRows....
 
 ## 缓存图片到内存中时：可能会出现内存警告⚠️：需要清理内存：手动创建一个缓存池：用字典存储：方便存取
 
@@ -318,14 +318,14 @@
 # 运行时设置UITextView提示文本控件
     1. fillBlank.setValue(placeHolderLabel, forKeyPath: "_placeholderLabel")
 
-# PS: SnapKit + UITableViewCell：自动布局
+# PS: SnapKit + Cell：自动布局
     1.自定义Cell：重写init：design初始化方法：setupUI:懒加载控件
     2.添加控件到contentView：添加布局约束：
     3.自动布局：需要给BottomView添加底部约束
-    4.设置UITableViewController自动布局：//1.设置估计值
+    4.设置Controller自动布局：//1.设置估计值
     tableView.estimatedRowHeight = 400
     2.设置自动计算
-    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = AutomaticDimension
 
 # 键盘遮挡问题：上移布局：view.frame.y = …
 
@@ -425,7 +425,7 @@
         2.2 直接使用图片作为启动图：Use Asset Catalog -> Migrate -> LaunchImage（拖拽图片到此处）-> 删除原来默认的LaunchImage引用
     PS：控制器大小会根据启动图的大小来最终确定，当启动图中最大的启动图比预先设置的控制器大小要小时控制器大小等于启动图中最大尺寸那张图的大小：会引起一些UI控件错位问题：解决这一问题：将对应设备启动图补全
     
-# UITableView添加右侧索引栏（类似通信录中的字母索引）：
+# 添加右侧索引栏（类似通信录中的字母索引）：
     1.实现sectionIndexTitlesForTableView方法返回对应的索引标签
     2.tableView.separatorInset在iOS8中无效？？
     
@@ -433,7 +433,7 @@
     1.设置alertViewStyle为plainTextInput
     2.通过textFieldAtIndex获取弹出框中指点View控件
     
-# UITableViewCell:
+# Cell:
     1.通过xib方式实现：
         1.0 为每个Cell设置一个Identifier可重用标识
         1.1 通过xib搭建好界面并设置好Identitfier:相当于reuseIdentitfier来重用通过xib创建的Cell
@@ -448,17 +448,19 @@
         2.2 没有可重用Cell则新建一个Cell并制定可重用的标识Identifier
         2.3 将获取到Cell设置给TableView
     3.动态计算TableViewCell行高：
-        1. 新建一个UITableViewCellFrame模型用来记录Cell中所有控件的Frame和Cell的行高
-        2. 在UITableViewCellFrame中给Model模型赋值时计算出所有子控件及可变控件(UILabel)的Frame，再通过最底部子控件 + margin 计算出行高rowHeight
-        3. 在控制器中将计算好的UITableViewCellFrame对象赋值给UITableViewCell对象
-        4. 在UITableViewCell中加载UITableViewCellFrame作为模型对象
-        5. 在UITableViewCellFrame模型对象赋值时设置UITableViewCell子控件的数据及计算好的Frame
-        6. 通过UITableViewCellFrame对象在控制器中UITableView的代理事件heightForRowAtIndexPath方法返回行高给UITableViewCell
-    4.UITableViewCell通过系统提供的UITableViewController中自带模板Cell实现
-        4.1 在storyboard中UITableViewController自带的模板Cell中指定Identifier
-        4.2 在UITableView CellForRow代理方法中通过模板中指定的identifier到缓存池中取UITableViewCell不需要再次判断缓存池中是没有Cell的情况，如果没有系统会自动通过模板中指定的identifier创建对应的UITableViewCell返回
+        1. 新建一个CellFrame模型用来记录Cell中所有控件的Frame和Cell的行高
+        2. 在CellFrame中给Model模型赋值时计算出所有子控件及可变控件(UILabel)的Frame，再通过最底部子控件 + margin 计算出行高rowHeight
+        3. 在控制器中将计算好的CellFrame对象赋值给Cell对象
+        4. 在Cell中加载CellFrame作为模型对象
+        5. 在CellFrame模型对象赋值时设置Cell子控件的数据及计算好的Frame
+        6. 通过CellFrame对象在控制器中的代理事件heightForRowAtIndexPath方法返回行高给Cell
+    4.Cell通过系统提供的Controller中自带模板Cell实现
+        4.1 在storyboard中Controller自带的模板Cell中指定Identifier
+        4.2 在 CellForRow代理方法中通过模板中指定的identifier到缓存池中取Cell不需要再次判断缓存池中是没有Cell的情况，如果没有系统会自动通过模板中指定的identifier创建对应的Cell返回
         
 ### TableView中FootView只能修改X和Hight 若需要自定义可变样式View可以放一个容器View修改内部View即可
+
+### UITableView在IOS8.0后通过系统代理方法editActionsForRowAtIndexPath即可实现Cell侧滑操作响应一个或多个按钮操作,8.0之前用JASwipeCell框架也可以实现
 
 ### 判断类是否实现了某个方法用respondsToSelector
 
@@ -489,14 +491,14 @@
     1.区别代理是一对一的
     2.通知（相当于广播）多对多的
     
-# UITableView实现分组效果且分组不仅仅包含标题文字还包含其他View控件：
+# 实现分组效果且分组不仅仅包含标题文字还包含其他View控件：
     1.通过实现tableView的代理方法ViewForHeaderInSection来重新定义Group的样式效果
-    2.为了可以重用每个相同样式的分组可以用系统的UITableViewHeaderFooterView来取代UIView（继承关系）
-    3.为了实现自定义的Group效果则重新自定义一个UITableViewHeaderFooterView来初始化时添加内部UI控件
-    4.通过一个类方法将创建UITableViewHeaderFooterView及重用标识等封装到该自定义UITableViewHeaderFooterView中
-    4.1重写UITableViewHeaderFooterView的initWithReuseIdentifier方法来返回自定义的UITableViewHeaderFooterView
+    2.为了可以重用每个相同样式的分组可以用系统的HeaderFooterView来取代UIView（继承关系）
+    3.为了实现自定义的Group效果则重新自定义一个HeaderFooterView来初始化时添加内部UI控件
+    4.通过一个类方法将创建HeaderFooterView及重用标识等封装到该自定义HeaderFooterView中
+    4.1重写HeaderFooterView的initWithReuseIdentifier方法来返回自定义的HeaderFooterView
     4.2设置内部自定义子控件的frame
-    5.将自定义的UITableViewHeaderFooterView设置给tableview
+    5.将自定义的HeaderFooterView设置给tableview
     
 ### 获取当前屏幕的Window窗口：UIApplication.share.keyWindow
     
@@ -661,3 +663,42 @@
 			3.1.1 UITabbarController -> UINavigationController -> ViewController  -- 正确嵌套方法	
 			3.1.2 UINavigationController -> UITabbarController -> ``` -> ViewController -- 错误嵌套方法 ---> 1.设置导航栏文字冲突···	
 
+## UISearchController + UISearchBar = 搜索界面： 2种方式
+	1. 搜索结果界面与UISearchController共用同一个控制器
+		1.1 新建一个来显示搜索结果
+		1.2 新建UISearchController并指定searchResultsController为nil
+		1.3 设置事件代理及结果更新代理
+			searchController?.delegate = self
+            //设置搜索结果显示代理
+            searchController?.searchResultsUpdater = self
+           	//将SearchBar添加到TableView头部视图
+            tableView.tableHeaderView = searchController?.searchBar
+            //样式设置
+            searchController?.searchBar.placeholder = "请输入视频、讲义、碑帖名称"
+            searchController?.searchBar.searchBarStyle = .minimal
+            //决定searchBar是否优先显示到当前self.view上跟随父控制器滚动显示:
+            self.definesPresentationContext = true
+            //设置大小位置
+            searchController?.searchBar.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
+            //设置searchBar代理事件
+            searchController?.searchBar.delegate = self
+            //共用相同控制器不需要遮罩层
+            searchController?.dimsBackgroundDuringPresentation = false
+        1.4 在updateSearchResults代理方法中获取(初始化)搜索结果数据源
+		1.5 正常设置TableView的数据源方法及代理事件
+	2. 搜索结果控制器 + UISearchController： 只需要将1.2 新建UISearchController并指定searchResultsController为nil 改为显示结果界面的控制器即可
+
+## Storyboard中跳转方式：
+	1. Modal方式：当点击后要执行的操作跟要跳转的Controller没有业务逻辑关联：如动态 -> 评论
+	2. Push方式：当点击后要执行的操作跟要跳转的Controller有业务逻辑关联： 如标题 -> 详情
+	3. push/modal(过期) -> show :因为两种方式都是通过Segue来实现可共用 
+
+## Quartz2D ： 绘图 纯C语言的 封装到Core Graphics框架中 -> OC可用
+	1.获取（图形上下文）对象：类似一张草稿纸
+		1.1 CGContextRef上下文包含信息：
+			1.1.1 绘图路径：CGPathRef、CGMutablePathRef
+			1.1.2 绘图状态：颜色、线宽、样式、旋转、缩放、平移、图片裁剪区等
+			1.1.3 输出目标：绘制到什么地方 -> UIView 图片、PDF、打印机、Window等	
+	2.向（图形上下文）对象添加路径
+		2.1 CGContextAddPath
+	3.渲染（将上下文中图形绘制到界面上）

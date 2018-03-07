@@ -29,6 +29,7 @@
 		04768B70202006320030CF9F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6F202006320030CF9F /* ViewD.swift */; };
 		04768B72202006360030CF9F /* ViewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B71202006360030CF9F /* ViewE.swift */; };
 		047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A9B9920438A7100EDBBB2 /* PageViewController.swift */; };
+		0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484C62A204E16F800862875 /* QrcodeViewController.swift */; };
 		04969E7D202D38F000849968 /* BLEView_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04969E7C202D38F000849968 /* BLEView_.xib */; };
 		04969E7F202D4FA500849968 /* BLEView_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04969E7E202D4FA500849968 /* BLEView_.swift */; };
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
@@ -64,6 +65,7 @@
 		04768B6F202006320030CF9F /* ViewD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewD.swift; sourceTree = "<group>"; };
 		04768B71202006360030CF9F /* ViewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewE.swift; sourceTree = "<group>"; };
 		047A9B9920438A7100EDBBB2 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		0484C62A204E16F800862875 /* QrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeViewController.swift; sourceTree = "<group>"; };
 		04969E7C202D38F000849968 /* BLEView_.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView_.xib; sourceTree = "<group>"; };
 		04969E7E202D4FA500849968 /* BLEView_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView_.swift; sourceTree = "<group>"; };
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				0484C629204E165300862875 /* Qr code */,
 				045C2A9A204CCD5900E3A16E /* PCH */,
 				04F59A2E20479E7400FA3BD9 /* TableView */,
 				047A9B9820438A3900EDBBB2 /* ScrollView_Page */,
@@ -220,6 +223,14 @@
 				04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */,
 			);
 			path = ScrollView_Page;
+			sourceTree = "<group>";
+		};
+		0484C629204E165300862875 /* Qr code */ = {
+			isa = PBXGroup;
+			children = (
+				0484C62A204E16F800862875 /* QrcodeViewController.swift */,
+			);
+			path = "Qr code";
 			sourceTree = "<group>";
 		};
 		04E2365F2029957800431C1A /* BLE */ = {
@@ -319,6 +330,7 @@
 			files = (
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
+				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
