@@ -696,9 +696,26 @@
 ## Quartz2D ： 绘图 纯C语言的 封装到Core Graphics框架中 -> OC可用
 	1.获取（图形上下文）对象：类似一张草稿纸
 		1.1 CGContextRef上下文包含信息：
-			1.1.1 绘图路径：CGPathRef、CGMutablePathRef
-			1.1.2 绘图状态：颜色、线宽、样式、旋转、缩放、平移、图片裁剪区等
+			1.1.1 绘图路径：CGPathRef、CGMutablePathRef、UIBezierPath(可以将C的path转化为OC的path)
+			1.1.2 绘图状态：颜色、线宽、样式（线宽、头尾、连接处）、旋转、缩放、平移、图片裁剪区等
 			1.1.3 输出目标：绘制到什么地方 -> UIView 图片、PDF、打印机、Window等	
 	2.向（图形上下文）对象添加路径
 		2.1 CGContextAddPath
 	3.渲染（将上下文中图形绘制到界面上）
+	4.OC封装写法：
+		4.1 直接用UIBezierPath
+		4.2 拼接路径
+		4.2.1 设置颜色：OC方式：UIColor().setStroke() ：C方式：context.setRGB... 
+		4.3 直接用path.stroke绘制：内部会自动调用上下文CGContextRef
+	5.在drawRect方法中绘图：
+		5.1 只有在drawRect中才能正确获取上下文对象
+		5.2 drawRect在UIView初始化时会调用 + 界面重绘时会调用（setNeedDisplay）
+		5.3  
+	6.渲染方式：
+		6.1 填充：CGContextStrokePath(context)
+		6.2 描边: CGContextFillPath(context)
+		6.3 通用：CGContextDrawPath(context,一个枚举)
+		6.4 奇偶填充规则：枚举：EOFill：不是系统默认规则
+		6.5 非0环绕数规则：系统默认方式：从右往左 -1 从左往右 +1 结果为0则不填充 否则填充
+		6.6 饼图绘制：for循环：start = 0 end = 0 ...结束角度 = 开始角度 + 2*3.14 * 比例
+    	6.7 柱状图绘制：
