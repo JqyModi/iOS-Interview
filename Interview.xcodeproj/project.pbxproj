@@ -22,6 +22,10 @@
 		0444E7C9201AD5590007B0E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7C8201AD5590007B0E5 /* Person.swift */; };
 		0444E7CB201AD5970007B0E5 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CA201AD5970007B0E5 /* Man.swift */; };
 		0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */; };
+		045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47D52050D18900CCFFE3 /* Quartz2DViewController.swift */; };
+		045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47D82050D1E100CCFFE3 /* PieView.swift */; };
+		045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47DA2050D1F300CCFFE3 /* BarView.swift */; };
+		045A47DD205111D200CCFFE3 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47DC205111D200CCFFE3 /* CustomProgressView.swift */; };
 		04719E4720424B2800612E4D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04719E4620424B2800612E4D /* GuessViewController.swift */; };
 		04768B6A2020061D0030CF9F /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B692020061D0030CF9F /* ViewA.swift */; };
 		04768B6C2020062E0030CF9F /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04768B6B2020062E0030CF9F /* ViewB.swift */; };
@@ -57,6 +61,10 @@
 		0444E7C8201AD5590007B0E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0444E7CA201AD5970007B0E5 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
 		0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Category.swift"; sourceTree = "<group>"; };
+		045A47D52050D18900CCFFE3 /* Quartz2DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quartz2DViewController.swift; sourceTree = "<group>"; };
+		045A47D82050D1E100CCFFE3 /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
+		045A47DA2050D1F300CCFFE3 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		045A47DC205111D200CCFFE3 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		045C2A9B204CCD8800E3A16E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04719E4620424B2800612E4D /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		04768B692020061D0030CF9F /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				045A47D42050D11E00CCFFE3 /* Quartz2D */,
 				0484C629204E165300862875 /* Qr code */,
 				045C2A9A204CCD5900E3A16E /* PCH */,
 				04F59A2E20479E7400FA3BD9 /* TableView */,
@@ -185,6 +194,25 @@
 				0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */,
 			);
 			path = Catagory_Inheritance;
+			sourceTree = "<group>";
+		};
+		045A47D42050D11E00CCFFE3 /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				045A47D72050D19E00CCFFE3 /* View */,
+				045A47D52050D18900CCFFE3 /* Quartz2DViewController.swift */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
+		045A47D72050D19E00CCFFE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045A47D82050D1E100CCFFE3 /* PieView.swift */,
+				045A47DA2050D1F300CCFFE3 /* BarView.swift */,
+				045A47DC205111D200CCFFE3 /* CustomProgressView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		045C2A9A204CCD5900E3A16E /* PCH */ = {
@@ -339,18 +367,22 @@
 				043088282047D76400814006 /* FriendTableViewCell.swift in Sources */,
 				043088242047ADBC00814006 /* Group.swift in Sources */,
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
+				045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */,
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
 				0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */,
 				04768B72202006360030CF9F /* ViewE.swift in Sources */,
 				04768B70202006320030CF9F /* ViewD.swift in Sources */,
 				0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */,
+				045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */,
 				04768B6A2020061D0030CF9F /* ViewA.swift in Sources */,
 				04768B6E202006300030CF9F /* ViewC.swift in Sources */,
 				049FF3AA2021968100631F9E /* BaseView.swift in Sources */,
 				0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */,
+				045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */,
 				0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */,
 				04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */,
+				045A47DD205111D200CCFFE3 /* CustomProgressView.swift in Sources */,
 				047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

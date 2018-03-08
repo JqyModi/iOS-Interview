@@ -694,7 +694,7 @@
 	3. push/modal(过期) -> show :因为两种方式都是通过Segue来实现可共用 
 
 ## Quartz2D ： 绘图 纯C语言的 封装到Core Graphics框架中 -> OC可用
-	1.获取（图形上下文）对象：类似一张草稿纸
+	1.获取（图形上下文）对象：类似一张草稿纸:UIGraphicsGetCurrentContext()
 		1.1 CGContextRef上下文包含信息：
 			1.1.1 绘图路径：CGPathRef、CGMutablePathRef、UIBezierPath(可以将C的path转化为OC的path)
 			1.1.2 绘图状态：颜色、线宽、样式（线宽、头尾、连接处）、旋转、缩放、平移、图片裁剪区等
@@ -718,4 +718,20 @@
 		6.4 奇偶填充规则：枚举：EOFill：不是系统默认规则
 		6.5 非0环绕数规则：系统默认方式：从右往左 -1 从左往右 +1 结果为0则不填充 否则填充
 		6.6 饼图绘制：for循环：start = 0 end = 0 ...结束角度 = 开始角度 + 2*3.14 * 比例
-    	6.7 柱状图绘制：
+    	6.7 柱状图绘制：demo：
+    		***********************
+    		for var i in (0..<count) {
+            let spaceWidth = 10
+            let width = (self.bounds.size.width - CGFloat((count-1)*spaceWidth)) / CGFloat(count)
+            let height = self.bounds.size.height * array[i]
+            let x: CGFloat = (width + CGFloat(spaceWidth)) * CGFloat(i)
+            let y: CGFloat = self.bounds.size.height - height
+            let rect = CGRect(x: x, y: y, width: width, height: height)
+            let path = UIBezierPath(rect: rect)
+            //设置样式
+            getRandomColor().set()
+            path.lineWidth = 1
+            path.fill()
+        	}
+            ***********************
+	7.self.center : center is center of frame.(根据父控件计算获得) 

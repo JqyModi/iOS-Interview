@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uV6-eS-V4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8q-hj-LZa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -358,7 +358,58 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAs-7l-hYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="-495"/>
+            <point key="canvasLocation" x="1626" y="-477"/>
+        </scene>
+        <!--Quartz2D View Controller-->
+        <scene sceneID="qOf-zF-Gxx">
+            <objects>
+                <viewController id="y8q-hj-LZa" customClass="Quartz2DViewController" customModule="Interview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hJg-z2-lwC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-uW-HI6" customClass="CustomProgressView" customModule="Interview" customModuleProvider="target">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMM-iu-5D7">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="qbn-1Z-rKd"/>
+                                    <constraint firstAttribute="width" constant="240" id="u78-08-Vlc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="valueLabel" destination="rMM-iu-5D7" id="xrS-8r-Dg9"/>
+                                </connections>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-Zn-7I2">
+                                <rect key="frame" x="67" y="493" width="242" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slide:" destination="y8q-hj-LZa" eventType="valueChanged" id="Lta-2O-lvh"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Ed-uW-HI6" firstAttribute="centerY" secondItem="hJg-z2-lwC" secondAttribute="centerY" id="ft9-3R-CLC"/>
+                            <constraint firstItem="4Ed-uW-HI6" firstAttribute="centerX" secondItem="hJg-z2-lwC" secondAttribute="centerX" id="iKZ-17-U9J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w4Y-sW-fge"/>
+                    </view>
+                    <connections>
+                        <outlet property="pieView" destination="4Ed-uW-HI6" id="IF6-qH-FMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGa-hm-dcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541.5999999999999" y="-494.30284857571218"/>
         </scene>
     </scenes>
     <resources>

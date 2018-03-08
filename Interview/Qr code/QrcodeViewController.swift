@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QrcodeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getQrcode()
     }
 
+    private func getQrcode() {
+        let avDivice = AVCaptureDevice(uniqueID: UUID.init().uuidString)
+        let avInput = AVCaptureSession()
+    }
+    
 }
