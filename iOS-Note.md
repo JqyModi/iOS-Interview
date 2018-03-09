@@ -736,7 +736,7 @@
             ***********************
 	7.self.center : center is center of frame.(根据父控件计算获得) 
 	
-    矩阵变换：
+    8.矩阵变换：
     	1.旋转
     		1.1 获取上下文 -> 旋转上下文 -> 绘制路径 ···
     	2.平移
@@ -744,34 +744,61 @@
     	3.缩放
     		3.1 获取上下文 -> 缩放上下文 -> 绘制路径 ···
 
-	图形上下文栈：
+	9.图形上下文栈：
     	1.保存到栈：可以保存多个状态 
     	2.恢复栈内信息
 
-	绘制文字：
+	10.绘制文字：
     	1.NSString自带的方法：
     		1.1 str.drawAtPoint：从Point点开始绘制
     		1.2 str.drawInRect：在一个指定的矩形中绘制 自动换行	
     		1.3 设置文字属性时：要设置阴影效果需要同时设置下划线
 
-	绘制图片：
+	11.绘制图片：
     	1.Image自带方法
     		1.1 draw...	
 
-	裁剪上下文渲染区域：如图片圆形裁剪
+	12.裁剪上下文渲染区域：如图片圆形裁剪
     	1.获取上下文
     	2.绘制要裁剪路径
     	3.裁剪：CGContextClip(context)
     	4.裁剪的是可视区域并不是将上下文裁剪成对应的路径形状
 
-	图片类型的图形上下文：可以在图片上下文上绘制图形并作为图片返回
-    	1.开启图片上下文：UIGraphicsBeginImageCOntextWithOption...可以指定不同屏幕下缩放因子：UIScreen.scale = 0 传0系统默认传屏幕缩放因子
+	13.图片(bitmap)类型的图形上下文：可以在图片上下文上绘制图形并作为图片返回
+    	1.开启图片上下文：UIGraphicsBeginImageContextWithOption...可以指定不同屏幕下缩放因子：UIScreen.scale = 0 传0系统默认传屏幕缩放因子
     	2.获取当前layer类型上下文绘制图形
     	3.通过layer类型的上下文渲染绘制的图形到图片类型的上下文上
     	4.通过UIGraphicsGetImageFromCurrentImageContext()获取到绘制到的图片image
     	5.关闭图片类型的图形上下文
     	6.显示获取到的image到界面上
 
-	将图片或者无writeToFile方法的对象保存到沙盒：
-    	1.先将对象转为NSData对象
+	14.将图片或者无writeToFile方法的对象保存到沙盒：
+    	1.先将对象转为NSData对象：图片通过UIImagePNGRepresentation转换
     	2.通过writeToFile方法将对象保存沙盒	
+
+	15.获取裁剪后图片：
+		1.开启图片上下文
+		2.关闭图片上下文
+		3.获取当前上下文
+		4.绘制要裁剪区域
+		5.裁剪：context.clip()
+		6.将图片绘制（渲染到界面上）：image.draw()
+		
+	16.将图片（UIImage）保存到手机相册：
+		1.调用UIImageWriteToSavedPhotosAlbum方法保存
+
+	17.给图片添加水印：
+		1.绘制大图
+		2.绘制文字
+		3.绘制logo
+
+	18.屏幕截图：
+		1.开启图片上下文：相当于在上下文栈的栈顶添加一个新的上下文 -> 再次获取当前上下文就是新开启的图片上下文 
+		2.关闭图片上下文：相当于在上下文栈中将栈顶元素出栈 -> 再次获取当前上下文就是系统为我们创建的上下文
+		3.获取当前上下文
+		4.调用UIView的layer的renderInContext方法截取整个View的图片不包含状态栏等无关信息
+		5.通过上下文获取渲染好View截图的Image：UIGraphicsGetImageFromCurrentImageContext
+		
+
+
+

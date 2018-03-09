@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8q-hj-LZa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AY3-e9-6L5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -403,13 +403,90 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w4Y-sW-fge"/>
                     </view>
-                    <connections>
-                        <outlet property="pieView" destination="4Ed-uW-HI6" id="IF6-qH-FMQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGa-hm-dcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541.5999999999999" y="-494.30284857571218"/>
+            <point key="canvasLocation" x="2236" y="-477"/>
+        </scene>
+        <!--Quartz2D View Controller-->
+        <scene sceneID="rS4-Yl-b9p">
+            <objects>
+                <viewController id="hbM-Mq-vS2" customClass="Quartz2DViewController" customModule="Interview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9H-ve-jw9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98e-Sb-dNH" userLabel="VariableView" customClass="VariableView" customModule="Interview" customModuleProvider="target">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="gHm-LR-B7Z"/>
+                                    <constraint firstAttribute="height" constant="240" id="zKs-yo-2fK"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dPI-ZC-Qtp">
+                                <rect key="frame" x="67" y="493" width="242" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slide:" destination="hbM-Mq-vS2" eventType="valueChanged" id="Wvj-dH-fKk"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="98e-Sb-dNH" firstAttribute="centerY" secondItem="W9H-ve-jw9" secondAttribute="centerY" id="a8q-oo-0b0"/>
+                            <constraint firstItem="98e-Sb-dNH" firstAttribute="centerX" secondItem="W9H-ve-jw9" secondAttribute="centerX" id="kaL-C7-iaL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n6w-8d-AMs"/>
+                    </view>
+                    <connections>
+                        <outlet property="varView" destination="98e-Sb-dNH" id="K8w-hW-0i3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGv-1t-I3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3022" y="-494"/>
+        </scene>
+        <!--Quartz2D View Controller-->
+        <scene sceneID="RdG-hN-S9b">
+            <objects>
+                <viewController id="AY3-e9-6L5" customClass="Quartz2DViewController" customModule="Interview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qU-Pw-Ef1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHU-NR-3hs">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="BNq-vb-F8p"/>
+                                    <constraint firstAttribute="height" constant="300" id="Gkq-SR-eg9"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MV1-yS-hcG">
+                                <rect key="frame" x="133" y="524" width="109" height="29"/>
+                                <segments>
+                                    <segment title="好友"/>
+                                    <segment title="通信录"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MV1-yS-hcG" firstAttribute="centerX" secondItem="IHU-NR-3hs" secondAttribute="centerX" id="GSy-Os-QYx"/>
+                            <constraint firstItem="IHU-NR-3hs" firstAttribute="centerX" secondItem="3qU-Pw-Ef1" secondAttribute="centerX" id="LOJ-Xs-dgu"/>
+                            <constraint firstItem="MV1-yS-hcG" firstAttribute="top" secondItem="IHU-NR-3hs" secondAttribute="bottom" constant="41" id="l1h-5B-BT0"/>
+                            <constraint firstItem="IHU-NR-3hs" firstAttribute="centerY" secondItem="3qU-Pw-Ef1" secondAttribute="centerY" id="muh-mr-Ab5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AEa-Ja-udF"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="IHU-NR-3hs" id="xOM-4U-iNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwU-Ou-Fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3937" y="-494"/>
         </scene>
     </scenes>
     <resources>
