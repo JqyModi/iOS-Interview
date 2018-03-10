@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1D19571B27038500C30E46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19561B27038500C30E46 /* main.m */; };
+		AA1D195A1B27038500C30E46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19591B27038500C30E46 /* AppDelegate.m */; };
+		AA1D195D1B27038500C30E46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D195C1B27038500C30E46 /* ViewController.m */; };
+		AA1D19601B27038500C30E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1D195E1B27038500C30E46 /* Main.storyboard */; };
+		AA1D19621B27038500C30E46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1D19611B27038500C30E46 /* Images.xcassets */; };
+		AA1D19651B27038500C30E46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1D19631B27038500C30E46 /* LaunchScreen.xib */; };
+		AA1D19711B27038500C30E46 /* _03_UIView__________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19701B27038500C30E46 /* _03_UIView__________Tests.m */; };
+		AA1D197D1B2704DA00C30E46 /* SteveZBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D197C1B2704DA00C30E46 /* SteveZBaseView.m */; };
+		AA1D19801B27052100C30E46 /* SteveZPurpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D197F1B27052100C30E46 /* SteveZPurpleView.m */; };
+		AA1D19831B27053900C30E46 /* SteveZYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19821B27053900C30E46 /* SteveZYellowView.m */; };
+		AA1D19861B27054B00C30E46 /* SteveZBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19851B27054B00C30E46 /* SteveZBlueView.m */; };
+		AA1D19891B27056000C30E46 /* SteveZRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19881B27056000C30E46 /* SteveZRedView.m */; };
+		AA1D198C1B27057900C30E46 /* SteveZGreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D198B1B27057900C30E46 /* SteveZGreenView.m */; };
+		AA1D198F1B2705F000C30E46 /* SteveZWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D198E1B2705F000C30E46 /* SteveZWhiteView.m */; };
+		AA1D19921B2706D700C30E46 /* SteveZOrange.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1D19911B2706D700C30E46 /* SteveZOrange.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA1D196B1B27038500C30E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA1D19491B27038500C30E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA1D19501B27038500C30E46;
+			remoteInfo = "预03-UIView不接受用户交互的情况";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA1D19511B27038500C30E46 /* 预03-UIView不接受用户交互的情况.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "预03-UIView不接受用户交互的情况.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1D19551B27038500C30E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1D19561B27038500C30E46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA1D19581B27038500C30E46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA1D19591B27038500C30E46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA1D195B1B27038500C30E46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA1D195C1B27038500C30E46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA1D195F1B27038500C30E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA1D19611B27038500C30E46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA1D19641B27038500C30E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA1D196A1B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "预03-UIView不接受用户交互的情况Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1D196F1B27038500C30E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1D19701B27038500C30E46 /* _03_UIView__________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_03_UIView__________Tests.m"; sourceTree = "<group>"; };
+		AA1D197B1B2704DA00C30E46 /* SteveZBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZBaseView.h; sourceTree = "<group>"; };
+		AA1D197C1B2704DA00C30E46 /* SteveZBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZBaseView.m; sourceTree = "<group>"; };
+		AA1D197E1B27052100C30E46 /* SteveZPurpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZPurpleView.h; sourceTree = "<group>"; };
+		AA1D197F1B27052100C30E46 /* SteveZPurpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZPurpleView.m; sourceTree = "<group>"; };
+		AA1D19811B27053900C30E46 /* SteveZYellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZYellowView.h; sourceTree = "<group>"; };
+		AA1D19821B27053900C30E46 /* SteveZYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZYellowView.m; sourceTree = "<group>"; };
+		AA1D19841B27054B00C30E46 /* SteveZBlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZBlueView.h; sourceTree = "<group>"; };
+		AA1D19851B27054B00C30E46 /* SteveZBlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZBlueView.m; sourceTree = "<group>"; };
+		AA1D19871B27056000C30E46 /* SteveZRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZRedView.h; sourceTree = "<group>"; };
+		AA1D19881B27056000C30E46 /* SteveZRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZRedView.m; sourceTree = "<group>"; };
+		AA1D198A1B27057900C30E46 /* SteveZGreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZGreenView.h; sourceTree = "<group>"; };
+		AA1D198B1B27057900C30E46 /* SteveZGreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZGreenView.m; sourceTree = "<group>"; };
+		AA1D198D1B2705F000C30E46 /* SteveZWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZWhiteView.h; sourceTree = "<group>"; };
+		AA1D198E1B2705F000C30E46 /* SteveZWhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZWhiteView.m; sourceTree = "<group>"; };
+		AA1D19901B2706D700C30E46 /* SteveZOrange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteveZOrange.h; sourceTree = "<group>"; };
+		AA1D19911B2706D700C30E46 /* SteveZOrange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteveZOrange.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA1D194E1B27038500C30E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1D19671B27038500C30E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1D19481B27038500C30E46 = {
+			isa = PBXGroup;
+			children = (
+				AA1D19531B27038500C30E46 /* 预03-UIView不接受用户交互的情况 */,
+				AA1D196D1B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests */,
+				AA1D19521B27038500C30E46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA1D19521B27038500C30E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D19511B27038500C30E46 /* 预03-UIView不接受用户交互的情况.app */,
+				AA1D196A1B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA1D19531B27038500C30E46 /* 预03-UIView不接受用户交互的情况 */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D197A1B2703C100C30E46 /* Views */,
+				AA1D19581B27038500C30E46 /* AppDelegate.h */,
+				AA1D19591B27038500C30E46 /* AppDelegate.m */,
+				AA1D195B1B27038500C30E46 /* ViewController.h */,
+				AA1D195C1B27038500C30E46 /* ViewController.m */,
+				AA1D195E1B27038500C30E46 /* Main.storyboard */,
+				AA1D19611B27038500C30E46 /* Images.xcassets */,
+				AA1D19631B27038500C30E46 /* LaunchScreen.xib */,
+				AA1D19541B27038500C30E46 /* Supporting Files */,
+			);
+			path = "预03-UIView不接受用户交互的情况";
+			sourceTree = "<group>";
+		};
+		AA1D19541B27038500C30E46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D19551B27038500C30E46 /* Info.plist */,
+				AA1D19561B27038500C30E46 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA1D196D1B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D19701B27038500C30E46 /* _03_UIView__________Tests.m */,
+				AA1D196E1B27038500C30E46 /* Supporting Files */,
+			);
+			path = "预03-UIView不接受用户交互的情况Tests";
+			sourceTree = "<group>";
+		};
+		AA1D196E1B27038500C30E46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D196F1B27038500C30E46 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA1D197A1B2703C100C30E46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D197B1B2704DA00C30E46 /* SteveZBaseView.h */,
+				AA1D197C1B2704DA00C30E46 /* SteveZBaseView.m */,
+				AA1D197E1B27052100C30E46 /* SteveZPurpleView.h */,
+				AA1D197F1B27052100C30E46 /* SteveZPurpleView.m */,
+				AA1D19811B27053900C30E46 /* SteveZYellowView.h */,
+				AA1D19821B27053900C30E46 /* SteveZYellowView.m */,
+				AA1D19841B27054B00C30E46 /* SteveZBlueView.h */,
+				AA1D19851B27054B00C30E46 /* SteveZBlueView.m */,
+				AA1D19871B27056000C30E46 /* SteveZRedView.h */,
+				AA1D19881B27056000C30E46 /* SteveZRedView.m */,
+				AA1D198A1B27057900C30E46 /* SteveZGreenView.h */,
+				AA1D198B1B27057900C30E46 /* SteveZGreenView.m */,
+				AA1D198D1B2705F000C30E46 /* SteveZWhiteView.h */,
+				AA1D198E1B2705F000C30E46 /* SteveZWhiteView.m */,
+				AA1D19901B2706D700C30E46 /* SteveZOrange.h */,
+				AA1D19911B2706D700C30E46 /* SteveZOrange.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA1D19501B27038500C30E46 /* 预03-UIView不接受用户交互的情况 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1D19741B27038500C30E46 /* Build configuration list for PBXNativeTarget "预03-UIView不接受用户交互的情况" */;
+			buildPhases = (
+				AA1D194D1B27038500C30E46 /* Sources */,
+				AA1D194E1B27038500C30E46 /* Frameworks */,
+				AA1D194F1B27038500C30E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "预03-UIView不接受用户交互的情况";
+			productName = "预03-UIView不接受用户交互的情况";
+			productReference = AA1D19511B27038500C30E46 /* 预03-UIView不接受用户交互的情况.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA1D19691B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1D19771B27038500C30E46 /* Build configuration list for PBXNativeTarget "预03-UIView不接受用户交互的情况Tests" */;
+			buildPhases = (
+				AA1D19661B27038500C30E46 /* Sources */,
+				AA1D19671B27038500C30E46 /* Frameworks */,
+				AA1D19681B27038500C30E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA1D196C1B27038500C30E46 /* PBXTargetDependency */,
+			);
+			name = "预03-UIView不接受用户交互的情况Tests";
+			productName = "预03-UIView不接受用户交互的情况Tests";
+			productReference = AA1D196A1B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA1D19491B27038500C30E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SteveZ;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = czbk;
+				TargetAttributes = {
+					AA1D19501B27038500C30E46 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					AA1D19691B27038500C30E46 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = AA1D19501B27038500C30E46;
+					};
+				};
+			};
+			buildConfigurationList = AA1D194C1B27038500C30E46 /* Build configuration list for PBXProject "预03-UIView不接受用户交互的情况" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA1D19481B27038500C30E46;
+			productRefGroup = AA1D19521B27038500C30E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA1D19501B27038500C30E46 /* 预03-UIView不接受用户交互的情况 */,
+				AA1D19691B27038500C30E46 /* 预03-UIView不接受用户交互的情况Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA1D194F1B27038500C30E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1D19601B27038500C30E46 /* Main.storyboard in Resources */,
+				AA1D19651B27038500C30E46 /* LaunchScreen.xib in Resources */,
+				AA1D19621B27038500C30E46 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1D19681B27038500C30E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA1D194D1B27038500C30E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1D19861B27054B00C30E46 /* SteveZBlueView.m in Sources */,
+				AA1D19891B27056000C30E46 /* SteveZRedView.m in Sources */,
+				AA1D195D1B27038500C30E46 /* ViewController.m in Sources */,
+				AA1D19801B27052100C30E46 /* SteveZPurpleView.m in Sources */,
+				AA1D195A1B27038500C30E46 /* AppDelegate.m in Sources */,
+				AA1D197D1B2704DA00C30E46 /* SteveZBaseView.m in Sources */,
+				AA1D19571B27038500C30E46 /* main.m in Sources */,
+				AA1D19831B27053900C30E46 /* SteveZYellowView.m in Sources */,
+				AA1D198C1B27057900C30E46 /* SteveZGreenView.m in Sources */,
+				AA1D19921B2706D700C30E46 /* SteveZOrange.m in Sources */,
+				AA1D198F1B2705F000C30E46 /* SteveZWhiteView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1D19661B27038500C30E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1D19711B27038500C30E46 /* _03_UIView__________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA1D196C1B27038500C30E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA1D19501B27038500C30E46 /* 预03-UIView不接受用户交互的情况 */;
+			targetProxy = AA1D196B1B27038500C30E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA1D195E1B27038500C30E46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA1D195F1B27038500C30E46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA1D19631B27038500C30E46 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA1D19641B27038500C30E46 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA1D19721B27038500C30E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA1D19731B27038500C30E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA1D19751B27038500C30E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "预03-UIView不接受用户交互的情况/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA1D19761B27038500C30E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "预03-UIView不接受用户交互的情况/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA1D19781B27038500C30E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "预03-UIView不接受用户交互的情况Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/预03-UIView不接受用户交互的情况.app/预03-UIView不接受用户交互的情况";
+			};
+			name = Debug;
+		};
+		AA1D19791B27038500C30E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "预03-UIView不接受用户交互的情况Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/预03-UIView不接受用户交互的情况.app/预03-UIView不接受用户交互的情况";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA1D194C1B27038500C30E46 /* Build configuration list for PBXProject "预03-UIView不接受用户交互的情况" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1D19721B27038500C30E46 /* Debug */,
+				AA1D19731B27038500C30E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1D19741B27038500C30E46 /* Build configuration list for PBXNativeTarget "预03-UIView不接受用户交互的情况" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1D19751B27038500C30E46 /* Debug */,
+				AA1D19761B27038500C30E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA1D19771B27038500C30E46 /* Build configuration list for PBXNativeTarget "预03-UIView不接受用户交互的情况Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1D19781B27038500C30E46 /* Debug */,
+				AA1D19791B27038500C30E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA1D19491B27038500C30E46 /* Project object */;
+}
