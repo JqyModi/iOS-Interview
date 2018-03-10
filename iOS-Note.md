@@ -355,6 +355,7 @@
     1.UIView的透明度小于0.01时控件不能响应事件
     2.设置控件的isUserInteractionEnabled为false时不能响应事件
     3.设置控件的isHidden为true时不能响应事件
+    4.子控件超出了父控件的显示范围：UIView的Clip to Bounds 属性是否勾选
 
 # 蓝牙开发：
 1.可用框架：GameKit
@@ -800,5 +801,8 @@
 		5.通过上下文获取渲染好View截图的Image：UIGraphicsGetImageFromCurrentImageContext
 		
 
+## 触摸事件：UITouch + UIEvent
+	1.响应者链条：一系列执行TouchBegin的所有对象按先后顺序连接：第一个执行touchbegin方法的对象就叫第一响应者
+	2.click事件（Selector）也相当于touch事件：当系统找到对应的控件响应了click事件后事件终止
 
-
+### 手势解锁：	

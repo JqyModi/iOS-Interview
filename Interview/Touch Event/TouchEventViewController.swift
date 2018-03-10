@@ -28,6 +28,10 @@ class TouchEventViewController: UIViewController {
         showLightPathWithTouches(touches: touches)
     }
 
+    /**
+     *  Desc: 跟随手指一动坐标绘制荧光路线
+     *  Param:
+     */
     private func showLightPathWithTouches(touches: Set<UITouch>) {
         //获取触摸对象：单点触控
 //        let touch = touches.first
@@ -53,7 +57,6 @@ class TouchEventViewController: UIViewController {
                     iv.removeFromSuperview()
                 }
             }
-            
             i = i + 1
         }
         
