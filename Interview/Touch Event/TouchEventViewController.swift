@@ -10,22 +10,40 @@ import UIKit
 
 class TouchEventViewController: UIViewController {
 
-//    @IBOutlet weak var touchView: TouchView!
+    @IBOutlet weak var unlockView: GesturesUnlockView!
+    
+    //定义一个手势正确密码
+    let pass = "012"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //通过UIColor的方法将图片转换为颜色设置
+        self.view.backgroundColor = UIColor.init(patternImage: UIImage(named: "Home_refresh_bg")!)
+        
+        
+        //判断密码是否正确
+        unlockView.checkPassBlock = { (pass) in
+            debugPrint("pass")
+            if pass.elementsEqual(self.pass) {
+                debugPrint("密码正确")
+                return true
+            }else {
+                debugPrint("密码错误") 
+                return false
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        debugPrint("touches  --->  \(touches)")
-        
-        debugPrint("event  --->  \(event)")
+//        debugPrint("touches  --->  \(touches)")
+//
+//        debugPrint("event  --->  \(event)")
 
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        showLightPathWithTouches(touches: touches)
+//        showLightPathWithTouches(touches: touches)
     }
 
     /**

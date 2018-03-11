@@ -50,6 +50,8 @@
 /* Begin PBXFileReference section */
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
+		0412E5042055687700E29689 /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SVProgressHUD; sourceTree = "<group>"; };
+		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		0430881D2047A9DB00814006 /* friends.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		043088232047ADBC00814006 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0412E4FE20555C8700E29689 /* Third Kit */ = {
+			isa = PBXGroup;
+			children = (
+				0412E5042055687700E29689 /* SVProgressHUD */,
+			);
+			path = "Third Kit";
+			sourceTree = "<group>";
+		};
 		0430881F2047AD5600814006 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				0412E4FE20555C8700E29689 /* Third Kit */,
 				0480106620535D610085C2FB /* Touch Event */,
 				045A47D42050D11E00CCFFE3 /* Quartz2D */,
 				0484C629204E165300862875 /* Qr code */,
@@ -293,6 +304,7 @@
 				0444E7B6201AD4290007B0E5 /* ViewController.swift */,
 				0444E7B8201AD4290007B0E5 /* Main.storyboard */,
 				0444E7B4201AD4290007B0E5 /* AppDelegate.swift */,
+				0412E505205568B300E29689 /* Header.h */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -349,6 +361,7 @@
 				TargetAttributes = {
 					0444E7B0201AD4290007B0E5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -560,17 +573,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJ2S6KBYBK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Interview/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = "Interview/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modi.Interview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Interview/Support Files/Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -578,17 +596,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJ2S6KBYBK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Interview/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = "Interview/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modi.Interview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Interview/Support Files/Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
