@@ -805,4 +805,37 @@
 	1.响应者链条：一系列执行TouchBegin的所有对象按先后顺序连接：第一个执行touchbegin方法的对象就叫第一响应者
 	2.click事件（Selector）也相当于touch事件：当系统找到对应的控件响应了click事件后事件终止
 
-### 手势解锁：	
+### 手势解锁：
+	1.初始化按钮并九宫格布局：
+		1.1 通过 i%lineCount 来控制同一行下一个X坐标 * (按钮宽 + margin) + margin
+		1.2 通过i/lineCount 来控制下一行Y坐标 * (按钮宽 + margin) + margin
+	2.禁用按钮点击事件改用touch事件来响应操作：
+		1.touchesBeagin: 使点击的按钮变为选中或者高亮状态
+		2.touchesMove: 使经过的的按钮变为选中或者高亮状态
+		3.touchesEnd: 取现所有状态
+	3.Quartz2D绘制按钮间连线及最后一个按钮与手指间的连线：
+	4.通过按钮的tag拼接字符串密码
+	5.设置block作为回调：响应用户密码的正确性操作并显示错误提示信息
+		1.定义一个回调：函数类型block回调：如 var passBlock: ((pass: String) -> Bool)?
+		2.在密码拼接处设置回调：self.checkPassBlock!(pass)供用户获取当前手势密码
+
+### 手势冲突：
+	1.系统默认不支持多种手势同时操作：
+	2.解决方法：通过实现代理方法告诉系统可以支持多种手势操作
+		1.gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool
+
+## CALayer: 给UIView设置样式属性实际上是在给CALayer设置样式属性：系统内部完成：如背景颜色，图片，字体等等
+	1.CALayer与UIView的关系：UIView负责监听事件响应，CALayer负责显示界面样式：
+	2.属性：边框，圆角，阴影需要配合透明度(Opacity = 1)使用，bounds，position(center)，content(一般设置图片)
+		2.1 bounds + position(center) = frame :一般不要给CALayer直接设置frame在动画操作上可能会出问题：position默认在center位置：可以通过anchorPoint(锚点)来调整
+		2.2 阴影需要配合透明度(Opacity = 1)使用
+		2.3 圆角需要配合裁剪使用：masksToBounds = true
+	3.CA : Core Animation：改变CALayer属性会自带动画效果：隐式动画：animatable标记的属性
+	4.控件的根layer是没有隐式动画的
+	5.禁用根layer的隐式动画：事务：CATransaction
+		5.1 开启事务：CATransaction begin
+		5.2 禁用隐式动画：CATransaction.setDisableActions = true
+		5.3 操作：
+		5.4 提交事务：commit
+	6.transform：3D动画:CATransform3D + 缩放/旋转/平移 / CGAffineTransform平面动画
+	7.anchorPoint：锚点：x,y取值范围是0~1：改变layer的中心点位置

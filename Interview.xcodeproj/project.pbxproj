@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
+		042022792056137400E8FE8A /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042022782056137400E8FE8A /* CALayerViewController.swift */; };
 		042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */; };
 		042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835C2056020C00A23537 /* SVProgressAnimatedView.m */; };
 		042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042B835E2056020C00A23537 /* SVProgressHUD.bundle */; };
@@ -56,6 +57,7 @@
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		042022782056137400E8FE8A /* CALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerViewController.swift; sourceTree = "<group>"; };
 		042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		042B835B2056020C00A23537 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 			path = "Third Kit";
 			sourceTree = "<group>";
 		};
+		042022772056133100E8FE8A /* UIView CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				042022782056137400E8FE8A /* CALayerViewController.swift */,
+			);
+			path = "UIView CALayer";
+			sourceTree = "<group>";
+		};
 		042B83582056020C00A23537 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				042022772056133100E8FE8A /* UIView CALayer */,
 				0412E4FE20555C8700E29689 /* Third Kit */,
 				0480106620535D610085C2FB /* Touch Event */,
 				045A47D42050D11E00CCFFE3 /* Quartz2D */,
@@ -329,11 +340,11 @@
 		04A1661E20536C7500629687 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				0444E7B8201AD4290007B0E5 /* Main.storyboard */,
 				0444E7C0201AD4290007B0E5 /* Info.plist */,
 				0444E7BB201AD4290007B0E5 /* Assets.xcassets */,
 				0444E7BD201AD4290007B0E5 /* LaunchScreen.storyboard */,
 				0444E7B6201AD4290007B0E5 /* ViewController.swift */,
-				0444E7B8201AD4290007B0E5 /* Main.storyboard */,
 				0444E7B4201AD4290007B0E5 /* AppDelegate.swift */,
 				0412E505205568B300E29689 /* Header.h */,
 			);
@@ -444,6 +455,7 @@
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
+				042022792056137400E8FE8A /* CALayerViewController.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
 				042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */,

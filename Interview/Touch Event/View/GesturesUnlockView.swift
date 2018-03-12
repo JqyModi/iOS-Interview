@@ -69,6 +69,7 @@ class GesturesUnlockView: UIView {
             //计算每个按钮的x
             debugPrint("行号 - \(CGFloat(i).truncatingRemainder(dividingBy: GesturesUnlockView.lineCount))")
             let x = CGFloat(i).truncatingRemainder(dividingBy: GesturesUnlockView.lineCount) * (width + margin) + margin
+            // i / lineCount 取整才不会发生偏移
             let y = CGFloat(Int(CGFloat(i) / GesturesUnlockView.lineCount)) * (height + margin) + margin
             debugPrint("y -- \(y)")
             
@@ -76,6 +77,7 @@ class GesturesUnlockView: UIView {
             btn.frame = rect
             //将按钮添加到View上
             self.addSubview(btn)
+        
         }
     }
     
