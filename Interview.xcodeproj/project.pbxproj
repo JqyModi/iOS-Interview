@@ -142,9 +142,17 @@
 		042022772056133100E8FE8A /* UIView CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				0420227A2056765F00E8FE8A /* CoreAnimation */,
 				042022782056137400E8FE8A /* CALayerViewController.swift */,
 			);
 			path = "UIView CALayer";
+			sourceTree = "<group>";
+		};
+		0420227A2056765F00E8FE8A /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 		042B83582056020C00A23537 /* SVProgressHUD */ = {

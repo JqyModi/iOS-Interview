@@ -839,3 +839,13 @@
 		5.4 提交事务：commit
 	6.transform：3D动画:CATransform3D + 缩放/旋转/平移 / CGAffineTransform平面动画
 	7.anchorPoint：锚点：x,y取值范围是0~1：改变layer的中心点位置
+
+## Core Animation：核心动画
+	1.CAAnimation是作用在layer上的：
+	2.基本动画：是属性动画的一种：通过keyPath方式改变属性的值从而实现动画效果
+		2.1 基本动画CAAnimation：动画执行完会回到原来的位置上
+	3.关键帧动画：属性动画的一种：也是通过keyPath方式改变属性的值从而实现动画效果
+		3.1 根据指定点执行动画：values：可以指定多个点
+			3.1.1 通过NSValue的构造方法可以将CGPoint转化为NSValue
+		3.2 根据路径执行动画：path：可以绘制各种路径
+		3.3 values和path同时设置执行后者

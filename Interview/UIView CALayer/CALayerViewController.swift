@@ -10,6 +10,9 @@ import UIKit
 
 class CALayerViewController: UIViewController {
 
+    @IBOutlet weak var pageImageView: UIImageView!
+    
+    var clock: CALayer?
     //定时旋转需要用到秒针
     var second: CALayer?
     
@@ -41,6 +44,8 @@ class CALayerViewController: UIViewController {
         //圆角
         clockLayer.cornerRadius = 100
         clockLayer.masksToBounds = true
+        
+        self.clock = clockLayer
 
         //添加秒针
         let secondLayer = CALayer()
@@ -88,4 +93,131 @@ class CALayerViewController: UIViewController {
         //通过设置一个平面动画
 //        self.second?.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(rotateAngle * s)))
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        animateOfBasic()
+//        animateOfKeyframe()
+        animateOfGroup()
+    }
+    
+    /**
+     *  Desc: 属性动画之基本动画：实现平移layer
+     *  Param: 基本动画执行完会回到原来的位置上
+     */
+    private func animateOfBasic() {
+        //初始化一个基本动画
+        let base = CABasicAnimation()
+        //通过指定属性来确定动画方式
+        base.keyPath = "position.x"
+        //设置属性的值变化
+        base.fromValue = 10
+        base.toValue = 300
+        //设置动画执行时间
+        base.duration = 3
+        //byValue表示在原来的基础上累加10
+        //base.byValue = 10
+        //不希望回到原来位置
+        base.fillMode = kCAFillModeForwards
+        base.isRemovedOnCompletion = false
+        
+        
+        //将动画添加到layer上
+        self.clock?.add(base, forKey: nil)
+        self.second?.add(base, forKey: nil)
+    }
+    
+    /**
+     *  Desc: 属性动画之关键帧动画
+     *  Param: 基本动画执行完会回到原来的位置上
+     */
+    private func animateOfKeyframe() {
+        //初始化一个关键帧动画
+        let keyframe = CAKeyframeAnimation()
+        //通过指定属性来确定动画方式
+        keyframe.keyPath = "position"
+        //设置属性的值变化：1.根据CGPoint连线路径来执行动画
+        //将点转为Value对象
+        let p1 = CGPoint(x: 0, y: 50)
+        let v1 = NSValue(cgPoint: p1)
+        let p2 = CGPoint(x: 300, y: 50)
+        let v2 = NSValue(cgPoint: p2)
+        let p3 = CGPoint(x: 0, y: 250)
+        let v3 = NSValue(cgPoint: p3)
+        let p4 = CGPoint(x: 300, y: 250)
+        let v4 = NSValue(cgPoint: p4)
+//        keyframe.values = [v1, v2, v3, v4]
+        
+        //2.根据UIBezierPath路径来执行动画
+        //绘制路径
+        let path = UIBezierPath()
+        path.addArc(withCenter: self.view.center, radius: 100, startAngle: 0, endAngle: CGFloat(2*Double.pi), clockwise: true)
+        //设置路径给关键帧
+        keyframe.path = path.cgPath
+        
+        //设置动画执行时间
+        keyframe.duration = 3
+        
+        //是否重复执行
+        //keyframe.repeatCount = MAXFLOAT
+        
+        //byValue表示在原来的基础上累加10
+        //base.byValue = 10
+        //不希望回到原来位置
+        keyframe.fillMode = kCAFillModeForwards
+        keyframe.isRemovedOnCompletion = false
+        
+        
+        //将动画添加到layer上
+        self.clock?.add(keyframe, forKey: nil)
+        self.second?.add(keyframe, forKey: nil)
+    }
+    
+    /**
+     *  Desc: 组动画
+     *  Param:
+     */
+    private func animateOfGroup() {
+        //初始化一个基本动画
+        let group = CAAnimationGroup()
+        
+        //-------------------------------------
+        //初始化一个基本动画
+        let base = CABasicAnimation()
+        //通过指定属性来确定动画方式
+        //自转
+        base.keyPath = "transform.rotation"
+        //设置属性的值变化
+        base.fromValue = 0
+        base.toValue = 2*Double.pi * 2
+        //-------------------------------------
+        
+        //-------------------------------------
+        //初始化一个关键帧动画
+        let keyframe = CAKeyframeAnimation()
+        //通过指定属性来确定动画方式：公转
+        keyframe.keyPath = "position"
+        //2.根据UIBezierPath路径来执行动画
+        //绘制路径
+        let path = UIBezierPath()
+        path.addArc(withCenter: self.view.center, radius: 100, startAngle: 0, endAngle: CGFloat(2*Double.pi), clockwise: true)
+        //设置路径给关键帧
+        keyframe.path = path.cgPath
+        //-------------------------------------
+        
+        //设置动画执行时间
+        group.duration = 3
+        //byValue表示在原来的基础上累加10
+        //base.byValue = 10
+        //不希望回到原来位置
+        group.fillMode = kCAFillModeForwards
+        group.isRemovedOnCompletion = false
+        
+        //将动画添加到Group动画中
+        group.animations = [base, keyframe]
+        
+        //将动画添加到layer上
+        self.clock?.add(group, forKey: nil)
+        self.second?.add(group, forKey: nil)
+    }
+    
 }

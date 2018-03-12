@@ -542,9 +542,21 @@
                     <view key="view" contentMode="scaleToFill" id="IFO-u4-aQi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="vMj-ku-d3t">
+                                <rect key="frame" x="27.5" y="93.5" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vMj-ku-d3t" firstAttribute="centerX" secondItem="IFO-u4-aQi" secondAttribute="centerX" id="hpg-Ty-mVJ"/>
+                            <constraint firstItem="vMj-ku-d3t" firstAttribute="centerY" secondItem="IFO-u4-aQi" secondAttribute="centerY" id="j7l-w5-iah"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uNM-b1-XFi"/>
                     </view>
+                    <connections>
+                        <outlet property="pageImageView" destination="vMj-ku-d3t" id="kos-Ty-yrK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQH-L0-JDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -552,6 +564,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="320" height="480"/>
         <image name="activity" width="32" height="32"/>
         <image name="p1" width="500" height="500"/>
         <image name="p2" width="760" height="300"/>
