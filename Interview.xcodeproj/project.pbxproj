@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
+		042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */; };
+		042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835C2056020C00A23537 /* SVProgressAnimatedView.m */; };
+		042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042B835E2056020C00A23537 /* SVProgressHUD.bundle */; };
+		042B83662056020C00A23537 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83602056020C00A23537 /* SVProgressHUD.m */; };
+		042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83622056020C00A23537 /* SVRadialGradientLayer.m */; };
 		0430881E2047A9DB00814006 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0430881D2047A9DB00814006 /* friends.plist */; };
 		043088242047ADBC00814006 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088232047ADBC00814006 /* Group.swift */; };
 		043088262047ADCF00814006 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088252047ADCF00814006 /* Friend.swift */; };
@@ -50,8 +55,17 @@
 /* Begin PBXFileReference section */
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
-		0412E5042055687700E29689 /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SVProgressHUD; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		042B835B2056020C00A23537 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		042B835C2056020C00A23537 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		042B835D2056020C00A23537 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		042B835E2056020C00A23537 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		042B835F2056020C00A23537 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		042B83602056020C00A23537 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		042B83612056020C00A23537 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		042B83622056020C00A23537 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		0430881D2047A9DB00814006 /* friends.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		043088232047ADBC00814006 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -118,9 +132,26 @@
 		0412E4FE20555C8700E29689 /* Third Kit */ = {
 			isa = PBXGroup;
 			children = (
-				0412E5042055687700E29689 /* SVProgressHUD */,
+				042B83582056020C00A23537 /* SVProgressHUD */,
 			);
 			path = "Third Kit";
+			sourceTree = "<group>";
+		};
+		042B83582056020C00A23537 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */,
+				042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */,
+				042B835B2056020C00A23537 /* SVProgressAnimatedView.h */,
+				042B835C2056020C00A23537 /* SVProgressAnimatedView.m */,
+				042B835D2056020C00A23537 /* SVProgressHUD-Prefix.pch */,
+				042B835E2056020C00A23537 /* SVProgressHUD.bundle */,
+				042B835F2056020C00A23537 /* SVProgressHUD.h */,
+				042B83602056020C00A23537 /* SVProgressHUD.m */,
+				042B83612056020C00A23537 /* SVRadialGradientLayer.h */,
+				042B83622056020C00A23537 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		0430881F2047AD5600814006 /* Model */ = {
@@ -389,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */,
 				0444E7BF201AD4290007B0E5 /* LaunchScreen.storyboard in Resources */,
 				0444E7BC201AD4290007B0E5 /* Assets.xcassets in Resources */,
 				0430881E2047A9DB00814006 /* friends.plist in Resources */,
@@ -414,6 +446,7 @@
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
+				042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */,
 				043088282047D76400814006 /* FriendTableViewCell.swift in Sources */,
 				043088242047ADBC00814006 /* Group.swift in Sources */,
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
@@ -421,10 +454,13 @@
 				045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */,
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
+				042B83662056020C00A23537 /* SVProgressHUD.m in Sources */,
 				0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */,
+				042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */,
 				04768B72202006360030CF9F /* ViewE.swift in Sources */,
 				04768B70202006320030CF9F /* ViewD.swift in Sources */,
 				0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */,
+				042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */,
 				045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */,
 				04688D3520520B48005D0AFE /* VariableView.swift in Sources */,
 				04768B6A2020061D0030CF9F /* ViewA.swift in Sources */,
