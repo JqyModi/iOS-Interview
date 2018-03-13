@@ -2,6 +2,8 @@
 
 ## Mac开启任何来源：sudo spctl --master-disable
 
+## 代码格式化：Ctrl + i
+
 ## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
 
 [Markdown](http://pad.haroopress.com/user.html#download)

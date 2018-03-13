@@ -50,6 +50,8 @@
 		04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */; };
 		04B74FF520576309004164C7 /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF420576309004164C7 /* DrawingBoard.swift */; };
 		04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF620576B7A004164C7 /* DrawBoardPath.swift */; };
+		04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF9205772E0004164C7 /* DynamicViewController.swift */; };
+		04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FFB2057BBC3004164C7 /* BgView.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
@@ -109,6 +111,8 @@
 		04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewController.swift; sourceTree = "<group>"; };
 		04B74FF420576309004164C7 /* DrawingBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
 		04B74FF620576B7A004164C7 /* DrawBoardPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardPath.swift; sourceTree = "<group>"; };
+		04B74FF9205772E0004164C7 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		04B74FFB2057BBC3004164C7 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
@@ -148,9 +152,9 @@
 		042022772056133100E8FE8A /* UIView CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				04B74FF8205772AF004164C7 /* UIDynamic */,
 				04B74FF3205762DC004164C7 /* DrawingBoard */,
 				0420227A2056765F00E8FE8A /* CoreAnimation */,
-				042022782056137400E8FE8A /* CALayerViewController.swift */,
 			);
 			path = "UIView CALayer";
 			sourceTree = "<group>";
@@ -158,6 +162,7 @@
 		0420227A2056765F00E8FE8A /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				042022782056137400E8FE8A /* CALayerViewController.swift */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -376,6 +381,15 @@
 			path = DrawingBoard;
 			sourceTree = "<group>";
 		};
+		04B74FF8205772AF004164C7 /* UIDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				04B74FF9205772E0004164C7 /* DynamicViewController.swift */,
+				04B74FFB2057BBC3004164C7 /* BgView.swift */,
+			);
+			path = UIDynamic;
+			sourceTree = "<group>";
+		};
 		04E2365F2029957800431C1A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +494,7 @@
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
+				04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
 				042022792056137400E8FE8A /* CALayerViewController.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
@@ -489,6 +504,7 @@
 				043088242047ADBC00814006 /* Group.swift in Sources */,
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
 				04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */,
+				04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */,
 				045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */,
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
