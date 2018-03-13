@@ -12,6 +12,20 @@ class CALayerViewController: UIViewController {
 
     @IBOutlet weak var pageImageView: UIImageView!
     
+    let pageCount = 5
+    //存放Image
+    lazy var images: [UIImage] = {
+        var images = NSMutableArray()
+        for i in (0..<5) {
+            let image = UIImage(named: "\(i+1)")
+            images.add(image)
+        }
+        return images as! [UIImage]
+    }()
+    
+    //记录图片名字：默认以数组命名1，2，3...
+    var imageName = 0
+    
     var clock: CALayer?
     //定时旋转需要用到秒针
     var second: CALayer?
@@ -21,16 +35,13 @@ class CALayerViewController: UIViewController {
 
         self.view.backgroundColor = UIColor.lightGray
         // Do any additional setup after loading the view.
-        clockWithCALayer()
         
+//        clockWithCALayer()
         //手动调用解决秒针初始旋转角偏移
-        self.rotateSecond()
+//        self.rotateSecond()
     }
     
-    private func calayer() {
-        //CA : Core Animation：改变CALayer属性会自带动画效果：隐式动画：animatable标记的属性
-//        let calayer = CALayer()
-    }
+    //MARK: - CALayer
     
     private func clockWithCALayer() {
         //CA : Core Animation：改变CALayer属性会自带动画效果：隐式动画：animatable标记的属性
@@ -92,6 +103,58 @@ class CALayerViewController: UIViewController {
         self.second?.transform = CATransform3DMakeRotation( CGFloat(rotateAngle * s), 0, 0, 1)
         //通过设置一个平面动画
 //        self.second?.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(rotateAngle * s)))
+    }
+    
+    //MARK: - Core Animation
+    
+    //MARK: - Core Animation - CATrisition
+    /**
+     *  Desc: 转场动画：CATrisition
+     *  Param:CATransaction是事务不是动画：let action = CATransaction()
+     */
+    @IBAction func changePage(_ sender: UISwipeGestureRecognizer) {
+        if imageName == 5 {
+            imageName = 0
+        }else if imageName == -1 {
+            imageName = 0
+        }
+        self.pageImageView.image = self.images[imageName]
+        
+        //1.新建转场动画
+        let anim = CATransition()
+        //2.设置动画类型：通过字符串指定系统自动完成动画效果
+        //        类型字符串    效果说明    关键字    方向
+        //        fade    交叉淡化过渡    YES
+        //        push    新视图把旧视图推出去     YES
+        //        moveIn    新视图移到旧视图上面    YES
+        //        reveal    将旧视图移开,显示下面的新视图     YES
+        //        cube    立方体翻滚效果
+        //        oglFlip    上下左右翻转效果
+        //        suckEffect    收缩效果，如一块布被抽走        NO
+        //        rippleEffect    水滴效果        NO
+        //        pageCurl    向上翻页效果
+        //        pageUnCurl    向下翻页效果
+        //        cameraIrisHollowOpen    相机镜头打开效果        NO
+        //        cameraIrisHollowClose    相机镜头关闭效果        NO
+        anim.type = "cube"  //3D翻转
+        anim.type = "fade"  //渐变
+        anim.type = "rippleEffect"
+        
+        
+        //判断两个轻扫手势的方向：手指轻扫方向决定左右
+        if sender.direction == UISwipeGestureRecognizerDirection.left {
+            imageName = imageName + 1
+            //4.改变动画方向
+            anim.subtype = kCATransitionFromLeft
+        }else if sender.direction == UISwipeGestureRecognizerDirection.right {
+            imageName = imageName - 1
+            //4.改变动画方向
+            anim.subtype = kCATransitionFromRight
+        }
+        
+        //3.添加动画到layer上
+        self.pageImageView.layer.add(anim, forKey: nil)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -219,5 +282,7 @@ class CALayerViewController: UIViewController {
         self.clock?.add(group, forKey: nil)
         self.second?.add(group, forKey: nil)
     }
+    
+    
     
 }

@@ -47,6 +47,9 @@
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
 		04A1661D20536BC600629687 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1661C20536BC600629687 /* TouchView.swift */; };
 		04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1661F2053854A00629687 /* GesturesUnlockView.swift */; };
+		04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */; };
+		04B74FF520576309004164C7 /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF420576309004164C7 /* DrawingBoard.swift */; };
+		04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF620576B7A004164C7 /* DrawBoardPath.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
@@ -103,6 +106,9 @@
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		04A1661C20536BC600629687 /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
 		04A1661F2053854A00629687 /* GesturesUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUnlockView.swift; sourceTree = "<group>"; };
+		04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewController.swift; sourceTree = "<group>"; };
+		04B74FF420576309004164C7 /* DrawingBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
+		04B74FF620576B7A004164C7 /* DrawBoardPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardPath.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		042022772056133100E8FE8A /* UIView CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				04B74FF3205762DC004164C7 /* DrawingBoard */,
 				0420227A2056765F00E8FE8A /* CoreAnimation */,
 				042022782056137400E8FE8A /* CALayerViewController.swift */,
 			);
@@ -359,6 +366,16 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
+		04B74FF3205762DC004164C7 /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */,
+				04B74FF420576309004164C7 /* DrawingBoard.swift */,
+				04B74FF620576B7A004164C7 /* DrawBoardPath.swift */,
+			);
+			path = DrawingBoard;
+			sourceTree = "<group>";
+		};
 		04E2365F2029957800431C1A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
+				04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */,
 				0480106820535DBD0085C2FB /* TouchEventViewController.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
@@ -475,6 +493,7 @@
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
 				042B83662056020C00A23537 /* SVProgressHUD.m in Sources */,
+				04B74FF520576309004164C7 /* DrawingBoard.swift in Sources */,
 				0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */,
 				042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */,
 				04768B72202006360030CF9F /* ViewE.swift in Sources */,
@@ -488,6 +507,7 @@
 				049FF3AA2021968100631F9E /* BaseView.swift in Sources */,
 				04A1661D20536BC600629687 /* TouchView.swift in Sources */,
 				0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */,
+				04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */,
 				045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */,
 				0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */,
 				04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */,

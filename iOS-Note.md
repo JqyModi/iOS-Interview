@@ -1,5 +1,7 @@
 ## 开启aria2c服务：aria2c --enable-rpc --rpc-listen-all
 
+## Mac开启任何来源：sudo spctl --master-disable
+
 ## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
 
 [Markdown](http://pad.haroopress.com/user.html#download)
