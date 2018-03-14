@@ -705,10 +705,10 @@
             </objects>
             <point key="canvasLocation" x="7525.6000000000004" y="-777.66116941529242"/>
         </scene>
-        <!--Dynamic View Controller-->
+        <!--View Controller-->
         <scene sceneID="nBJ-YM-cf3">
             <objects>
-                <viewController id="ZBU-tF-iH1" customClass="DynamicViewController" customModule="Interview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZBU-tF-iH1" customClass="MMCViewController" customModule="Interview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAq-ES-R5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

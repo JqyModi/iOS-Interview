@@ -20,6 +20,7 @@
 		043088262047ADCF00814006 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088252047ADCF00814006 /* Friend.swift */; };
 		043088282047D76400814006 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088272047D76400814006 /* FriendTableViewCell.swift */; };
 		0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088292047DE6500814006 /* GroupHeaderView.swift */; };
+		04402B7E2058A09300982883 /* MMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04402B7D2058A09300982883 /* MMCViewController.swift */; };
 		0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B4201AD4290007B0E5 /* AppDelegate.swift */; };
 		0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B6201AD4290007B0E5 /* ViewController.swift */; };
 		0444E7BA201AD4290007B0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444E7B8201AD4290007B0E5 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		043088272047D76400814006 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		043088292047DE6500814006 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		04402B7D2058A09300982883 /* MMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCViewController.swift; sourceTree = "<group>"; };
 		0444E7B1201AD4290007B0E5 /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0444E7B4201AD4290007B0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0444E7B6201AD4290007B0E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,14 @@
 				0430881D2047A9DB00814006 /* friends.plist */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		04402B7C20589FC000982883 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				04402B7D2058A09300982883 /* MMCViewController.swift */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		0444E7A8201AD4290007B0E5 = {
@@ -384,6 +394,7 @@
 		04B74FF8205772AF004164C7 /* UIDynamic */ = {
 			isa = PBXGroup;
 			children = (
+				04402B7C20589FC000982883 /* Demo */,
 				04B74FF9205772E0004164C7 /* DynamicViewController.swift */,
 				04B74FFB2057BBC3004164C7 /* BgView.swift */,
 			);
@@ -505,6 +516,7 @@
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
 				04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */,
 				04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */,
+				04402B7E2058A09300982883 /* MMCViewController.swift in Sources */,
 				045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */,
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
