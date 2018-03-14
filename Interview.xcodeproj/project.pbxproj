@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */; };
+		040A7C352058BB600037E17A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C342058BB600037E17A /* Consts.swift */; };
+		040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C362058BD0D0037E17A /* BgCircleView.swift */; };
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
 		042022792056137400E8FE8A /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042022782056137400E8FE8A /* CALayerViewController.swift */; };
@@ -60,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsViewController.swift; sourceTree = "<group>"; };
+		040A7C342058BB600037E17A /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		040A7C362058BD0D0037E17A /* BgCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgCircleView.swift; sourceTree = "<group>"; };
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -225,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				04402B7D2058A09300982883 /* MMCViewController.swift */,
+				040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */,
+				040A7C362058BD0D0037E17A /* BgCircleView.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -377,6 +385,7 @@
 				0444E7B6201AD4290007B0E5 /* ViewController.swift */,
 				0444E7B4201AD4290007B0E5 /* AppDelegate.swift */,
 				0412E505205568B300E29689 /* Header.h */,
+				040A7C342058BB600037E17A /* Consts.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -514,6 +523,7 @@
 				043088282047D76400814006 /* FriendTableViewCell.swift in Sources */,
 				043088242047ADBC00814006 /* Group.swift in Sources */,
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
+				040A7C352058BB600037E17A /* Consts.swift in Sources */,
 				04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */,
 				04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */,
 				04402B7E2058A09300982883 /* MMCViewController.swift in Sources */,
@@ -538,7 +548,9 @@
 				04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */,
 				045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */,
 				0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */,
+				040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */,
 				04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */,
+				040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */,
 				045A47DD205111D200CCFFE3 /* CustomProgressView.swift in Sources */,
 				047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */,
 			);
