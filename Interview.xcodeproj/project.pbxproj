@@ -10,6 +10,7 @@
 		040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */; };
 		040A7C352058BB600037E17A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C342058BB600037E17A /* Consts.swift */; };
 		040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C362058BD0D0037E17A /* BgCircleView.swift */; };
+		040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C5A20591B200037E17A /* LocationViewController.swift */; };
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
 		042022792056137400E8FE8A /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042022782056137400E8FE8A /* CALayerViewController.swift */; };
@@ -66,6 +67,7 @@
 		040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsViewController.swift; sourceTree = "<group>"; };
 		040A7C342058BB600037E17A /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		040A7C362058BD0D0037E17A /* BgCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgCircleView.swift; sourceTree = "<group>"; };
+		040A7C5A20591B200037E17A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A7C5920591AFA0037E17A /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				040A7C5A20591B200037E17A /* LocationViewController.swift */,
+			);
+			path = CLLocation;
+			sourceTree = "<group>";
+		};
 		0412CFD0202AF6F70085ABE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +266,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				040A7C5920591AFA0037E17A /* CLLocation */,
 				042022772056133100E8FE8A /* UIView CALayer */,
 				0412E4FE20555C8700E29689 /* Third Kit */,
 				0480106620535D610085C2FB /* Touch Event */,
@@ -510,6 +521,7 @@
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
 				04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */,
 				0480106820535DBD0085C2FB /* TouchEventViewController.swift in Sources */,
+				040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
