@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-P8-02R">
+                                <rect key="frame" x="140" y="60" width="320" height="480"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1d1-jC-Avz" appends="YES" id="6IA-1C-ceo"/>
+                                    <outletCollection property="gestureRecognizers" destination="vcv-8o-7wS" appends="YES" id="0uH-6d-KPy"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NGJ-P8-02R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dml-WW-Ga2"/>
+                            <constraint firstItem="NGJ-P8-02R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hPe-tN-ZXn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NGJ-P8-02R" id="y7Y-x2-Tcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="1d1-jC-Avz">
+                    <connections>
+                        <action selector="imageChange:" destination="BYZ-38-t0r" id="io3-JV-ysa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="vcv-8o-7wS">
+                    <connections>
+                        <action selector="imageChange:" destination="BYZ-38-t0r" id="pzS-jA-W7r"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="320" height="480"/>
+    </resources>
+</document>

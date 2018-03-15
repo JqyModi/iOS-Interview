@@ -1,5 +1,9 @@
 ## 开启aria2c服务：aria2c --enable-rpc --rpc-listen-all
 
+## Mac开启任何来源：sudo spctl --master-disable
+
+## 代码格式化：Ctrl + i
+
 ## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
 
 [Markdown](http://pad.haroopress.com/user.html#download)
@@ -805,4 +809,70 @@
 	1.响应者链条：一系列执行TouchBegin的所有对象按先后顺序连接：第一个执行touchbegin方法的对象就叫第一响应者
 	2.click事件（Selector）也相当于touch事件：当系统找到对应的控件响应了click事件后事件终止
 
+<<<<<<< .merge_file_djrtkl
 ### 手势解锁：	
+=======
+### 手势解锁：
+	1.初始化按钮并九宫格布局：
+		1.1 通过 i%lineCount 来控制同一行下一个X坐标 * (按钮宽 + margin) + margin
+		1.2 通过i/lineCount 来控制下一行Y坐标 * (按钮宽 + margin) + margin
+	2.禁用按钮点击事件改用touch事件来响应操作：
+		1.touchesBeagin: 使点击的按钮变为选中或者高亮状态
+		2.touchesMove: 使经过的的按钮变为选中或者高亮状态
+		3.touchesEnd: 取现所有状态
+	3.Quartz2D绘制按钮间连线及最后一个按钮与手指间的连线：
+	4.通过按钮的tag拼接字符串密码
+	5.设置block作为回调：响应用户密码的正确性操作并显示错误提示信息
+		1.定义一个回调：函数类型block回调：如 var passBlock: ((pass: String) -> Bool)?
+		2.在密码拼接处设置回调：self.checkPassBlock!(pass)供用户获取当前手势密码
+
+### 手势冲突：
+	1.系统默认不支持多种手势同时操作：
+	2.解决方法：通过实现代理方法告诉系统可以支持多种手势操作
+		1.gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool
+
+## CALayer: 给UIView设置样式属性实际上是在给CALayer设置样式属性：系统内部完成：如背景颜色，图片，字体等等
+	1.CALayer与UIView的关系：UIView负责监听事件响应，CALayer负责显示界面样式：
+	2.属性：边框，圆角，阴影需要配合透明度(Opacity = 1)使用，bounds，position(center)，content(一般设置图片)
+		2.1 bounds + position(center) = frame :一般不要给CALayer直接设置frame在动画操作上可能会出问题：position默认在center位置：可以通过anchorPoint(锚点)来调整
+		2.2 阴影需要配合透明度(Opacity = 1)使用
+		2.3 圆角需要配合裁剪使用：masksToBounds = true
+	3.CA : Core Animation：改变CALayer属性会自带动画效果：隐式动画：animatable标记的属性
+	4.控件的根layer是没有隐式动画的
+	5.禁用根layer的隐式动画：事务：CATransaction
+		5.1 开启事务：CATransaction begin
+		5.2 禁用隐式动画：CATransaction.setDisableActions = true
+		5.3 操作：
+		5.4 提交事务：commit
+	6.transform：3D动画:CATransform3D + 缩放/旋转/平移 / CGAffineTransform平面动画
+	7.anchorPoint：锚点：x,y取值范围是0~1：改变layer的中心点位置
+
+## Core Animation：核心动画
+	1.CAAnimation是作用在layer上的：
+	2.基本动画：是属性动画的一种：通过keyPath方式改变属性的值从而实现动画效果
+		2.1 基本动画CAAnimation：动画执行完会回到原来的位置上
+	3.关键帧动画：属性动画的一种：也是通过keyPath方式改变属性的值从而实现动画效果
+		3.1 根据指定点执行动画：values：可以指定多个点
+			3.1.1 通过NSValue的构造方法可以将CGPoint转化为NSValue
+		3.2 根据路径执行动画：path：可以绘制各种路径
+		3.3 values和path同时设置执行后者
+	4.转场动画：CATransition
+		4.1 创建动画
+		4.2 通过字符串type设置动画效果：cube、
+		4.2.1 改变动画方向：subtype 系统默认是从上到下
+		4.3 往layer上添加动画：layer.add(anima..)
+	5.画板案例：
+		1.搭建界面
+		2.多条线绘制
+		3.设置线宽、样式
+		4.设置颜色：系统路径没有颜色属性：自定义一个路径创建颜色属性存储
+		5.工具条功能实现：清屏、回退、橡皮擦、保存到相册
+	6.绘制圆形路径时最好用arc方式画圆：如果以椭圆方式OverInRect方式画圆两个路径本质不一样长
+
+#	添加2D(平面)动画：在原来的基础上添加旋转动画：累加
+
+	self.rotateImageView.transform.rotated(by: CGFloat(angle * s * 10)) //错误做法这样只是改变了原来的没有设置到layer上
+    	self.rotateImageView.layer.setAffineTransform(self.rotateImageView.transform.rotated(by: CGFloat(angle))) 	//正确做法
+
+## 应用启动图决定了当前应用的分辨率大小：bounds.size
+>>>>>>> .merge_file_RiLi3Y

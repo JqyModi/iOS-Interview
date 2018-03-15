@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */; };
+		040A7C352058BB600037E17A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C342058BB600037E17A /* Consts.swift */; };
+		040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C362058BD0D0037E17A /* BgCircleView.swift */; };
+		040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C5A20591B200037E17A /* LocationViewController.swift */; };
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
+		042022792056137400E8FE8A /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042022782056137400E8FE8A /* CALayerViewController.swift */; };
+		042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */; };
+		042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835C2056020C00A23537 /* SVProgressAnimatedView.m */; };
+		042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042B835E2056020C00A23537 /* SVProgressHUD.bundle */; };
+		042B83662056020C00A23537 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83602056020C00A23537 /* SVProgressHUD.m */; };
+		042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83622056020C00A23537 /* SVRadialGradientLayer.m */; };
 		0430881E2047A9DB00814006 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0430881D2047A9DB00814006 /* friends.plist */; };
 		043088242047ADBC00814006 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088232047ADBC00814006 /* Group.swift */; };
 		043088262047ADCF00814006 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088252047ADCF00814006 /* Friend.swift */; };
 		043088282047D76400814006 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088272047D76400814006 /* FriendTableViewCell.swift */; };
 		0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088292047DE6500814006 /* GroupHeaderView.swift */; };
+		04402B7E2058A09300982883 /* MMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04402B7D2058A09300982883 /* MMCViewController.swift */; };
 		0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B4201AD4290007B0E5 /* AppDelegate.swift */; };
 		0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B6201AD4290007B0E5 /* ViewController.swift */; };
 		0444E7BA201AD4290007B0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444E7B8201AD4290007B0E5 /* Main.storyboard */; };
@@ -41,6 +52,11 @@
 		049FF3AA2021968100631F9E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF3A92021968100631F9E /* BaseView.swift */; };
 		04A1661D20536BC600629687 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1661C20536BC600629687 /* TouchView.swift */; };
 		04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1661F2053854A00629687 /* GesturesUnlockView.swift */; };
+		04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */; };
+		04B74FF520576309004164C7 /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF420576309004164C7 /* DrawingBoard.swift */; };
+		04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF620576B7A004164C7 /* DrawBoardPath.swift */; };
+		04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF9205772E0004164C7 /* DynamicViewController.swift */; };
+		04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FFB2057BBC3004164C7 /* BgView.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
@@ -48,15 +64,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsViewController.swift; sourceTree = "<group>"; };
+		040A7C342058BB600037E17A /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		040A7C362058BD0D0037E17A /* BgCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgCircleView.swift; sourceTree = "<group>"; };
+		040A7C5A20591B200037E17A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
-		0412E5042055687700E29689 /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SVProgressHUD; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		042022782056137400E8FE8A /* CALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerViewController.swift; sourceTree = "<group>"; };
+		042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		042B835B2056020C00A23537 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		042B835C2056020C00A23537 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		042B835D2056020C00A23537 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		042B835E2056020C00A23537 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		042B835F2056020C00A23537 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		042B83602056020C00A23537 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		042B83612056020C00A23537 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		042B83622056020C00A23537 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		0430881D2047A9DB00814006 /* friends.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		043088232047ADBC00814006 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		043088272047D76400814006 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		043088292047DE6500814006 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		04402B7D2058A09300982883 /* MMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCViewController.swift; sourceTree = "<group>"; };
 		0444E7B1201AD4290007B0E5 /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0444E7B4201AD4290007B0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0444E7B6201AD4290007B0E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +118,11 @@
 		049FF3A92021968100631F9E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		04A1661C20536BC600629687 /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
 		04A1661F2053854A00629687 /* GesturesUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUnlockView.swift; sourceTree = "<group>"; };
+		04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewController.swift; sourceTree = "<group>"; };
+		04B74FF420576309004164C7 /* DrawingBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
+		04B74FF620576B7A004164C7 /* DrawBoardPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardPath.swift; sourceTree = "<group>"; };
+		04B74FF9205772E0004164C7 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		04B74FFB2057BBC3004164C7 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
@@ -104,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A7C5920591AFA0037E17A /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				040A7C5A20591B200037E17A /* LocationViewController.swift */,
+			);
+			path = CLLocation;
+			sourceTree = "<group>";
+		};
 		0412CFD0202AF6F70085ABE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +162,44 @@
 		0412E4FE20555C8700E29689 /* Third Kit */ = {
 			isa = PBXGroup;
 			children = (
-				0412E5042055687700E29689 /* SVProgressHUD */,
+				042B83582056020C00A23537 /* SVProgressHUD */,
 			);
 			path = "Third Kit";
+			sourceTree = "<group>";
+		};
+		042022772056133100E8FE8A /* UIView CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				04B74FF8205772AF004164C7 /* UIDynamic */,
+				04B74FF3205762DC004164C7 /* DrawingBoard */,
+				0420227A2056765F00E8FE8A /* CoreAnimation */,
+			);
+			path = "UIView CALayer";
+			sourceTree = "<group>";
+		};
+		0420227A2056765F00E8FE8A /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				042022782056137400E8FE8A /* CALayerViewController.swift */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		042B83582056020C00A23537 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */,
+				042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */,
+				042B835B2056020C00A23537 /* SVProgressAnimatedView.h */,
+				042B835C2056020C00A23537 /* SVProgressAnimatedView.m */,
+				042B835D2056020C00A23537 /* SVProgressHUD-Prefix.pch */,
+				042B835E2056020C00A23537 /* SVProgressHUD.bundle */,
+				042B835F2056020C00A23537 /* SVProgressHUD.h */,
+				042B83602056020C00A23537 /* SVProgressHUD.m */,
+				042B83612056020C00A23537 /* SVRadialGradientLayer.h */,
+				042B83622056020C00A23537 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		0430881F2047AD5600814006 /* Model */ = {
@@ -158,6 +237,16 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		04402B7C20589FC000982883 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				04402B7D2058A09300982883 /* MMCViewController.swift */,
+				040A7C322058B25C0037E17A /* AngryBirdsViewController.swift */,
+				040A7C362058BD0D0037E17A /* BgCircleView.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		0444E7A8201AD4290007B0E5 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +266,8 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				040A7C5920591AFA0037E17A /* CLLocation */,
+				042022772056133100E8FE8A /* UIView CALayer */,
 				0412E4FE20555C8700E29689 /* Third Kit */,
 				0480106620535D610085C2FB /* Touch Event */,
 				045A47D42050D11E00CCFFE3 /* Quartz2D */,
@@ -298,15 +389,36 @@
 		04A1661E20536C7500629687 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				0444E7B8201AD4290007B0E5 /* Main.storyboard */,
 				0444E7C0201AD4290007B0E5 /* Info.plist */,
 				0444E7BB201AD4290007B0E5 /* Assets.xcassets */,
 				0444E7BD201AD4290007B0E5 /* LaunchScreen.storyboard */,
 				0444E7B6201AD4290007B0E5 /* ViewController.swift */,
-				0444E7B8201AD4290007B0E5 /* Main.storyboard */,
 				0444E7B4201AD4290007B0E5 /* AppDelegate.swift */,
 				0412E505205568B300E29689 /* Header.h */,
+				040A7C342058BB600037E17A /* Consts.swift */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		04B74FF3205762DC004164C7 /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04B74FF12057614D004164C7 /* DrawingBoardViewController.swift */,
+				04B74FF420576309004164C7 /* DrawingBoard.swift */,
+				04B74FF620576B7A004164C7 /* DrawBoardPath.swift */,
+			);
+			path = DrawingBoard;
+			sourceTree = "<group>";
+		};
+		04B74FF8205772AF004164C7 /* UIDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				04402B7C20589FC000982883 /* Demo */,
+				04B74FF9205772E0004164C7 /* DynamicViewController.swift */,
+				04B74FFB2057BBC3004164C7 /* BgView.swift */,
+			);
+			path = UIDynamic;
 			sourceTree = "<group>";
 		};
 		04E2365F2029957800431C1A /* BLE */ = {
@@ -389,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */,
 				0444E7BF201AD4290007B0E5 /* LaunchScreen.storyboard in Resources */,
 				0444E7BC201AD4290007B0E5 /* Assets.xcassets in Resources */,
 				0430881E2047A9DB00814006 /* friends.plist in Resources */,
@@ -406,25 +519,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
+				04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */,
 				0480106820535DBD0085C2FB /* TouchEventViewController.swift in Sources */,
+				040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
+				04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
+				042022792056137400E8FE8A /* CALayerViewController.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
+				042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */,
 				043088282047D76400814006 /* FriendTableViewCell.swift in Sources */,
 				043088242047ADBC00814006 /* Group.swift in Sources */,
 				043088262047ADCF00814006 /* Friend.swift in Sources */,
+				040A7C352058BB600037E17A /* Consts.swift in Sources */,
 				04A166202053854A00629687 /* GesturesUnlockView.swift in Sources */,
+				04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */,
+				04402B7E2058A09300982883 /* MMCViewController.swift in Sources */,
 				045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */,
 				04719E4720424B2800612E4D /* GuessViewController.swift in Sources */,
 				04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */,
+				042B83662056020C00A23537 /* SVProgressHUD.m in Sources */,
+				04B74FF520576309004164C7 /* DrawingBoard.swift in Sources */,
 				0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */,
+				042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */,
 				04768B72202006360030CF9F /* ViewE.swift in Sources */,
 				04768B70202006320030CF9F /* ViewD.swift in Sources */,
 				0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */,
+				042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */,
 				045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */,
 				04688D3520520B48005D0AFE /* VariableView.swift in Sources */,
 				04768B6A2020061D0030CF9F /* ViewA.swift in Sources */,
@@ -432,9 +557,12 @@
 				049FF3AA2021968100631F9E /* BaseView.swift in Sources */,
 				04A1661D20536BC600629687 /* TouchView.swift in Sources */,
 				0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */,
+				04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */,
 				045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */,
 				0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */,
+				040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */,
 				04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */,
+				040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */,
 				045A47DD205111D200CCFFE3 /* CustomProgressView.swift in Sources */,
 				047A9B9A20438A7100EDBBB2 /* PageViewController.swift in Sources */,
 			);

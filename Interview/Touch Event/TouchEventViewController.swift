@@ -27,6 +27,8 @@ class TouchEventViewController: UIViewController {
             debugPrint("pass")
             if pass.elementsEqual(self.pass) {
                 debugPrint("密码正确")
+                //界面跳转到主页
+                
                 return true
             }else {
                 debugPrint("密码错误") 

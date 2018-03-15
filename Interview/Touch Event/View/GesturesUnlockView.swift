@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 /**
  *  Desc: 手势解锁View
  *  Param:
@@ -72,6 +69,7 @@ class GesturesUnlockView: UIView {
             //计算每个按钮的x
             debugPrint("行号 - \(CGFloat(i).truncatingRemainder(dividingBy: GesturesUnlockView.lineCount))")
             let x = CGFloat(i).truncatingRemainder(dividingBy: GesturesUnlockView.lineCount) * (width + margin) + margin
+            // i / lineCount 取整才不会发生偏移
             let y = CGFloat(Int(CGFloat(i) / GesturesUnlockView.lineCount)) * (height + margin) + margin
             debugPrint("y -- \(y)")
             
@@ -79,6 +77,7 @@ class GesturesUnlockView: UIView {
             btn.frame = rect
             //将按钮添加到View上
             self.addSubview(btn)
+        
         }
     }
     
@@ -172,6 +171,9 @@ class GesturesUnlockView: UIView {
         //重绘界面
         self.setNeedsDisplay()
         
+        //生成及判断密码
+        getPassOfHighlightBtns()
+        
         //获取触摸对象
         let touch = touches.first
         //改变按钮状态为disable = true显示错误手势图片
@@ -195,14 +197,7 @@ class GesturesUnlockView: UIView {
 //        perform(#selector(GesturesUnlockView.clear), with: self, afterDelay: time)
     }
     
-    @objc private func clear() {
-        //判断当前触摸坐标是否在某个btn的frame上：在则改变状态为选中
-        for btn in array! {
-            btn.isSelected = false
-            //恢复可用状态
-            btn.isEnabled = true
-        }
-        
+    private func getPassOfHighlightBtns() {
         //生成手势密码
         var pass = ""
         for btn in highlightBtns! {
@@ -212,12 +207,22 @@ class GesturesUnlockView: UIView {
         if (checkPassBlock != nil) {
             if checkPassBlock!(pass) {
                 debugPrint("密码正确")
+                SVProgressHUD.showSuccess(withStatus: "密码正确")
             }else {
                 debugPrint("密码错误")
+                SVProgressHUD.showError(withStatus: "密码错误")
             }
         }
-        
         debugPrint("pass ---> \(pass)")
+    }
+    
+    @objc private func clear() {
+        //判断当前触摸坐标是否在某个btn的frame上：在则改变状态为选中
+        for btn in array! {
+            btn.isSelected = false
+            //恢复可用状态
+            btn.isEnabled = true
+        }
         //取消按钮间的连线
         highlightBtns?.removeAll()
         //重绘界面
