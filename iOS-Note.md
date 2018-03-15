@@ -865,3 +865,10 @@
 		4.设置颜色：系统路径没有颜色属性：自定义一个路径创建颜色属性存储
 		5.工具条功能实现：清屏、回退、橡皮擦、保存到相册
 	6.绘制圆形路径时最好用arc方式画圆：如果以椭圆方式OverInRect方式画圆两个路径本质不一样长
+
+#	添加2D(平面)动画：在原来的基础上添加旋转动画：累加
+
+	self.rotateImageView.transform.rotated(by: CGFloat(angle * s * 10)) //错误做法这样只是改变了原来的没有设置到layer上
+    	self.rotateImageView.layer.setAffineTransform(self.rotateImageView.transform.rotated(by: CGFloat(angle))) 	//正确做法
+
+## 应用启动图决定了当前应用的分辨率大小：bounds.size

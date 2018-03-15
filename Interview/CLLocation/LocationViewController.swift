@@ -55,6 +55,6 @@ extension LocationViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         debugPrint("当前位置：locations ==== \(locations.last)")
         //停止更新位置
-        
+        locationManager.stopUpdatingLocation()
     }
 }
