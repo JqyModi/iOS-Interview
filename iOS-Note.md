@@ -876,3 +876,14 @@
 
 ## 应用启动图决定了当前应用的分辨率大小：bounds.size
 >>>>>>> .merge_file_RiLi3Y
+
+## 设置应用导航栏颜色样式注意点：
+	1.设置样式用navigationBar：高度44
+	2.设置内容用navigationItem
+	3.通过self.NavigationController.navigationBar.setBackgroundColor:单纯的设置44高度的navigationBar的背景颜色
+	4.通过self.NavigationController.navigationBar.setTintColor:设置主题色调：文字主题色
+	5.通过self.NavigationController.navigationBar.setBarTintColor:设置64高度的导航栏颜色：状态栏也设置 特殊处理后的颜色：系统默认半透明处理
+	6.如果不想要系统特殊处理后的颜色可以取消：通过self.NavigationController.navigationBar.setTranslucent = false : 设置会使TableView显示的起点坐标有变换y值增加64：因为不透明看不到内容了没有意义
+
+
+
