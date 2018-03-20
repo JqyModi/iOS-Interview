@@ -811,6 +811,9 @@
 	1.响应者链条：一系列执行TouchBegin的所有对象按先后顺序连接：第一个执行touchbegin方法的对象就叫第一响应者
 	2.click事件（Selector）也相当于touch事件：当系统找到对应的控件响应了click事件后事件终止
 
+<<<<<<< .merge_file_djrtkl
+### 手势解锁：	
+=======
 ### 手势解锁：
 	1.初始化按钮并九宫格布局：
 		1.1 通过 i%lineCount 来控制同一行下一个X坐标 * (按钮宽 + margin) + margin
@@ -874,5 +877,20 @@
     	self.rotateImageView.layer.setAffineTransform(self.rotateImageView.transform.rotated(by: CGFloat(angle))) 	//正确做法
 
 ## 应用启动图决定了当前应用的分辨率大小：bounds.size
+<<<<<<< HEAD
 
 ## UICollectionView通过注册Cell方式从缓存池中获取Cell，如果获取不到系统会自动新建一个Cell返回不需要手动创建到缓存池中
+=======
+>>>>>>> .merge_file_RiLi3Y
+
+## 设置应用导航栏颜色样式注意点：
+	1.设置样式用navigationBar：高度44
+	2.设置内容用navigationItem
+	3.通过self.NavigationController.navigationBar.setBackgroundColor:单纯的设置44高度的navigationBar的背景颜色
+	4.通过self.NavigationController.navigationBar.setTintColor:设置主题色调：文字主题色
+	5.通过self.NavigationController.navigationBar.setBarTintColor:设置64高度的导航栏颜色：状态栏也设置 特殊处理后的颜色：系统默认半透明处理
+	6.如果不想要系统特殊处理后的颜色可以取消：通过self.NavigationController.navigationBar.setTranslucent = false : 设置会使TableView显示的起点坐标有变换y值增加64：因为不透明看不到内容了没有意义
+
+
+
+>>>>>>> 6a8fbf7a0dc5702acefe813aedfc84c39ae20f00
