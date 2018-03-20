@@ -2,6 +2,8 @@
 
 ## Mac开启任何来源：sudo spctl --master-disable
 
+## Git恢复提交： 用 git reflog  找到commit id  然后在git reset —hard 7517adb(commit id)
+
 ## 代码格式化：Ctrl + i
 
 ## MarkDown编辑器：MacOS+Windows: http://pad.haroopress.com/user.html#download
@@ -872,3 +874,5 @@
     	self.rotateImageView.layer.setAffineTransform(self.rotateImageView.transform.rotated(by: CGFloat(angle))) 	//正确做法
 
 ## 应用启动图决定了当前应用的分辨率大小：bounds.size
+
+## UICollectionView通过注册Cell方式从缓存池中获取Cell，如果获取不到系统会自动新建一个Cell返回不需要手动创建到缓存池中
