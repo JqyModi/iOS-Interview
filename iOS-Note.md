@@ -1,5 +1,7 @@
 ## 开启aria2c服务：aria2c --enable-rpc --rpc-listen-all
 
+## 在线思维图制作：https://www.processon.com/diagrams
+
 ## Mac开启任何来源：sudo spctl --master-disable
 
 ## Git恢复提交： 用 git reflog  找到commit id  然后在git reset —hard 7517adb(commit id)
