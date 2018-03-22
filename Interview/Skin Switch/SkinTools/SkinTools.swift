@@ -24,9 +24,13 @@ class SkinTools: NSObject {
     
     var skinInfo: String?
     
+    //读取字典操作只需要读取一次
+    var colorLists: NSDictionary?
+    
     //私有构造方法
     private override init() {
         super.init()
+        loadColorPlist()
         self.skinInfo = loadCurrentThemeInfo()
     }
     //单例
@@ -43,6 +47,24 @@ class SkinTools: NSObject {
             skinInfo = "red"
         }
         return skinInfo as! String
+    }
+    
+    private func loadColorPlist() {
+        //通过plist文件读取样式的颜色
+        let colorPath = Bundle.main.path(forResource: "color", ofType: "plist")
+        let colorDict = NSDictionary(contentsOfFile: colorPath!)
+        //将字典内容转为颜色
+        var mutArr = NSMutableDictionary()
+        colorDict?.enumerateKeysAndObjects({ (key, value, nil) in
+            //分割字符串
+            let arr = (value as AnyObject).components(separatedBy: ", ")
+            let r = NSString(string: arr[0]).floatValue
+            let g = NSString(string: arr[1]).floatValue
+            let b = NSString(string: arr[2]).floatValue
+            let color = UIColor.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1)
+            mutArr.addEntries(from: [key as! AnyHashable : color])
+        })
+        self.colorLists = mutArr
     }
     
     func imageWithName(name: String) -> UIImage {
@@ -64,21 +86,23 @@ class SkinTools: NSObject {
      *  Param:
      */
     func getColorWithKey(colorName: String) -> UIColor? {
-        //通过plist文件读取样式的颜色
-        let colorPath = Bundle.main.path(forResource: "color", ofType: "plist")
-        let colorDict = NSDictionary(contentsOfFile: colorPath!)
-        debugPrint("colorDict -------> \(colorDict)")
-        //通过字符串生成一个颜色
-        var color: UIColor?
-        if let colorStr = colorDict![colorName] as? String {
-            //分割字符串
-            let arr = colorStr.components(separatedBy: ", ")
-            let r = NSString(string: arr[0]).floatValue
-            let g = NSString(string: arr[1]).floatValue
-            let b = NSString(string: arr[2]).floatValue
-            color = UIColor.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1)
-        }
-        return color
+//        //通过plist文件读取样式的颜色
+//        let colorPath = Bundle.main.path(forResource: "color", ofType: "plist")
+//        let colorDict = NSDictionary(contentsOfFile: colorPath!)
+//        debugPrint("colorDict -------> \(colorDict)")
+//        //通过字符串生成一个颜色
+//        var color: UIColor?
+//        if let colorStr = colorDict![colorName] as? String {
+//            //分割字符串
+//            let arr = colorStr.components(separatedBy: ", ")
+//            let r = NSString(string: arr[0]).floatValue
+//            let g = NSString(string: arr[1]).floatValue
+//            let b = NSString(string: arr[2]).floatValue
+//            color = UIColor.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1)
+//        }
+        
+        //直接从转换好的颜色字典获取
+        return self.colorLists?[colorName] as! UIColor
     }
     
 }
