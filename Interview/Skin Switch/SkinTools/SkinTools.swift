@@ -30,8 +30,9 @@ class SkinTools: NSObject {
     //私有构造方法
     private override init() {
         super.init()
-        loadColorPlist()
         self.skinInfo = loadCurrentThemeInfo()
+        //plist中的字符串转颜色
+        loadColorPlist()
     }
     //单例
     private static let sharedInstance = SkinTools()
@@ -51,13 +52,14 @@ class SkinTools: NSObject {
     
     private func loadColorPlist() {
         //通过plist文件读取样式的颜色
-        let colorPath = Bundle.main.path(forResource: "color", ofType: "plist")
+        let colorPlistName =  "skin/\(self.skinInfo!)/SkinColors"
+        let colorPath = Bundle.main.path(forResource: colorPlistName, ofType: "plist")
         let colorDict = NSDictionary(contentsOfFile: colorPath!)
         //将字典内容转为颜色
         var mutArr = NSMutableDictionary()
         colorDict?.enumerateKeysAndObjects({ (key, value, nil) in
             //分割字符串
-            let arr = (value as AnyObject).components(separatedBy: ", ")
+            let arr = (value as AnyObject).components(separatedBy: ",")
             let r = NSString(string: arr[0]).floatValue
             let g = NSString(string: arr[1]).floatValue
             let b = NSString(string: arr[2]).floatValue
@@ -79,6 +81,8 @@ class SkinTools: NSObject {
         standard.set(currentSkinInfo, forKey: "SkinInfo")
         //保存当前的主题信息
         self.skinInfo = currentSkinInfo
+        //重新加载当前的colorPlist转换为对应的颜色值
+        loadColorPlist()
     }
     
     /**

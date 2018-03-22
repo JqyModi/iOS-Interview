@@ -3,8 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>labelBackgroundDayColor</key>
-	<string>0,255,255,1</string>
+	<string>0,255,255</string>
 	<key>labelTextDayColor</key>
-	<string>253,124,35,1</string>
+	<string>253,124,35</string>
+	<key>label_textColor</key>
+	<string>110, 180, 142</string>
+	<key>label_bgColor</key>
+	<string>205, 130, 160</string>
 </dict>
 </plist>
