@@ -14,14 +14,6 @@ import UIKit
  */
 class SkinTools: NSObject {
     
-    func initialize() {
-        debugPrint("initialize")
-    }
-    
-    func load() {
-        debugPrint("load")
-    }
-    
     var skinInfo: String?
     
     //读取字典操作只需要读取一次
