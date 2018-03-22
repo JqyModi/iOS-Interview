@@ -14,6 +14,7 @@ class QrcodeViewController: UIViewController {
     //引用
     var session: AVCaptureSession?
     var layer: CALayer?
+    var preView: PreView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,12 +59,17 @@ class QrcodeViewController: UIViewController {
         avOutput.metadataObjectTypes = [.qr]
         
         //获取预览layer
-        self.layer = AVCaptureVideoPreviewLayer(session: session)
-        //设置layer的大小
-        self.layer?.frame = UIScreen.main.bounds
-        //添加到View上
-        self.view.layer.addSublayer(layer!)
+//        self.layer = AVCaptureVideoPreviewLayer(session: session)
+//        //设置layer的大小
+//        self.layer?.frame = UIScreen.main.bounds
+//        //添加到View上
+//        self.view.layer.addSublayer(layer!)
         
+        //用自定义的preView代替layer
+        self.preView = PreView(frame: self.view.bounds)
+        //绑定会话
+        self.preView?.session = session
+        self.view.addSubview(preView!)
         //开始回话
         session.startRunning()
     }
