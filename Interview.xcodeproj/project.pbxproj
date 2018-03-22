@@ -13,6 +13,8 @@
 		040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A7C5A20591B200037E17A /* LocationViewController.swift */; };
 		0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412CFD1202AF7170085ABE4 /* BLEView.swift */; };
 		0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412CFD3202AF7920085ABE4 /* BLEView.xib */; };
+		0418C9CC2063328B00F7E2DA /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 0418C9CB2063328A00F7E2DA /* skin */; };
+		0418C9CF2063357C00F7E2DA /* SkinTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418C9CE2063357C00F7E2DA /* SkinTools.swift */; };
 		042022792056137400E8FE8A /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042022782056137400E8FE8A /* CALayerViewController.swift */; };
 		042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */; };
 		042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B835C2056020C00A23537 /* SVProgressAnimatedView.m */; };
@@ -24,6 +26,7 @@
 		043088262047ADCF00814006 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088252047ADCF00814006 /* Friend.swift */; };
 		043088282047D76400814006 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088272047D76400814006 /* FriendTableViewCell.swift */; };
 		0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088292047DE6500814006 /* GroupHeaderView.swift */; };
+		0434D7C3206342DA0046D6F1 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434D7C2206342DA0046D6F1 /* NextViewController.swift */; };
 		04402B7E2058A09300982883 /* MMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04402B7D2058A09300982883 /* MMCViewController.swift */; };
 		0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B4201AD4290007B0E5 /* AppDelegate.swift */; };
 		0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7B6201AD4290007B0E5 /* ViewController.swift */; };
@@ -33,6 +36,7 @@
 		0444E7C9201AD5590007B0E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7C8201AD5590007B0E5 /* Person.swift */; };
 		0444E7CB201AD5970007B0E5 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CA201AD5970007B0E5 /* Man.swift */; };
 		0444E7CD201AD5DE0007B0E5 /* Person+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */; };
+		045964A420632F22008EEF1F /* SkinSwitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045964A320632F22008EEF1F /* SkinSwitchController.swift */; };
 		045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47D52050D18900CCFFE3 /* Quartz2DViewController.swift */; };
 		045A47D92050D1E100CCFFE3 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47D82050D1E100CCFFE3 /* PieView.swift */; };
 		045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A47DA2050D1F300CCFFE3 /* BarView.swift */; };
@@ -57,7 +61,11 @@
 		04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF620576B7A004164C7 /* DrawBoardPath.swift */; };
 		04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FF9205772E0004164C7 /* DynamicViewController.swift */; };
 		04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FFB2057BBC3004164C7 /* BgView.swift */; };
+		04C0833920632E8900A108D2 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0833820632E8900A108D2 /* PreView.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
+		04D950092063568900B31D47 /* TabBar1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D950082063568900B31D47 /* TabBar1Controller.swift */; };
+		04D9500B20635BD600B31D47 /* LabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9500A20635BD600B31D47 /* LabelController.swift */; };
+		04D9500D20635E1100B31D47 /* color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D9500C20635E1100B31D47 /* color.plist */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
@@ -71,6 +79,8 @@
 		0412CFD1202AF7170085ABE4 /* BLEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEView.swift; sourceTree = "<group>"; };
 		0412CFD3202AF7920085ABE4 /* BLEView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEView.xib; sourceTree = "<group>"; };
 		0412E505205568B300E29689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		0418C9CB2063328A00F7E2DA /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
+		0418C9CE2063357C00F7E2DA /* SkinTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTools.swift; sourceTree = "<group>"; };
 		042022782056137400E8FE8A /* CALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerViewController.swift; sourceTree = "<group>"; };
 		042B83592056020C00A23537 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		042B835A2056020C00A23537 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
@@ -87,6 +97,7 @@
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		043088272047D76400814006 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		043088292047DE6500814006 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		0434D7C2206342DA0046D6F1 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		04402B7D2058A09300982883 /* MMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCViewController.swift; sourceTree = "<group>"; };
 		0444E7B1201AD4290007B0E5 /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0444E7B4201AD4290007B0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +109,7 @@
 		0444E7C8201AD5590007B0E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0444E7CA201AD5970007B0E5 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
 		0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Category.swift"; sourceTree = "<group>"; };
+		045964A320632F22008EEF1F /* SkinSwitchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinSwitchController.swift; sourceTree = "<group>"; };
 		045A47D52050D18900CCFFE3 /* Quartz2DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quartz2DViewController.swift; sourceTree = "<group>"; };
 		045A47D82050D1E100CCFFE3 /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
 		045A47DA2050D1F300CCFFE3 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
@@ -123,9 +135,14 @@
 		04B74FF620576B7A004164C7 /* DrawBoardPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardPath.swift; sourceTree = "<group>"; };
 		04B74FF9205772E0004164C7 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		04B74FFB2057BBC3004164C7 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
+		04C0833820632E8900A108D2 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
+		04D950082063568900B31D47 /* TabBar1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar1Controller.swift; sourceTree = "<group>"; };
+		04D9500A20635BD600B31D47 /* LabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelController.swift; sourceTree = "<group>"; };
+		04D9500C20635E1100B31D47 /* color.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = color.plist; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
+		04F404C820633FB900EB2160 /* SkinNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SkinNote.md; sourceTree = "<group>"; };
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +182,14 @@
 				042B83582056020C00A23537 /* SVProgressHUD */,
 			);
 			path = "Third Kit";
+			sourceTree = "<group>";
+		};
+		0418C9CD2063356200F7E2DA /* SkinTools */ = {
+			isa = PBXGroup;
+			children = (
+				0418C9CE2063357C00F7E2DA /* SkinTools.swift */,
+			);
+			path = SkinTools;
 			sourceTree = "<group>";
 		};
 		042022772056133100E8FE8A /* UIView CALayer */ = {
@@ -237,6 +262,17 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		0434D7C1206342AF0046D6F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045964A320632F22008EEF1F /* SkinSwitchController.swift */,
+				0434D7C2206342DA0046D6F1 /* NextViewController.swift */,
+				04D950082063568900B31D47 /* TabBar1Controller.swift */,
+				04D9500A20635BD600B31D47 /* LabelController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04402B7C20589FC000982883 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +302,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				045964A220632EC7008EEF1F /* Skin Switch */,
 				040A7C5920591AFA0037E17A /* CLLocation */,
 				042022772056133100E8FE8A /* UIView CALayer */,
 				0412E4FE20555C8700E29689 /* Third Kit */,
@@ -300,6 +337,17 @@
 				0444E7CC201AD5DE0007B0E5 /* Person+Category.swift */,
 			);
 			path = Catagory_Inheritance;
+			sourceTree = "<group>";
+		};
+		045964A220632EC7008EEF1F /* Skin Switch */ = {
+			isa = PBXGroup;
+			children = (
+				0434D7C1206342AF0046D6F1 /* Controller */,
+				04F404C720633F9400EB2160 /* Note */,
+				0418C9CD2063356200F7E2DA /* SkinTools */,
+				0418C9CB2063328A00F7E2DA /* skin */,
+			);
+			path = "Skin Switch";
 			sourceTree = "<group>";
 		};
 		045A47D42050D11E00CCFFE3 /* Quartz2D */ = {
@@ -372,6 +420,7 @@
 		0484C629204E165300862875 /* Qr code */ = {
 			isa = PBXGroup;
 			children = (
+				04C0833720632E4700A108D2 /* View */,
 				0484C62A204E16F800862875 /* QrcodeViewController.swift */,
 			);
 			path = "Qr code";
@@ -421,6 +470,14 @@
 			path = UIDynamic;
 			sourceTree = "<group>";
 		};
+		04C0833720632E4700A108D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C0833820632E8900A108D2 /* PreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04E2365F2029957800431C1A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +485,15 @@
 				04E23660202995CE00431C1A /* BLEViewController.swift */,
 			);
 			path = BLE;
+			sourceTree = "<group>";
+		};
+		04F404C720633F9400EB2160 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				04F404C820633FB900EB2160 /* SkinNote.md */,
+				04D9500C20635E1100B31D47 /* color.plist */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 		04F59A2E20479E7400FA3BD9 /* TableView */ = {
@@ -502,8 +568,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */,
+				0418C9CC2063328B00F7E2DA /* skin in Resources */,
 				0444E7BF201AD4290007B0E5 /* LaunchScreen.storyboard in Resources */,
 				0444E7BC201AD4290007B0E5 /* Assets.xcassets in Resources */,
+				04D9500D20635E1100B31D47 /* color.plist in Resources */,
 				0430881E2047A9DB00814006 /* friends.plist in Resources */,
 				0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */,
 				04969E7D202D38F000849968 /* BLEView_.xib in Resources */,
@@ -526,8 +594,10 @@
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
 				04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */,
 				0444E7CB201AD5970007B0E5 /* Man.swift in Sources */,
+				0418C9CF2063357C00F7E2DA /* SkinTools.swift in Sources */,
 				04B74FFA205772E0004164C7 /* DynamicViewController.swift in Sources */,
 				0444E7C9201AD5590007B0E5 /* Person.swift in Sources */,
+				04C0833920632E8900A108D2 /* PreView.swift in Sources */,
 				042022792056137400E8FE8A /* CALayerViewController.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
@@ -550,7 +620,9 @@
 				04768B70202006320030CF9F /* ViewD.swift in Sources */,
 				0444E7B7201AD4290007B0E5 /* ViewController.swift in Sources */,
 				042B83632056020C00A23537 /* SVIndefiniteAnimatedView.m in Sources */,
+				0434D7C3206342DA0046D6F1 /* NextViewController.swift in Sources */,
 				045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */,
+				04D9500B20635BD600B31D47 /* LabelController.swift in Sources */,
 				04688D3520520B48005D0AFE /* VariableView.swift in Sources */,
 				04768B6A2020061D0030CF9F /* ViewA.swift in Sources */,
 				04768B6E202006300030CF9F /* ViewC.swift in Sources */,
@@ -558,9 +630,11 @@
 				04A1661D20536BC600629687 /* TouchView.swift in Sources */,
 				0444E7B5201AD4290007B0E5 /* AppDelegate.swift in Sources */,
 				04B74FF22057614D004164C7 /* DrawingBoardViewController.swift in Sources */,
+				04D950092063568900B31D47 /* TabBar1Controller.swift in Sources */,
 				045A47D62050D18900CCFFE3 /* Quartz2DViewController.swift in Sources */,
 				0430882A2047DE6500814006 /* GroupHeaderView.swift in Sources */,
 				040A7C372058BD0D0037E17A /* BgCircleView.swift in Sources */,
+				045964A420632F22008EEF1F /* SkinSwitchController.swift in Sources */,
 				04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */,
 				040A7C332058B25C0037E17A /* AngryBirdsViewController.swift in Sources */,
 				045A47DD205111D200CCFFE3 /* CustomProgressView.swift in Sources */,
