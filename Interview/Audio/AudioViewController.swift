@@ -20,7 +20,10 @@ class AudioViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        playAudio()
+//        playAudio()
+        //2.1获取音效文件URL
+        let url = Bundle.main.url(forResource: "timeclock", withExtension: "wav")
+        AudioTools.shared.palySystemSoundWithURL(url: url!)
     }
     
     //点击播放音效

@@ -12,11 +12,20 @@ import AVFoundation
 class AudioTools: NSObject {
     
     //缓存URL对应的音效ID
-    var cacheDict: NSMutableDictionary?
+    var cacheDict: Dictionary<String, SystemSoundID>
     
-    override init() {
-        debugPrint("func --> \(#function) : line --> \(#line)")
-        cacheDict = NSMutableDictionary.init(capacity: 10)
+//    override init() {
+//        debugPrint("func --> \(#function) : line --> \(#line)")
+//        cacheDict = Dictionary<String, SystemSoundID>()
+//    }
+    
+    private override init() {
+        cacheDict = Dictionary<String, SystemSoundID>()
+    }
+    
+    private static let sigle = AudioTools()
+    class var shared: AudioTools {
+        return sigle
     }
     
     func palySystemSoundWithURL(url: URL) {
@@ -25,7 +34,7 @@ class AudioTools: NSObject {
         AudioServicesPlaySystemSoundWithCompletion(cacheSoundIDWithURL(url: url)) {
             debugPrint("音效播放完成 ~")
             //释放音效
-//            AudioServicesDisposeSystemSoundID(soundID)
+//            AudioServicesDisposeSystemSoundID(self.cacheSoundIDWithURL(url: url))
         }
     }
     
@@ -37,14 +46,19 @@ class AudioTools: NSObject {
         let path = url.absoluteString
         
         //2.2定义一个变量记录当前音效ID
-        var soundID = self.cacheDict![path] as! SystemSoundID
+        var soundID = SystemSoundID()
+        
+        soundID = SystemSoundID(self.cacheDict[path]?.hashValue ?? 0)
         
         //2.3创建音效文件
         if soundID == 0 {
+            debugPrint("新生成ID")
             //如果不存在重新创建
             AudioServicesCreateSystemSoundID(url as! CFURL, &soundID)
             //重新缓存
-            self.cacheDict?.addEntries(from: [path  : soundID])
+            self.cacheDict[path] = soundID
+        }else {
+            debugPrint("缓存ID")
         }
         return soundID
     }
