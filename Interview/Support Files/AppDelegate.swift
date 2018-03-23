@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        window?.rootViewController = QrcodeViewController()
 //        window?.rootViewController = AppSwitchViewController()
-        window?.rootViewController = TouchIDViewController()
+        window?.rootViewController = AudioViewController()
         window?.makeKeyAndVisible()
         return true
     }

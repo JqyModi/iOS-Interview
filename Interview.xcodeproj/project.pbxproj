@@ -64,6 +64,8 @@
 		04B74FFC2057BBC3004164C7 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B74FFB2057BBC3004164C7 /* BgView.swift */; };
 		04C0833920632E8900A108D2 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0833820632E8900A108D2 /* PreView.swift */; };
 		04C0AC1220438B4900980D8C /* ScrollAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */; };
+		04C1E92C2064F23500DB1B52 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1E92B2064F23500DB1B52 /* AudioViewController.swift */; };
+		04C1E92F2064F3D800DB1B52 /* timeclock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04C1E92E2064F3D800DB1B52 /* timeclock.wav */; };
 		04D950092063568900B31D47 /* TabBar1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D950082063568900B31D47 /* TabBar1Controller.swift */; };
 		04D9500B20635BD600B31D47 /* LabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9500A20635BD600B31D47 /* LabelController.swift */; };
 		04D9500D20635E1100B31D47 /* color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D9500C20635E1100B31D47 /* color.plist */; };
@@ -141,6 +143,8 @@
 		04B74FFB2057BBC3004164C7 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
 		04C0833820632E8900A108D2 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 		04C0AC1120438B4900980D8C /* ScrollAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAlphaViewController.swift; sourceTree = "<group>"; };
+		04C1E92B2064F23500DB1B52 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		04C1E92E2064F3D800DB1B52 /* timeclock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timeclock.wav; sourceTree = "<group>"; };
 		04D950082063568900B31D47 /* TabBar1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar1Controller.swift; sourceTree = "<group>"; };
 		04D9500A20635BD600B31D47 /* LabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelController.swift; sourceTree = "<group>"; };
 		04D9500C20635E1100B31D47 /* color.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = color.plist; sourceTree = "<group>"; };
@@ -325,6 +329,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				04C1E92A2064F22100DB1B52 /* Audio */,
 				04F8F85D2064DB3800A46B37 /* NoteBook */,
 				04F8F8572064A0B700A46B37 /* App Switch(应用间跳转) */,
 				042E233C20647C41001618AB /* Touch ID(指纹识别) */,
@@ -504,6 +509,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04C1E92A2064F22100DB1B52 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				04C1E92D2064F3BA00DB1B52 /* sources */,
+				04C1E92B2064F23500DB1B52 /* AudioViewController.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		04C1E92D2064F3BA00DB1B52 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				04C1E92E2064F3D800DB1B52 /* timeclock.wav */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
 		04E2365F2029957800431C1A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +656,7 @@
 				0430881E2047A9DB00814006 /* friends.plist in Resources */,
 				04F8F85F2064DB6300A46B37 /* iOS-Note.md in Resources */,
 				0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */,
+				04C1E92F2064F3D800DB1B52 /* timeclock.wav in Resources */,
 				04969E7D202D38F000849968 /* BLEView_.xib in Resources */,
 				0444E7BA201AD4290007B0E5 /* Main.storyboard in Resources */,
 			);
@@ -651,6 +674,7 @@
 				04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */,
 				0480106820535DBD0085C2FB /* TouchEventViewController.swift in Sources */,
 				04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */,
+				04C1E92C2064F23500DB1B52 /* AudioViewController.swift in Sources */,
 				040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,
