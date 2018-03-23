@@ -21,6 +21,7 @@
 		042B83652056020C00A23537 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042B835E2056020C00A23537 /* SVProgressHUD.bundle */; };
 		042B83662056020C00A23537 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83602056020C00A23537 /* SVProgressHUD.m */; };
 		042B83672056020C00A23537 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83622056020C00A23537 /* SVRadialGradientLayer.m */; };
+		042E233F20647C83001618AB /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E233E20647C83001618AB /* TouchIDViewController.swift */; };
 		0430881E2047A9DB00814006 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0430881D2047A9DB00814006 /* friends.plist */; };
 		043088242047ADBC00814006 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088232047ADBC00814006 /* Group.swift */; };
 		043088262047ADCF00814006 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043088252047ADCF00814006 /* Friend.swift */; };
@@ -69,6 +70,7 @@
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
+		04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,7 @@
 		042B83602056020C00A23537 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		042B83612056020C00A23537 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		042B83622056020C00A23537 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		042E233E20647C83001618AB /* TouchIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 		0430881D2047A9DB00814006 /* friends.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		043088232047ADBC00814006 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		043088252047ADCF00814006 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
 		04F404C820633FB900EB2160 /* SkinNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SkinNote.md; sourceTree = "<group>"; };
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
+		04F8F8592064A12600A46B37 /* Note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Note.md; sourceTree = "<group>"; };
+		04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +232,22 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		042E233C20647C41001618AB /* Touch ID(指纹识别) */ = {
+			isa = PBXGroup;
+			children = (
+				042E233D20647C66001618AB /* Controller */,
+			);
+			path = "Touch ID(指纹识别)";
+			sourceTree = "<group>";
+		};
+		042E233D20647C66001618AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042E233E20647C83001618AB /* TouchIDViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0430881F2047AD5600814006 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,7 +323,9 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
-				045964A220632EC7008EEF1F /* Skin Switch */,
+				04F8F8572064A0B700A46B37 /* App Switch(应用间跳转) */,
+				042E233C20647C41001618AB /* Touch ID(指纹识别) */,
+				045964A220632EC7008EEF1F /* Skin Switch(皮肤切换) */,
 				040A7C5920591AFA0037E17A /* CLLocation */,
 				042022772056133100E8FE8A /* UIView CALayer */,
 				0412E4FE20555C8700E29689 /* Third Kit */,
@@ -339,7 +362,7 @@
 			path = Catagory_Inheritance;
 			sourceTree = "<group>";
 		};
-		045964A220632EC7008EEF1F /* Skin Switch */ = {
+		045964A220632EC7008EEF1F /* Skin Switch(皮肤切换) */ = {
 			isa = PBXGroup;
 			children = (
 				0434D7C1206342AF0046D6F1 /* Controller */,
@@ -347,7 +370,7 @@
 				0418C9CD2063356200F7E2DA /* SkinTools */,
 				0418C9CB2063328A00F7E2DA /* skin */,
 			);
-			path = "Skin Switch";
+			path = "Skin Switch(皮肤切换)";
 			sourceTree = "<group>";
 		};
 		045A47D42050D11E00CCFFE3 /* Quartz2D */ = {
@@ -507,6 +530,31 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		04F8F8572064A0B700A46B37 /* App Switch(应用间跳转) */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F85A2064A2BE00A46B37 /* Controller */,
+				04F8F8582064A11300A46B37 /* Note */,
+			);
+			path = "App Switch(应用间跳转)";
+			sourceTree = "<group>";
+		};
+		04F8F8582064A11300A46B37 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F8592064A12600A46B37 /* Note.md */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		04F8F85A2064A2BE00A46B37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -587,8 +635,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04969E7F202D4FA500849968 /* BLEView_.swift in Sources */,
+				042E233F20647C83001618AB /* TouchIDViewController.swift in Sources */,
 				04B74FF720576B7A004164C7 /* DrawBoardPath.swift in Sources */,
 				0480106820535DBD0085C2FB /* TouchEventViewController.swift in Sources */,
+				04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */,
 				040A7C5B20591B200037E17A /* LocationViewController.swift in Sources */,
 				04E23661202995CE00431C1A /* BLEViewController.swift in Sources */,
 				0484C62B204E16F800862875 /* QrcodeViewController.swift in Sources */,

@@ -14,23 +14,10 @@ import AVFoundation
  *  Param:
  */
 class PreView: UIView {
-
-    var session: AVCaptureSession? {
-        didSet {
-            let l: AVCaptureVideoPreviewLayer = self.layer as! AVCaptureVideoPreviewLayer
-            l.session = self.session
-        }
-    }
     
     var imageView: UIImageView?
     var lineImageView: UIImageView?
     var timer: Timer?
-    
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initUIConfig()
-    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -46,12 +33,10 @@ class PreView: UIView {
 //    return [AVCaptureVideoPreviewLayer class];
 //    }
     
-//    class func layerClass() -> AnyClass {
-//        return AVCaptureVideoPreviewLayer.self
-//    }
-
-    override var layer: CALayer {
-        return AVCaptureVideoPreviewLayer()
+    //重写父类的layerClass返回自己需要的类型：向下转型
+    override class var layerClass: AnyClass {
+//        return CAGradientLayer.self
+        return AVCaptureVideoPreviewLayer.self
     }
     
 //    - (void)setSession:(AVCaptureSession *)session
@@ -61,6 +46,14 @@ class PreView: UIView {
 //    AVCaptureVideoPreviewLayer *layer = (AVCaptureVideoPreviewLayer *)  self.layer;
 //    layer.session = session;
 //    }
+    
+    //接收需要设置到AVCaptureVideoPreviewLayer的Session
+    var session: AVCaptureSession? {
+        didSet {
+            let l: AVCaptureVideoPreviewLayer = self.layer as! AVCaptureVideoPreviewLayer
+            l.session = self.session
+        }
+    }
 
 //    - (instancetype)initWithFrame:(CGRect)frame
 //    {
@@ -69,9 +62,13 @@ class PreView: UIView {
 //    }
 //    return self;
 //    }
+    
+    //初始化时添加扫描UI
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.initUIConfig()
+    }
 
-    
-    
 //    - (void)initUiConfig
 //    {
 //    //设置背景图片
@@ -90,6 +87,7 @@ class PreView: UIView {
 //    _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(animation) userInfo:nil repeats:YES];
 //    }
     
+    //添加扫描框+扫描线
     private func initUIConfig() {
         self.imageView = UIImageView(image: UIImage(named: "pick_bg.png"))
         self.imageView?.frame = CGRect(x: self.bounds.size.width * 0.5 - 140, y: self.bounds.size.height * 0.5 - 140, width: 280, height: 280)
@@ -110,6 +108,8 @@ class PreView: UIView {
 //    _lineImageView.frame = CGRectMake(30, 10, 220, 2);
 //    }];
 //    }
+    
+    //添加扫描线动画
     @objc private func animation() {
         UIView.animate(withDuration: 3, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
             self.lineImageView?.frame = CGRect(x: 30, y: 260, width: 220, height: 2)

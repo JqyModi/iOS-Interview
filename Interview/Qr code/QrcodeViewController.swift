@@ -68,7 +68,7 @@ class QrcodeViewController: UIViewController {
         //用自定义的preView代替layer
         self.preView = PreView(frame: self.view.bounds)
         //绑定会话
-        self.preView?.session = session
+        self.preView?.session = self.session
         self.view.addSubview(preView!)
         //开始回话
         session.startRunning()
