@@ -71,6 +71,7 @@
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
 		04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */; };
+		04F8F85F2064DB6300A46B37 /* iOS-Note.md in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F85E2064DB6300A46B37 /* iOS-Note.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +150,7 @@
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
 		04F8F8592064A12600A46B37 /* Note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Note.md; sourceTree = "<group>"; };
 		04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitchViewController.swift; sourceTree = "<group>"; };
+		04F8F85E2064DB6300A46B37 /* iOS-Note.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS-Note.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 		0444E7B3201AD4290007B0E5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				04F8F85D2064DB3800A46B37 /* NoteBook */,
 				04F8F8572064A0B700A46B37 /* App Switch(应用间跳转) */,
 				042E233C20647C41001618AB /* Touch ID(指纹识别) */,
 				045964A220632EC7008EEF1F /* Skin Switch(皮肤切换) */,
@@ -555,6 +558,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		04F8F85D2064DB3800A46B37 /* NoteBook */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F85E2064DB6300A46B37 /* iOS-Note.md */,
+			);
+			path = NoteBook;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -621,6 +632,7 @@
 				0444E7BC201AD4290007B0E5 /* Assets.xcassets in Resources */,
 				04D9500D20635E1100B31D47 /* color.plist in Resources */,
 				0430881E2047A9DB00814006 /* friends.plist in Resources */,
+				04F8F85F2064DB6300A46B37 /* iOS-Note.md in Resources */,
 				0412CFD4202AF7920085ABE4 /* BLEView.xib in Resources */,
 				04969E7D202D38F000849968 /* BLEView_.xib in Resources */,
 				0444E7BA201AD4290007B0E5 /* Main.storyboard in Resources */,

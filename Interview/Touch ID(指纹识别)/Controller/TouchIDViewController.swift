@@ -36,7 +36,7 @@ class TouchIDViewController: UIViewController {
                 
                 //通过错误代码或者错误提示文字进行进行相对应操作
                 if (error != nil) {
-                    debugPrint("验证失败")
+                    debugPrint("验证失败  error ---> \(error)")
                 }
             })
         }else {
