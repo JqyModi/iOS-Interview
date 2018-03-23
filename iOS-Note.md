@@ -918,6 +918,15 @@
     3.播放音效文件：AudioPlay。。。
     4.释放：AudioDispose。。。
 
+## 音乐播放：
+	1.导入AVFoundation
+	2.创建播放器：AVAudioPlayer
+	3.播放前准备：prepare..
+	4.播放：play：内部检查是否准备没有自动调用准备操作
+	5.暂停：pause
+	6.停止：stop：手动将时间清零
+
+## 录音：
 
 
 
