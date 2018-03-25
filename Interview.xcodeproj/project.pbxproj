@@ -71,6 +71,7 @@
 		04D9500B20635BD600B31D47 /* LabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9500A20635BD600B31D47 /* LabelController.swift */; };
 		04D9500D20635E1100B31D47 /* color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D9500C20635E1100B31D47 /* color.plist */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
+		04E6DE602067D25B00A5EC9C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6DE5F2067D25B00A5EC9C /* MusicViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
 		04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */; };
@@ -151,6 +152,7 @@
 		04D9500A20635BD600B31D47 /* LabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelController.swift; sourceTree = "<group>"; };
 		04D9500C20635E1100B31D47 /* color.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = color.plist; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		04E6DE5F2067D25B00A5EC9C /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
 		04F404C820633FB900EB2160 /* SkinNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SkinNote.md; sourceTree = "<group>"; };
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
@@ -514,9 +516,11 @@
 		04C1E92A2064F22100DB1B52 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04E6DE5E2067D21B00A5EC9C /* Music */,
+				04E6DE5D2067D1E600A5EC9C /* Sound */,
+				04E6DE5C2067D1D400A5EC9C /* Recorder */,
 				04C1E9302064F66C00DB1B52 /* Tools */,
 				04C1E92D2064F3BA00DB1B52 /* sources */,
-				04C1E92B2064F23500DB1B52 /* AudioViewController.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -544,6 +548,29 @@
 				04E23660202995CE00431C1A /* BLEViewController.swift */,
 			);
 			path = BLE;
+			sourceTree = "<group>";
+		};
+		04E6DE5C2067D1D400A5EC9C /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		04E6DE5D2067D1E600A5EC9C /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				04C1E92B2064F23500DB1B52 /* AudioViewController.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		04E6DE5E2067D21B00A5EC9C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				04E6DE5F2067D25B00A5EC9C /* MusicViewController.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		04F404C720633F9400EB2160 /* Note */ = {
@@ -698,6 +725,7 @@
 				042022792056137400E8FE8A /* CALayerViewController.swift in Sources */,
 				0412CFD2202AF7170085ABE4 /* BLEView.swift in Sources */,
 				04768B6C2020062E0030CF9F /* ViewB.swift in Sources */,
+				04E6DE602067D25B00A5EC9C /* MusicViewController.swift in Sources */,
 				042B83642056020C00A23537 /* SVProgressAnimatedView.m in Sources */,
 				043088282047D76400814006 /* FriendTableViewCell.swift in Sources */,
 				043088242047ADBC00814006 /* Group.swift in Sources */,
