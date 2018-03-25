@@ -927,6 +927,64 @@
 	6.停止：stop：手动将时间清零
 
 ## 录音：
+	1.AVFoundation
+		1.1 获取要存储的路径
+		1.2 配置录音录制参数：字典：录音格式、采样率、通道数、位深度等
+	2.AVAudioRecorder初始化
+	3.准备录音：prepare
+	4.开始录音：start
+	5.暂停录音：pause
+	6.停止录音：stop
+
+	7.自动停止录音：分贝检测：没有声音时自动停止
+		7.1 打开分贝检测：meteringEnabled
+		7.2 通过计时器循环检测分贝大小
+		7.3 初始化定时器：CADisplayLink并在暂停和停止的地方暂停定时器
+		7.4 更新分贝信息：updateMeters
+		7.5 获取更新后的分贝值（负值最大是0）：averagePowerForChannel： 0
+		7.6  判断分贝值在一定时间(次数)内一直低于某个值则认为可以自动停止录音：count记录次数：如120次内持续低于某个值则自动停止
+		7.7 真机上运行注意：
+			7.1.1 提示用户授权
+			7.1.2 需要添加AVAudioSession的分类并指定类型是录音：record
+
+## 视频播放：
+	1.导入MediaPlayer
+	2.带view的播放器
+		2.0 获取视频URL路径
+		2.1 MPMoviePlayerViewController
+		2.2 模态弹出控制器：present。。
+		2.3 需要在弹出控制器的view加载完毕之后才弹出播放器：否则可能会出现没有画面或报警告
+	3.不带view的播放器
+		3.1 设置frame
+		3.2 将播放器控制器的view添加到目标view上
+		3.3 强引用播放器：否则会被销毁
+			3.3.1 设置播放器控制模式：controlStyle
+		3.4 准备播放
+		3.5 播放
+		3.6 通过通知来监听视频播放器的播放结束：播放完成、播放出错、列表播放完毕
+			3.6.1 连续播放：在播放结束通知时切换视频URL并播放  
+		3.7 不带view的播放器播放完成移除view：removefromsuperview
+		 
+	4.iOS9后视频播放：
+		4.1 导入AVKit
+		4.2 AVPlayerViewController
+		4.3 设置AVPlayer：player（重点）
+		4.4 播放：play
+		4.5 弹出控制器：present。。。
+		4.6 自定义播放器大小：改变frame添加到目标view上即可
+
+		4.7 视频截图：
+			4.7.1 获取要截取视频资源URL
+			4.7.2 获取AVAsset资源
+			4.7.3 创建图像资源生成器：AVAseetImageGenerator
+			4.7.4 设置要截取哪一帧的时间：CMTime：CMTime(5,1) = 第五帧/每秒一帧
+			4.7.4.1 将CMTime转化为NSValue类型
+			4.7.5 通过AVAseetImageGenerator生成截图并在回调中获取截图 - 主线程更新UI
+
+		4.8 视频录制：跟拍照类似
+			1.
+
+
 
 ## 进阶：
 	1.地理定位，导航
@@ -942,13 +1000,12 @@
 	11.蓝牙
 	12.音频处理
 	13.视频处理
-	14.内存分析
+	14.内存分析:Instruments
 	15.打包，调试，上架
 	16.支付宝支付
 	17.推送，通知
 	18.广告，内购
 	19.静态库(.a,.framework)，动态库
-
 
 
 
