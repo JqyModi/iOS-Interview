@@ -997,7 +997,7 @@
 				8.1 导入资源库：AssetsLibrary
 				8.2 通过ALAssetsLibrary的writeVideo方法保存视频
 
-		4.9 视频压缩：
+		4.9 视频压缩-导出：AVFoundation框架
 			1.通过URL获取视频资源：AVAsset(url)
 			2.设置压缩格式：低质量压缩：AVAssetExportSession：presetName表示压缩质量
 			3.设置到处路径：session.outputURL
