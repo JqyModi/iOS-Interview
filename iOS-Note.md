@@ -982,7 +982,28 @@
 			4.7.5 通过AVAseetImageGenerator生成截图并在回调中获取截图 - 主线程更新UI
 
 		4.8 视频录制：跟拍照类似
-			1.
+			1.判断相机是否可用UIImagePickerController：isSourceTypeAvailable
+			2.初始化相机选择控制器：
+			3.设置source类型：sourceType
+			4.设置媒体类型：
+				4.1 需要导入key所在库：MobileCoreServices
+				4.2 设置media类型：kUITypeMovie
+				4.3 设置相机检测模式：cameraCaptureMode
+				4.4 设置录制视频的质量：videoQuality
+			5.设置相机选择控制器代理事件获取录制好的文件
+			6.弹出控制器：present。。。
+			7.代理方法中获取录制的视频(URL)：并播放
+			8.保存视频:
+				8.1 导入资源库：AssetsLibrary
+				8.2 通过ALAssetsLibrary的writeVideo方法保存视频
+
+		4.9 视频压缩：
+			1.通过URL获取视频资源：AVAsset(url)
+			2.设置压缩格式：低质量压缩：AVAssetExportSession：presetName表示压缩质量
+			3.设置到处路径：session.outputURL
+			4.设置导出类型：outputFileType：Movie或者MPEG4等
+			5.开始导出：session.exportAsynchronous...：回调
+
 
 
 
