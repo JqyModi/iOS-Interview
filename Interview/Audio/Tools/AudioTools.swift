@@ -63,4 +63,18 @@ class AudioTools: NSObject {
         return soundID
     }
     
+    //清理内存
+    func clearCache() {
+        //遍历获取soundID并清理对应的音效资源
+        let dict: NSMutableDictionary = self.cacheDict as! NSMutableDictionary
+        dict.enumerateKeysAndObjects { (key, value, nil) in
+            //获取soundID
+            let soundID = value as! SystemSoundID
+            //通过soundID删除对应的音效内存引用
+            AudioServicesDisposeSystemSoundID(soundID)
+        }
+        //字典也需要清理
+        dict.removeAllObjects()
+    }
+    
 }

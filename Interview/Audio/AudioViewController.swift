@@ -47,5 +47,11 @@ class AudioViewController: UIViewController {
         }
         
     }
+    
+    override func didReceiveMemoryWarning() {
+        debugPrint("didReceiveMemoryWarning")
+        //局部清理
+        AudioTools.shared.clearCache()
+    }
 
 }
