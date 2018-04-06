@@ -72,6 +72,7 @@
 		04D9500D20635E1100B31D47 /* color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D9500C20635E1100B31D47 /* color.plist */; };
 		04E23661202995CE00431C1A /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E23660202995CE00431C1A /* BLEViewController.swift */; };
 		04E6DE602067D25B00A5EC9C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6DE5F2067D25B00A5EC9C /* MusicViewController.swift */; };
+		04E6DE622067E19E00A5EC9C /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6DE612067E19E00A5EC9C /* RecordViewController.swift */; };
 		04E815EE20492E2500CE1949 /* FriendTableViewCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */; };
 		04F59A3020479EC300FA3BD9 /* GroupsHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */; };
 		04F8F85C2064A2DA00A46B37 /* AppSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F85B2064A2DA00A46B37 /* AppSwitchViewController.swift */; };
@@ -153,6 +154,7 @@
 		04D9500C20635E1100B31D47 /* color.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = color.plist; sourceTree = "<group>"; };
 		04E23660202995CE00431C1A /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
 		04E6DE5F2067D25B00A5EC9C /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		04E6DE612067E19E00A5EC9C /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		04E815ED20492E2500CE1949 /* FriendTableViewCellFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCellFrame.swift; sourceTree = "<group>"; };
 		04F404C820633FB900EB2160 /* SkinNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SkinNote.md; sourceTree = "<group>"; };
 		04F59A2F20479EC300FA3BD9 /* GroupsHeaderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsHeaderTableViewController.swift; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 		04E6DE5C2067D1D400A5EC9C /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
+				04E6DE612067E19E00A5EC9C /* RecordViewController.swift */,
 			);
 			path = Recorder;
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 				04C1E9322064F68D00DB1B52 /* AudioTools.swift in Sources */,
 				0434D7C3206342DA0046D6F1 /* NextViewController.swift in Sources */,
 				045A47DB2050D1F300CCFFE3 /* BarView.swift in Sources */,
+				04E6DE622067E19E00A5EC9C /* RecordViewController.swift in Sources */,
 				04D9500B20635BD600B31D47 /* LabelController.swift in Sources */,
 				04688D3520520B48005D0AFE /* VariableView.swift in Sources */,
 				04768B6A2020061D0030CF9F /* ViewA.swift in Sources */,
