@@ -266,7 +266,10 @@
     CFRunLoopStop(runloop)
     CFRunLoopStart()
     CFRunLoopGetCurrent()
-
+    2.Runloop作用：
+        1.保持应用程序不退出：在main函数的ApplicationMain函数中创建并永远不会返回int值：主运行循环：默认开启runloop（对象：创建线程时系统默认创建，子线程默认不开启，手动开启后线程销毁时自动销毁）
+        2.事件监听和传递：当有事件触发时Runloop监听到事件并从Event queue中取出对应事件并传递给Application对象进行处理，接下来就是事件分发机制中找处理对象的过程
+        3.runloop是一个死循环会浪费大量内存资源，系统默认在runloop没有事件时睡眠，当有事件触发时立即唤醒并传递事件减少内存消耗
 
 # OC属性修饰符关键字：atomic原子属性/nonatomic 非原子属性
     1.原子属性特点：多线程情况下：原子属性在同一时刻只能有一个线程能对该属性赋值操作，读取都可以：系统默认会给setter方法加一把锁：自旋锁：并不能保证线程安全
@@ -1004,8 +1007,11 @@
 			4.设置导出类型：outputFileType：Movie或者MPEG4等
 			5.开始导出：session.exportAsynchronous...：回调
 
-
-
+## 加载网页：UIWebView与WKWebView
+     1.iOS8.0之后推出，弥补UIWebView的不足：大网页显示时内存峰值问题：减少10倍内存占用？性能提高
+     2.用法跟UIWebView类似：导入WebKit框架，加载请求，设置导航代理
+     3.处理回调：协议头过滤，网页加载完成回调中可以处理与js交互，通过kvo监听网页加载进度
+     4.修改网页字体大小：config.preference.fontSize
 
 ## 进阶：
 	1.地理定位，导航
@@ -1027,7 +1033,6 @@
 	17.推送，通知
 	18.广告，内购
 	19.静态库(.a,.framework)，动态库
-
 
 
 
